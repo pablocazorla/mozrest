@@ -1,0 +1,72 @@
+.photo-mosaic {
+  height: 100%;
+  .row {
+    height: 100%;
+  }
+  [class*="col-"] {
+    height: 100%;
+  }
+  .photo-mosaic-column {
+    height: 100%;
+    .photo-mosaic-content {
+      @g: 16px;
+      height: 50%;
+      padding: 0 0 @g @g;
+      .photo-mosaic-figure {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &.p-left {
+        padding-left: 20%;
+      }
+
+      &.c-1 {
+        height: (1/12) * 100%;
+      }
+      &.c-2 {
+        height: (2/12) * 100%;
+      }
+      &.c-3 {
+        height: (3/12) * 100%;
+      }
+      &.c-4 {
+        height: (4/12) * 100%;
+      }
+      &.c-5 {
+        height: (5/12) * 100%;
+      }
+      &.c-6 {
+        height: (6/12) * 100%;
+      }
+      &.c-7 {
+        height: (7/12) * 100%;
+      }
+      &.c-8 {
+        height: (8/12) * 100%;
+      }
+
+      &.c-9 {
+        height: (9/12) * 100%;
+      }
+      &.c-10 {
+        height: (10/12) * 100%;
+      }
+      &.c-11 {
+        height: (11/12) * 100%;
+      }
+      &.c-12 {
+        height: 100%;
+      }
+    }
+  }
+}

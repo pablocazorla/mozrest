@@ -1,3 +1,45 @@
 body {
-  background-color: #fff;
+  font-size: 16px;
+  color: @text-color;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  .font-alt;
+}
+h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 0.7em;
+}
+p {
+  font-size: 16px;
+  margin-bottom: 1.7em;
+}
+
+.generate_text_color(@col) {
+  .text-@{col} {
+    color: @@col;
+  }
+}
+
+.generate_text_color(blue);
+.generate_text_color(pink);
+.generate_text_color(yellow);
+.generate_text_color(green);
+.generate_text_color(dark);
+.generate_text_color(red);
+.generate_text_color(yellow2);
+.generate_text_color(green2);
+.generate_text_color(brown);
+.generate_text_color(brown2);
+.generate_text_color(dark2);
+.generate_text_color(black);
+.generate_text_color(white);
+.generate_text_color(gray);
+.generate_text_color(primary);
+.generate_text_color(secondary);
