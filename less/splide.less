@@ -1,0 +1,24 @@
+.splide {
+  padding-bottom: 60px;
+}
+.splide__pagination {
+  bottom: 0px;
+}
+.splide__pagination__page {
+  @w: 14px;
+  width: @w;
+  height: @w;
+  background-color: #c4c4c4;
+
+  &.is-active {
+    background-color: @blue;
+    .transform(none);
+  }
+}
+
+.splide__arrow {
+  top: auto;
+  bottom: -3px;
+  .transform(none);
+  background-color: transparent;
+}

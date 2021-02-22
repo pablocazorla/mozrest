@@ -16,10 +16,56 @@ h1 {
   line-height: 1.1;
   margin-bottom: 0.7em;
 }
+h2 {
+  font-size: 38px;
+  margin-bottom: 1.3em;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 20px;
+}
 p {
   font-size: 16px;
   margin-bottom: 1.7em;
 }
+
+.block-size-1 {
+  max-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.block-size-2 {
+  max-width: 386px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  list-style: inside none none;
+  padding: 0;
+  li {
+    margin-bottom: 1em;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: @pink;
+      margin-right: 1em;
+      border-radius: 2px;
+      position: relative;
+      top: -0.1em;
+    }
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+///////////////////
 
 .generate_text_color(@col) {
   .text-@{col} {

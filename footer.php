@@ -10,6 +10,50 @@
  */
 
 ?>
+
+<div class="footer-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="<?php bloginfo( 'url' ); ?>" class="footer-top_brand">
+          <img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="MOZREST" class="img-100">
+        </a>
+      </div>
+      <div class="col-md-3">
+        <nav class="fotter-top_nav">
+          <h4>Company</h4>
+          <a href="#">Restaurant</a>
+          <a href="#">Market Place</a>
+          <a href="#">Reservation Software</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+      <div class="col-md-3">
+        <nav class="fotter-top_nav">
+          <h4>Resources</h4>
+          <a href="#">Opt In</a>
+          <a href="#">Opt Out</a>
+          <a href="#">Presence Check</a>
+          <a href="#">Audit</a>
+          <a href="#">Listing Video</a>
+        </nav>
+      </div>
+      <div class="col-md-3">
+        <nav class="fotter-top_nav">
+          <h4>Other</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Lorem Ipsum</a>
+          <a href="#">Lorem Ipsum</a>
+          <a href="#">Lorem Ipsum</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="push"></div>
 </div><!-- .main-wrap -->
 <footer class="main-footer">

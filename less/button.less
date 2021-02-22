@@ -4,6 +4,12 @@
   border: none;
   .transition(all 0.2s);
 
+  &,
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+
   .generate_btn_color(@col) {
     &.btn-@{col} {
       background-color: @@col;
@@ -16,6 +22,20 @@
     }
   }
 
+  .generate_btn_color(blue);
+  .generate_btn_color(pink);
+  .generate_btn_color(yellow);
+  .generate_btn_color(green);
+  .generate_btn_color(dark);
+  .generate_btn_color(red);
+  .generate_btn_color(yellow2);
+  .generate_btn_color(green2);
+  .generate_btn_color(brown);
+  .generate_btn_color(brown2);
+  .generate_btn_color(dark2);
+  .generate_btn_color(black);
+  .generate_btn_color(white);
+  .generate_btn_color(gray);
   .generate_btn_color(primary);
   .generate_btn_color(secondary);
 }

@@ -1,3 +1,33 @@
+.footer-top {
+  padding: 1em 0 5em;
+
+  .footer-top_brand {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .fotter-top_nav {
+    h4 {
+      color: @blue;
+      margin-bottom: 2em;
+    }
+    a {
+      display: block;
+      font-size: 18px;
+      color: #9895ad;
+      margin-bottom: 0.7em;
+      text-decoration: none;
+      &:hover {
+        color: @blue;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 .main-footer {
   border-top: 1px solid @border-color;
   text-align: center;
