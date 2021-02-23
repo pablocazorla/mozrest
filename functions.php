@@ -116,15 +116,17 @@ add_action( 'widgets_init', 'mozrest_widgets_init' );
 function mozrest_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), _MOZREST_VERSION );
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), _MOZREST_VERSION );
-	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), _MOZREST_VERSION );
+	wp_enqueue_style( 'mozresticons', get_template_directory_uri() . '/css/mozresticons.css', array(), _MOZREST_VERSION );
 	wp_enqueue_style( 'splide_css', get_template_directory_uri() . '/css/splide.min.css', array(), _MOZREST_VERSION );
 	wp_enqueue_style( 'splide_theme_css', get_template_directory_uri() . '/css/splide-default.min.css', array(), _MOZREST_VERSION );
+	wp_enqueue_style( 'aos_css', get_template_directory_uri() . '/css/aos.css', array(), _MOZREST_VERSION );
 	wp_enqueue_style( 'mozrest_css', get_template_directory_uri() . '/css/mozrest.css', array(), _MOZREST_VERSION );
 
 
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.5.1.min.js', array(), _MOZREST_VERSION, true );
 	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array(), _MOZREST_VERSION, true );
 	wp_enqueue_script( 'splide_js', get_template_directory_uri() . '/js/splide.min.js', array(), _MOZREST_VERSION, true );
+	wp_enqueue_script( 'aos_js', get_template_directory_uri() . '/js/aos.js', array(), _MOZREST_VERSION, true );
 	wp_enqueue_script( 'mozrest_js', get_template_directory_uri() . '/js/mozrest.min.js', array(), _MOZREST_VERSION, true );
 
 

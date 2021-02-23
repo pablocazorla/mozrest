@@ -27,6 +27,11 @@ section {
   width: 100%;
   .transform(translateY(-50%));
 }
+@media (min-width: @md) {
+  .v-md-centered {
+    .v-centered;
+  }
+}
 
 .back-content {
   position: absolute;
@@ -47,6 +52,7 @@ section {
 }
 .front-content {
   position: relative;
+  z-index: 2;
 }
 
 @media (max-width: @md) {
@@ -56,5 +62,11 @@ section {
   .main-footer,
   .push {
     height: @footer-sm-h;
+  }
+  .back-content {
+    position: relative;
+    .back-content-col {
+      flex: 0 0 100%;
+    }
   }
 }

@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "mozresticons";
+  src: url("../fonts/mozresticons.eot?t=1614088525299"); /* IE9*/
+  src: url("../fonts/mozresticons.eot?t=1614088525299#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/mozresticons.woff2?t=1614088525299")
+      format("woff2"),
+    url("../fonts/mozresticons.woff?t=1614088525299") format("woff"),
+    url("../fonts/mozresticons.ttf?t=1614088525299") format("truetype"),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+      url("../fonts/mozresticons.svg?t=1614088525299#mozresticons")
+      format("svg"); /* iOS 4.1- */
+}
+
+[class^="mozresticons-"],
+[class*=" mozresticons-"] {
+  display: inline-block;
+  font: normal normal normal 14px/1 "mozresticons";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mozresticons-chevron-down:before {
+  content: "\ea01";
+}
+.mozresticons-chevron-left:before {
+  content: "\ea02";
+}
+.mozresticons-chevron-right:before {
+  content: "\ea03";
+}
+.mozresticons-clock:before {
+  content: "\ea04";
+}
+.mozresticons-connect:before {
+  content: "\ea05";
+}
+.mozresticons-cook:before {
+  content: "\ea06";
+}
+.mozresticons-down-percent:before {
+  content: "\ea07";
+}
+.mozresticons-facebook:before {
+  content: "\ea08";
+}
+.mozresticons-flag:before {
+  content: "\ea09";
+}
+.mozresticons-food:before {
+  content: "\ea0a";
+}
+.mozresticons-fork:before {
+  content: "\ea0b";
+}
+.mozresticons-group:before {
+  content: "\ea0c";
+}
+.mozresticons-grow:before {
+  content: "\ea0d";
+}
+.mozresticons-hands:before {
+  content: "\ea0e";
+}
+.mozresticons-instagram:before {
+  content: "\ea0f";
+}
+.mozresticons-linked-in:before {
+  content: "\ea10";
+}
+.mozresticons-location-o:before {
+  content: "\ea11";
+}
+.mozresticons-location:before {
+  content: "\ea12";
+}
+.mozresticons-long-arrow-left:before {
+  content: "\ea13";
+}
+.mozresticons-long-arrow-right:before {
+  content: "\ea14";
+}
+.mozresticons-magnet:before {
+  content: "\ea15";
+}
+.mozresticons-mobile:before {
+  content: "\ea16";
+}
+.mozresticons-net:before {
+  content: "\ea17";
+}
+.mozresticons-ok-circle:before {
+  content: "\ea18";
+}
+.mozresticons-ok-loading:before {
+  content: "\ea19";
+}
+.mozresticons-ok-shield:before {
+  content: "\ea1a";
+}
+.mozresticons-ok:before {
+  content: "\ea1b";
+}
+.mozresticons-pc:before {
+  content: "\ea1c";
+}
+.mozresticons-review:before {
+  content: "\ea1d";
+}
+.mozresticons-search:before {
+  content: "\ea1e";
+}
+.mozresticons-star-o:before {
+  content: "\ea1f";
+}
+.mozresticons-star:before {
+  content: "\ea20";
+}
+.mozresticons-store:before {
+  content: "\ea21";
+}
+.mozresticons-tablet:before {
+  content: "\ea22";
+}
+.mozresticons-twitter:before {
+  content: "\ea23";
+}
+.mozresticons-user-connection:before {
+  content: "\ea24";
+}
+.mozresticons-user:before {
+  content: "\ea25";
+}
+.mozresticons-waiter:before {
+  content: "\ea26";
+}
+.mozresticons-wifi:before {
+  content: "\ea27";
+}
+.mozresticons-world:before {
+  content: "\ea28";
+}
+.mozresticons-youtube-pc:before {
+  content: "\ea29";
+}

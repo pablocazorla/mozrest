@@ -15,3 +15,39 @@
   width: 100%;
   height: auto;
 }
+
+.bg-img-container {
+  height: 0;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.displaced-bg {
+  box-shadow: 80px 80px 0 0 #000;
+}
+
+.generate_displaced_bg_color(@col) {
+  .displaced-bg-@{col} {
+    box-shadow: 80px 80px 0 0 @@col;
+  }
+}
+
+.generate_displaced_bg_color(blue);
+.generate_displaced_bg_color(pink);
+.generate_displaced_bg_color(yellow);
+.generate_displaced_bg_color(green);
+.generate_displaced_bg_color(dark);
+.generate_displaced_bg_color(red);
+.generate_displaced_bg_color(yellow2);
+.generate_displaced_bg_color(green2);
+.generate_displaced_bg_color(brown);
+.generate_displaced_bg_color(brown2);
+.generate_displaced_bg_color(dark2);
+.generate_displaced_bg_color(black);
+.generate_displaced_bg_color(white);
+.generate_displaced_bg_color(gray);
+.generate_displaced_bg_color(primary);
+.generate_displaced_bg_color(secondary);

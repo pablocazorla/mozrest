@@ -1,4 +1,4 @@
-new Splide("#splide", {
+new Splide("#testimonials", {
   type: "loop",
   // perPage: 3,
   focus: "center",

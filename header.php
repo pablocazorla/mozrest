@@ -23,7 +23,7 @@
 <body>
 
   <div class="main-wrapper">
-    <header class="main-header" id="main-header">
+    <header class="main-header" id="main-header" data-aos="fade-down">
       <div class="container">
         <div class="row no-gutters align-items-center">
           <div class="col-sm col-6">

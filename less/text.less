@@ -69,8 +69,12 @@ p {
 
 .generate_text_color(@col) {
   .text-@{col} {
-    color: @@col;
+    color: @@col !important;
   }
+}
+
+.fz18 {
+  font-size: 18px;
 }
 
 .generate_text_color(blue);
@@ -89,3 +93,16 @@ p {
 .generate_text_color(gray);
 .generate_text_color(primary);
 .generate_text_color(secondary);
+
+@media (max-width: @md) {
+  h1 {
+    font-size: 44px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  body,
+  p {
+    font-size: 14px;
+  }
+}
