@@ -22,31 +22,43 @@
       <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
         <nav class="fotter-top_nav">
           <h4>Company</h4>
-          <a href="#">Restaurant</a>
-          <a href="#">Market Place</a>
-          <a href="#">Reservation Software</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
+          <?php
+            wp_nav_menu(
+              array(
+                'theme_location' => 'footer1',
+                'menu_id'        => 'footer1-menu',
+                'container' => '',
+              )
+            );
+          ?>
         </nav>
       </div>
       <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
         <nav class="fotter-top_nav">
           <h4>Resources</h4>
-          <a href="#">Opt In</a>
-          <a href="#">Opt Out</a>
-          <a href="#">Presence Check</a>
-          <a href="#">Audit</a>
-          <a href="#">Listing Video</a>
+          <?php
+            wp_nav_menu(
+              array(
+                'theme_location' => 'footer2',
+                'menu_id'        => 'footer2-menu',
+                'container' => '',
+              )
+            );
+          ?>
         </nav>
       </div>
       <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
         <nav class="fotter-top_nav">
           <h4>Other</h4>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms and Conditions</a>
-          <a href="#">Lorem Ipsum</a>
-          <a href="#">Lorem Ipsum</a>
-          <a href="#">Lorem Ipsum</a>
+          <?php
+            wp_nav_menu(
+              array(
+                'theme_location' => 'footer3',
+                'menu_id'        => 'footer3-menu',
+                'container' => '',
+              )
+            );
+          ?>
         </nav>
       </div>
     </div>

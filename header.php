@@ -25,7 +25,7 @@
   <div class="main-wrapper">
     <header class="main-header" id="main-header" data-aos="fade-down">
       <div class="container">
-        <div class="row no-gutters align-items-center">
+        <div class="row no-gutters align-items-md-center align-items-start">
           <div class="col-sm col-6">
             <a href="<?php bloginfo( 'url' ); ?>" class="main-brand">
               <img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="MOZREST">
@@ -36,7 +36,7 @@
               <span class="line-1"></span><span class="line-2"></span><span class="line-3"></span>
             </button>
           </div>
-          <div class="col-md col-sm-12 relative">
+          <div class="col-md col-sm-12">
             <menu class="main-menu" id="main-menu">
               <?php
                 wp_nav_menu(
