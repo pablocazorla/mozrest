@@ -38,6 +38,37 @@
   .generate_btn_color(gray);
   .generate_btn_color(primary);
   .generate_btn_color(secondary);
+
+  .generate_btn_outline_color(@col) {
+    &.btn-outline-@{col} {
+      color: @@col;
+      background-color: transparent;
+      border: 1px solid @@col;
+      &:hover {
+        background-color: darken(@@col, 15%);
+        color: #fff;
+      }
+      &:focus {
+        box-shadow: 0 0 0 0.25rem fade(@@col, 34%);
+      }
+    }
+  }
+  .generate_btn_outline_color(blue);
+  .generate_btn_outline_color(pink);
+  .generate_btn_outline_color(yellow);
+  .generate_btn_outline_color(green);
+  .generate_btn_outline_color(dark);
+  .generate_btn_outline_color(red);
+  .generate_btn_outline_color(yellow2);
+  .generate_btn_outline_color(green2);
+  .generate_btn_outline_color(brown);
+  .generate_btn_outline_color(brown2);
+  .generate_btn_outline_color(dark2);
+  .generate_btn_outline_color(black);
+  .generate_btn_outline_color(white);
+  .generate_btn_outline_color(gray);
+  .generate_btn_outline_color(primary);
+  .generate_btn_outline_color(secondary);
 }
 
 .btn-link {

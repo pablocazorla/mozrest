@@ -1,0 +1,66 @@
+.princing-col {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  &.selected {
+    background-color: #f2f9ff;
+  }
+}
+.princing-box {
+  padding: 24px;
+  text-align: center;
+  &.bt {
+    border-top: 1px solid #9eaeb7;
+  }
+  &.bb {
+    border-bottom: 1px solid #9eaeb7;
+  }
+
+  .princing-title {
+    font-size: 28px;
+    line-height: 1.3em;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 0;
+    color: @pricing;
+  }
+
+  .princing-price {
+    font-size: 28px;
+    line-height: 1.3em;
+
+    span {
+      vertical-align: middle;
+    }
+
+    .price-number {
+      font-size: 48px;
+    }
+  }
+
+  ul {
+    min-height: 310px;
+    list-style: inside none none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: @pricing;
+    li {
+      padding: 8px 0;
+
+      &:before {
+        content: "\ea1b";
+        font-family: "mozresticons";
+        vertical-align: middle;
+        margin-right: 0.4em;
+        color: @success;
+      }
+    }
+  }
+
+  .princing-more {
+    color: @blue;
+    font-weight: bold;
+  }
+}
