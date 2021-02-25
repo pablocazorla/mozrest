@@ -133,7 +133,7 @@ Template Name: Restaurant
   <div class="container">
     <h2 class="text-center" data-aos="fade-up">Testimonials</h2>
   </div>
-  <div class="splide" id="testimonials" data-aos="fade-up">
+  <div class="splide splide__pagination__pink" id="testimonials" data-aos="fade-up">
     <div class="splide__track">
       <ul class="splide__list">
         <?php 
