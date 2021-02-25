@@ -43,6 +43,24 @@ if ( ! function_exists( 'mozrest_setup' ) ) :
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
+		/***********************************************
+		* CUSTOM LENGTH EXCERPT
+		***********************************************/
+		function custom_excerpt_length( $length ) {
+			global $post;
+			if ($post->post_type == 'post'){
+					return 14;
+			} else if ($post->post_type == 'illustration'){
+					return 9;
+			}
+		}
+		add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+		// remove_filter( 'the_excerpt', 'wpautop' );
+		function new_excerpt_more( $more ) {
+			return '';
+		}
+		add_filter('excerpt_more', 'new_excerpt_more');
+
 
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
