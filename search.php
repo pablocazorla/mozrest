@@ -9,12 +9,7 @@
 
 get_header();
 ?>
-
-
-
 <?php if ( have_posts() ) : ?>
-
-
 <header class="page-header" data-aos="fade-down" data-aos-delay="100">
   <div class="container">
     <h1 class="search-title">
@@ -53,7 +48,7 @@ get_header();
         <div class="moz_pagination">
           <?php
 	$argsPag = array(
-		'prev_text'    => '<i class="icon mozresticons-chevron-left"></i> ' . __('Prev'),
+		'prev_text'    => '<i class="icon mozresticons-chevron-left"></i> ' . __('Previous'),
     'next_text'    => __('Next') . ' <i class="icon mozresticons-chevron-right"></i>',
 	);
 	echo paginate_links($argsPag);
@@ -63,7 +58,6 @@ get_header();
       <?php
 else :
 	?>
-
 
       <header class="page-header" data-aos="fade-down" data-aos-delay="100">
         <div class="container">
@@ -77,9 +71,6 @@ else :
           <?php	get_template_part( 'template-parts/content', 'none' );?>
         </div>
       </section>
-
-
-
       <?php
 endif;
 ?>

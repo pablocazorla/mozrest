@@ -8,7 +8,6 @@
  *
  * @package Mozrest
  */
-
 ?>
 
 <div class="footer-top">
@@ -21,7 +20,7 @@
       </div>
       <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
         <nav class="fotter-top_nav">
-          <h4>Company</h4>
+          <h4><?php esc_html_e( 'Company', 'mozrest' ); ?></h4>
           <?php
             wp_nav_menu(
               array(
@@ -35,7 +34,7 @@
       </div>
       <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
         <nav class="fotter-top_nav">
-          <h4>Resources</h4>
+          <h4><?php esc_html_e( 'Resources', 'mozrest' ); ?></h4>
           <?php
             wp_nav_menu(
               array(
@@ -49,7 +48,7 @@
       </div>
       <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
         <nav class="fotter-top_nav">
-          <h4>Other</h4>
+          <h4><?php esc_html_e( 'Legal', 'mozrest' ); ?></h4>
           <?php
             wp_nav_menu(
               array(
@@ -64,8 +63,6 @@
     </div>
   </div>
 </div>
-
-
 <div class="push"></div>
 </div><!-- .main-wrap -->
 <footer class="main-footer">
@@ -73,7 +70,7 @@
     <div class="row align-items-center">
       <div class="col-lg-6 offset-lg-3 col-md-8 order-md-1 order-2">
         <?php				
-        echo esc_html__( 'Copyright © 2021 Mozrest.com. All Right Reserved.', 'mozrest' );
+        esc_html_e( 'Copyright © 2021 Mozrest.com. All Right Reserved.', 'mozrest' );
 		?>
       </div>
       <div class="col-lg-3 col-md-4 order-md-2 order-1">

@@ -21,11 +21,14 @@ get_header();
       <?php if(is_category()):
           echo $cat_name; 
         elseif(is_tag()):
-          echo "Tag <i>".$cat_name."</i>"; 
+          esc_html_e( 'Tag', 'mozrest' );
+          echo " <i>".$cat_name."</i>"; 
         elseif(is_author()):
-          echo "Autor: <i>".$cat_name."<i>"; 
+          esc_html_e( 'Author', 'mozrest' );
+          echo ": <i>".$cat_name."<i>"; 
         elseif(is_archive()):
-          echo "En archivo <i>".$cat_name."<i>";
+          esc_html_e( 'In file', 'mozrest' );
+          echo " <i>".$cat_name."<i>";
         endif; ?>
     </h1>
   </div>
@@ -56,7 +59,7 @@ get_header();
         <div class="moz_pagination">
           <?php
 	$argsPag = array(
-		'prev_text'    => '<i class="icon mozresticons-chevron-left"></i> ' . __('Prev'),
+		'prev_text'    => '<i class="icon mozresticons-chevron-left"></i> ' . __('Previous'),
     'next_text'    => __('Next') . ' <i class="icon mozresticons-chevron-right"></i>',
 	);
 	echo paginate_links($argsPag);
@@ -87,10 +90,10 @@ endif;
         </div>
         <div class="col-md-7 order-md-2 order-1">
           <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade-left" data-aos-delay="300">
-            <h2 class="mb-3">Digital is complex and waste of time</h2>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              standard
-              dummy text ever</p>
+            <h2 class="mb-3"><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h2>
+            <p>
+              <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
+            </p>
             <?php 
           include 'subscribe-form.php';
           ?>
@@ -100,10 +103,5 @@ endif;
     </div>
   </div>
 </section>
-
-
-
-
 <?php
-
 get_footer();

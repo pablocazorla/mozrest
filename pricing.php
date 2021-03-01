@@ -8,7 +8,7 @@ Template Name: Pricing
 
 <section>
   <div class="container">
-    <h1 class="h2 text-center mb-5 pb-4" data-aos="fade-up">Pricing</h1>
+    <h1 class="h2 text-center mb-5 pb-4" data-aos="fade-up"><?php esc_html_e( 'Pricing', 'mozrest' ); ?></h1>
     <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
       <div class="col-lg-10">
         <div class="pricing-table">
@@ -16,10 +16,12 @@ Template Name: Pricing
             <div class="col-md-4">
               <div class="princing-col">
                 <div class="princing-box bt bb">
-                  <div class="princing-title">Basic</div>
+                  <div class="princing-title"><?php esc_html_e( 'Basic', 'mozrest' ); ?></div>
                 </div>
                 <div class="princing-box">
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
+                  <p>
+                    <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+                  </p>
                 </div>
                 <div class="princing-box">
                   <div class="princing-price">
@@ -28,31 +30,34 @@ Template Name: Pricing
                 </div>
                 <div class="princing-box">
                   <ul class="pricing-features">
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
                   </ul>
                 </div>
                 <div class="princing-box">
-                  <p class="princing-more">More information about Basic</p>
+                  <a href="#"
+                    class="princing-more"><?php esc_html_e( 'More information about Basic', 'mozrest' ); ?></a>
                 </div>
                 <div class="princing-box">
-                  <a href="#" class="btn btn-outline-primary">Call to action</a>
+                  <a href="#" class="btn btn-outline-primary"><?php esc_html_e( 'Call to action', 'mozrest' ); ?></a>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="princing-col selected">
                 <div class="princing-box bt bb">
-                  <div class="princing-title">Premium</div>
+                  <div class="princing-title"><?php esc_html_e( 'Premium', 'mozrest' ); ?></div>
                 </div>
                 <div class="princing-box">
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
+                  <p>
+                    <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+                  </p>
                 </div>
                 <div class="princing-box">
                   <div class="princing-price">
@@ -61,31 +66,34 @@ Template Name: Pricing
                 </div>
                 <div class="princing-box">
                   <ul class="pricing-features">
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
                   </ul>
                 </div>
                 <div class="princing-box">
-                  <p class="princing-more">More information about Premium</p>
+                  <a href="#" class="princing-more">
+                    <?php esc_html_e( 'More information about Premium', 'mozrest' ); ?></a>
                 </div>
                 <div class="princing-box">
-                  <a href="#" class="btn btn-primary">Call to action</a>
+                  <a href="#" class="btn btn-primary"><?php esc_html_e( 'Call to action', 'mozrest' ); ?></a>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="princing-col">
                 <div class="princing-box bt bb">
-                  <div class="princing-title">Advance</div>
+                  <div class="princing-title"><?php esc_html_e( 'Advance', 'mozrest' ); ?></div>
                 </div>
                 <div class="princing-box">
-                  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
+                  <p>
+                    <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+                  </p>
                 </div>
                 <div class="princing-box">
                   <div class="princing-price">
@@ -94,21 +102,22 @@ Template Name: Pricing
                 </div>
                 <div class="princing-box">
                   <ul class="pricing-features">
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
-                    <li>Loren Ipsum text</li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
+                    <li><?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?></li>
                   </ul>
                 </div>
                 <div class="princing-box">
-                  <p class="princing-more">More information about Advance</p>
+                  <a href="#"
+                    class="princing-more"><?php esc_html_e( 'More information about Advance', 'mozrest' ); ?></a>
                 </div>
                 <div class="princing-box">
-                  <a href="#" class="btn btn-outline-primary">Call to action</a>
+                  <a href="#" class="btn btn-outline-primary"><?php esc_html_e( 'Call to action', 'mozrest' ); ?></a>
                 </div>
               </div>
             </div>
@@ -135,8 +144,8 @@ Template Name: Pricing
                 <i class="icon mozresticons-star"></i>
                 <i class="icon mozresticons-star"></i>
               </div>
-              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                Latin literature from 45 BC, making it over 2000 years old.</p>
+              <p><?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+              </p>
               <div class="user-data">
                 <div class="user-data_photo">
                   <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/user-photo.jpg"
@@ -161,15 +170,14 @@ Template Name: Pricing
     <div class="bg-blue text-white r-4 px-5 py-4">
       <div class="row g-5 align-items-center">
         <div class="col-md-5 order-1" data-aos="zoom-in">
-          <h3>Digital is complex and
-            waste of time</h3>
-          <p class="m-0">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard
-            dummy text ever</p>
+          <h3><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h3>
+          <p class="m-0">
+            <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
+          </p>
         </div>
         <div class="col-md-2 text-center order-md-2 order-3" data-aos="zoom-in" data-aos-delay="200">
           <a href="#" class="btn btn-primary unwrap">
-            Call to action
+            <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
           </a>
         </div>
         <div class="col-md-5 order-md-3 order-2" data-aos="zoom-in" data-aos-delay="400">

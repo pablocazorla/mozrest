@@ -21,13 +21,14 @@ get_header();
       <div class="container">
         <div class="row">
           <div class="col-md-6 text-center text-md-start pt-md-0 pt-5" data-aos="fade-up">
-            <h1 class="text-blue">It is everything about guests!</h1>
+            <h1 class="text-blue"><?php esc_html_e( 'It is everything about guests!', 'mozrest' ); ?></h1>
             <p>
-              Find guests be found by them get bookings discuss whith them share news
+              <?php esc_html_e( 'Find guests be found by them get bookings discuss whith them share news', 'mozrest' ); ?>
             </p>
             <p>
               <a href="#" class="btn btn-primary">
-                Call to action
+
+                <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
               </a>
             </p>
           </div>
@@ -95,28 +96,31 @@ get_header();
 </section>
 <section>
   <div class="container text-center">
-    <h2 class="mb-5 pb-3" data-aos="fade-up">Enpower</h2>
+    <h2 class="mb-5 pb-3" data-aos="fade-up"><?php esc_html_e( 'Enpower', 'mozrest' ); ?></h2>
     <div class="row justify-content-center">
       <div class="col-lg-4" data-aos="fade-up">
         <div class="icon-container mx-auto bg-pink mb-5">
           <i class="icon mozresticons-food"></i>
         </div>
-        <h3>Restaurants</h3>
-        <p class="block-size-1">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <h3><?php esc_html_e( 'Restaurants', 'mozrest' ); ?></h3>
+        <p class="block-size-1">
+          <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
         <div class="icon-container mx-auto bg-yellow mb-5">
           <i class="icon mozresticons-store"></i>
         </div>
-        <h3>Market place</h3>
-        <p class="block-size-1">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <h3><?php esc_html_e( 'Market place', 'mozrest' ); ?></h3>
+        <p class="block-size-1">
+          <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div class="icon-container mx-auto bg-green mb-5">
           <i class="icon mozresticons-tablet"></i>
         </div>
-        <h3>Guest Management Software</h3>
-        <p class="block-size-1">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <h3><?php esc_html_e( 'Guest Management Software', 'mozrest' ); ?></h3>
+        <p class="block-size-1">
+          <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
       </div>
     </div>
   </div>
@@ -125,13 +129,14 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-md-5 py-5" data-aos="fade-up">
-        <h2>One Platform endless possibilities</h2>
+        <h2>One Platform endless possibilities<?php esc_html_e( 'One Platform endless possibilities', 'mozrest' ); ?>
+        </h2>
         <ul class="list fz18">
-          <li>Marketing pagado</li>
-          <li>SEO local</li>
-          <li>Reserva</li>
-          <li>Revisión de la gestión</li>
-          <li>Publicación social</li>
+          <li><?php esc_html_e( 'Marketing pagado', 'mozrest' ); ?></li>
+          <li><?php esc_html_e( 'SEO local', 'mozrest' ); ?></li>
+          <li><?php esc_html_e( 'Reserva', 'mozrest' ); ?></li>
+          <li><?php esc_html_e( 'Revisión de la gestión', 'mozrest' ); ?></li>
+          <li><?php esc_html_e( 'Publicación social', 'mozrest' ); ?></li>
         </ul>
       </div>
       <div class="col-md-7" data-aos="fade-left" data-aos-delay="200">
@@ -145,10 +150,10 @@ get_header();
 <section class="pb-4">
   <div class="container">
     <div class="text-center mb-4" data-aos="fade-up">
-      <h2 class="mb-4">Feature</h2>
+      <h2 class="mb-4"><?php esc_html_e( 'Feature', 'mozrest' ); ?></h2>
       <div class="row justify-content-center">
         <div class="col-md-5">
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.</p>
+          <p><?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
         </div>
       </div>
     </div>
@@ -158,9 +163,10 @@ get_header();
           <div class="bg-blue text-center text-white pt-md-7 pt-4">
             <div class="row justify-content-center mb-4">
               <div class="col-md-7 col-9">
-                <h3>Loren Ipsum</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s.</p>
+                <h3><?php esc_html_e( 'Loren Ipsum', 'mozrest' ); ?></h3>
+                <p>
+                  <?php esc_html_e( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.', 'mozrest' ); ?>
+                </p>
               </div>
             </div>
             <div class="row justify-content-center">
@@ -175,9 +181,10 @@ get_header();
           <div class="bg-green text-center text-white pt-md-7 pt-4">
             <div class="row justify-content-center mb-4">
               <div class="col-md-7 col-9">
-                <h3>Loren Ipsum</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s.</p>
+                <h3><?php esc_html_e( 'Loren Ipsum', 'mozrest' ); ?></h3>
+                <p>
+                  <?php esc_html_e( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.', 'mozrest' ); ?>
+                </p>
               </div>
             </div>
             <div class="row justify-content-center">
@@ -192,9 +199,10 @@ get_header();
           <div class="bg-pink text-center text-white pt-md-7 pt-4">
             <div class="row justify-content-center mb-4">
               <div class="col-md-7 col-9">
-                <h3>Loren Ipsum</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s.</p>
+                <h3><?php esc_html_e( 'Loren Ipsum', 'mozrest' ); ?></h3>
+                <p>
+                  <?php esc_html_e( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.', 'mozrest' ); ?>
+                </p>
               </div>
             </div>
             <div class="row justify-content-center">
@@ -223,24 +231,21 @@ get_header();
     </div>
     <div class="row justify-content-center mb-md-4 pb-md-5">
       <div class="col-lg-4 col-8  pb-md-5">
-        <h2 class="mb-4" data-aos="fade-up">Loren Ipsum</h2>
-        <p data-aos="fade-up">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-          piece.</p>
+        <h2 class="mb-4" data-aos="fade-up"><?php esc_html_e( 'Loren Ipsum', 'mozrest' ); ?></h2>
+        <p data-aos="fade-up">
+          <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
         <p data-aos="fade-up">
           <a href="#" class="btn btn-primary">
-            Call to action
+            <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
           </a>
         </p>
       </div>
     </div>
-
-
   </div>
-
 </section>
 <section>
   <div class="container">
-    <h2 class="text-center" data-aos="fade-up">Testimonials</h2>
+    <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
   </div>
   <div class="splide" id="testimonials" data-aos="fade-up">
     <div class="splide__track">
@@ -258,8 +263,8 @@ get_header();
                 <i class="icon mozresticons-star"></i>
                 <i class="icon mozresticons-star"></i>
               </div>
-              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                Latin literature from 45 BC, making it over 2000 years old.</p>
+              <p><?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+              </p>
               <div class="user-data">
                 <div class="user-data_photo">
                   <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/user-photo.jpg"
@@ -281,7 +286,7 @@ get_header();
 </section>
 <section class="pb-0">
   <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up">Article Blog</h2>
+    <h2 class="text-center mb-5" data-aos="fade-up"><?php esc_html_e( 'Article Blog', 'mozrest' ); ?></h2>
     <div class="row justify-content-center">
       <?php 
         $delay = 0;
@@ -323,13 +328,13 @@ get_header();
         </div>
         <div class="col-md-7 order-md-2 order-1">
           <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade-left" data-aos-delay="300">
-            <h2>Digital is complex and waste of time</h2>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              standard
-              dummy text ever</p>
+            <h2><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h2>
+            <p>
+              <?php esc_html_e( 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
+            </p>
             <p class="m-0">
               <a href="#" class="btn btn-blue uppercase d-block">
-                Call to action
+                <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
               </a>
             </p>
           </div>

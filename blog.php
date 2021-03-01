@@ -42,10 +42,6 @@ Template Name: Blog
           <ul class="nav nav-tabs no-border blog-cat-tabs" role="tablist">
             <?php $categories = get_categories(); 
             $firstCat = ' active';
-            
-            
-
-
             foreach($categories as $category) {
               $catName = $category->name;
               if($category->slug === 'blog'){
@@ -100,9 +96,11 @@ Template Name: Blog
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
 
         <div class="bg-blue text-white r-4 px-5 pt-4 pb-5">
-          <h3 class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
-          <p class="mb-4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-            classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <h3 class="mb-4">
+            <?php esc_html_e( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'mozrest' ); ?>
+          </h3>
+          <p class="mb-4">
+            <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
           <?php 
           include 'subscribe-form.php';
           ?>
@@ -141,7 +139,8 @@ Template Name: Blog
       ?>
     </div>
     <nav class="text-center" data-aos="fade" data-aos-delay="200">
-      <a href="<?php the_category_url_by_slug( 'blog' ); ?>" class="btn btn-link">More posts <i
+      <a href="<?php the_category_url_by_slug( 'blog' ); ?>"
+        class="btn btn-link"><?php esc_html_e( 'More articles', 'mozrest' ); ?> <i
           class="mozresticons-chevron-right"></i> </a>
     </nav>
   </div>
@@ -158,10 +157,10 @@ Template Name: Blog
         </div>
         <div class="col-md-7 order-md-2 order-1">
           <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade-left" data-aos-delay="300">
-            <h2 class="mb-3">Digital is complex and waste of time</h2>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              standard
-              dummy text ever</p>
+            <h2 class="mb-3"><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h2>
+            <p>
+              <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
+            </p>
             <?php 
           include 'subscribe-form.php';
           ?>
@@ -171,5 +170,4 @@ Template Name: Blog
     </div>
   </div>
 </section>
-
 <?php get_footer(); ?>

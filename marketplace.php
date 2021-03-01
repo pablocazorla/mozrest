@@ -10,14 +10,13 @@ Template Name: MarketPlace
       <div class="container">
         <div class="row">
           <div class="col-md-6 text-center text-md-start pt-md-0 pt-5" data-aos="fade-up">
-            <h1 class="text-blue">Pains / Problem</h1>
+            <h1 class="text-blue"><?php esc_html_e( 'Pains / Problem', 'mozrest' ); ?></h1>
             <p>
-              Creating and growing a restaurant base and promoting them in front of your consumers is a costly and
-              never-ending endeavor. You need more restaurants, more locations, to reach more consumers.
+              <?php esc_html_e( 'Creating and growing a restaurant base and promoting them in front of your consumers is a costly and never-ending endeavor. You need more restaurants, more locations, to reach more consumers.', 'mozrest' ); ?>
             </p>
             <p>
               <a href="#" class="btn btn-yellow">
-                Call to action
+                <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
               </a>
             </p>
           </div>
@@ -37,13 +36,13 @@ Template Name: MarketPlace
             </figure>
 
             <div class="moz-pill bg-green restaurant-mp-green" data-aos="fade-left" data-aos-delay="400">
-              <i class="icon mozresticons-ok-circle"></i> Lorem Ipsum Text
+              <i class="icon mozresticons-ok-circle"></i> <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
             </div>
             <div class="moz-pill bg-pink restaurant-mp-pink" data-aos="fade-left" data-aos-delay="500">
-              <i class="icon mozresticons-ok-circle"></i> Lorem Ipsum Text
+              <i class="icon mozresticons-ok-circle"></i> <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
             </div>
             <div class="moz-pill bg-yellow restaurant-mp-yellow" data-aos="fade-left" data-aos-delay="600">
-              <i class="icon mozresticons-ok-circle"></i> Lorem Ipsum Text
+              <i class="icon mozresticons-ok-circle"></i> <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
             </div>
           </div>
         </div>
@@ -53,42 +52,43 @@ Template Name: MarketPlace
 </section>
 <section>
   <div class="container text-center">
-    <h2 class="mb-5 pb-3" data-aos="fade-up">Why it is important</h2>
+    <h2 class="mb-5 pb-3" data-aos="fade-up"><?php esc_html_e( 'Why it is important', 'mozrest' ); ?></h2>
     <div class="row justify-content-center">
       <div class="col-lg-4" data-aos="fade-up">
         <div class="icon-container big mx-auto text-yellow mb-3">
           <i class="icon mozresticons-store"></i>
         </div>
-        <p class="block-size-1">Showcase more restaurants</p>
+        <p class="block-size-1"><?php esc_html_e( 'Showcase more restaurants', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
         <div class="icon-container big mx-auto text-yellow mb-3">
           <i class="icon mozresticons-down-percent"></i>
         </div>
-        <p class="block-size-1">Reduce your sales cost</p>
+        <p class="block-size-1"><?php esc_html_e( 'Reduce your sales cost', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div class="icon-container big mx-auto text-yellow mb-3">
           <i class="icon mozresticons-hands"></i>
         </div>
-        <p class="block-size-1">Increase engagement with your consumers</p>
+        <p class="block-size-1"><?php esc_html_e( 'Increase engagement with your consumers', 'mozrest' ); ?></p>
       </div>
     </div>
   </div>
 </section>
 <section class="pt-2">
   <div class="container">
-    <h2 class="mb-5 text-center" data-aos="fade-up">How we respond to the problem</h2>
+    <h2 class="mb-5 text-center" data-aos="fade-up"><?php esc_html_e( 'How we respond to the problem', 'mozrest' ); ?>
+    </h2>
     <div class="row justify-content-center pt-4">
       <div class="col-lg-10">
         <div class="row align-items-center justify-content-between">
           <div class="col-md-5" data-aos="fade-right">
-            <h3>Provide access to an enlarged network of restaurants</h3>
+            <h3><?php esc_html_e( 'Provide access to an enlarged network of restaurants', 'mozrest' ); ?></h3>
             <p class="block-size-2 ms-0">
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece .
+              <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.', 'mozrest' ); ?>
             </p>
             <p>
-              <a href="" class="btn-link text-yellow">Call to action <i
+              <a href="" class="btn-link text-yellow"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
             </p>
           </div>
@@ -101,24 +101,24 @@ Template Name: MarketPlace
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-mp-2.png" alt="MOZREST" />
           </div>
           <div class="col-md-5 order-md-2 order-1" data-aos="fade-left">
-            <h3>Get restaurant updated description and photos</h3>
+            <h3><?php esc_html_e( 'Get restaurant updated description and photos', 'mozrest' ); ?></h3>
             <p class="block-size-2 ms-0">
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece .
+              <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
             </p>
             <p>
-              <a href="" class="btn-link text-yellow">Call to action <i
+              <a href="" class="btn-link text-yellow"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
             </p>
           </div>
         </div>
         <div class="row align-items-center justify-content-between">
           <div class="col-md-5" data-aos="fade-right">
-            <h3>Increase the ROI of your ads, access to new locations</h3>
+            <h3><?php esc_html_e( 'Increase the ROI of your ads, access to new locations', 'mozrest' ); ?></h3>
             <p class="block-size-2 ms-0">
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece .
+              <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
             </p>
             <p>
-              <a href="" class="btn-link text-yellow">Call to action <i
+              <a href="" class="btn-link text-yellow"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
             </p>
           </div>
@@ -132,7 +132,7 @@ Template Name: MarketPlace
 </section>
 <section>
   <div class="container">
-    <h2 class="text-center" data-aos="fade-up">Testimonials</h2>
+    <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
   </div>
   <div class="splide splide__pagination__yellow" id="testimonials" data-aos="fade-up">
     <div class="splide__track">
@@ -150,8 +150,8 @@ Template Name: MarketPlace
                 <i class="icon mozresticons-star"></i>
                 <i class="icon mozresticons-star"></i>
               </div>
-              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                Latin literature from 45 BC, making it over 2000 years old.</p>
+              <p><?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+              </p>
               <div class="user-data">
                 <div class="user-data_photo">
                   <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/user-photo.jpg"
@@ -175,25 +175,28 @@ Template Name: MarketPlace
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 col-12">
-        <h2 class="mb-md-5 pb-md-5 text-md-start text-center" data-aos="fade-up">Feature</h2>
+        <h2 class="mb-md-5 pb-md-5 text-md-start text-center" data-aos="fade-up">
+          <?php esc_html_e( 'Feature', 'mozrest' ); ?></h2>
         <div class="row justify-content-between py-md-5">
           <div class="col-md-7" data-aos="fade-up">
             <div class="titles-feature text-md-start text-center">
-              <div class="title-feature title-check"> <i class="icon mozresticons-ok"></i> Content Update Plaftom</div>
+              <div class="title-feature title-check"> <i class="icon mozresticons-ok"></i>
+                <?php esc_html_e( 'Content Update Plaftom', 'mozrest' ); ?></div>
               <br />
-              <div class="title-feature">Inventory Dashboard</div><br />
-              <div class="title-feature">Performance Marketing optimizacion tool</div><br />
+              <div class="title-feature"><?php esc_html_e( 'Inventory Dashboard', 'mozrest' ); ?></div><br />
+              <div class="title-feature"><?php esc_html_e( 'Performance Marketing optimizacion tool', 'mozrest' ); ?>
+              </div><br />
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
             <img class="img-auto mb-4" src="<?php bloginfo('template_url'); ?>/img/marketplace-feature.svg"
               alt="MOZREST" />
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.
+            <p><?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
             </p>
           </div>
           <div class="col-12" data-aos="fade-up">
             <div class="text-md-start text-center">
-              <a href="#" class="btn btn-blue">Call to action</a>
+              <a href="#" class="btn btn-blue"><?php esc_html_e( 'Call to action', 'mozrest' ); ?></a>
             </div>
           </div>
         </div>
@@ -206,15 +209,14 @@ Template Name: MarketPlace
     <div class="bg-blue text-white r-4 px-5 py-4">
       <div class="row g-5 align-items-center">
         <div class="col-md-5 order-1" data-aos="zoom-in">
-          <h3>Digital is complex and
-            waste of time</h3>
-          <p class="m-0">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard
-            dummy text ever</p>
+          <h3><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h3>
+          <p class="m-0">
+            <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
+          </p>
         </div>
         <div class="col-md-2 text-center order-md-2 order-3" data-aos="zoom-in" data-aos-delay="200">
           <a href="#" class="btn btn-yellow unwrap">
-            Call to action
+            <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
           </a>
         </div>
         <div class="col-md-5 order-md-3 order-2" data-aos="zoom-in" data-aos-delay="400">

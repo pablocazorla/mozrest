@@ -9,8 +9,7 @@
 
 ?>
 <form class="subscribe-form">
-
-  <input type="email" class="form-control mb-4" placeholder="Enter your Email" />
-
-  <button type="submit" class="btn btn-primary uppercase d-block">Subscribe</button>
+  <input type="email" class="form-control mb-4" placeholder="<?php esc_html_e( 'Enter your Email', 'mozrest' ); ?>" />
+  <button type="submit"
+    class="btn btn-primary uppercase d-block"><?php esc_html_e( 'Subscribe', 'mozrest' ); ?></button>
 </form>

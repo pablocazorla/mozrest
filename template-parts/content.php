@@ -22,11 +22,12 @@
     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
     <p><?php the_excerpt(); ?></p>
     <div class="row align-items-center g-0">
-      <div class="col-6"><a href="<?php the_permalink(); ?>" class="read-more">Read more <i
+      <div class="col-6"><a href="<?php the_permalink(); ?>"
+          class="read-more"><?php esc_html_e( 'Read more', 'mozrest' ); ?> <i
             class="icon mozresticons-chevron-right"></i></a>
       </div>
       <div class="col-6 text-right">
-        <span class="time-read"><?php the_reading_time(); ?> min read</span>
+        <span class="time-read"><?php the_reading_time(); ?> <?php esc_html_e( 'min read', 'mozrest' ); ?></span>
       </div>
     </div>
   </div>

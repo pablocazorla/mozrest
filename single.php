@@ -15,7 +15,7 @@ get_header();
       <div class="col-xl-9 col-lg-8">
         <div class="mb-3" data-aos="fade-left">
           <a href="<?php the_category_url_by_slug( 'blog' ); ?>" class="back-to-blog">
-            <i class="icon mozresticons-long-arrow-left"></i> Back to blog
+            <i class="icon mozresticons-long-arrow-left"></i> <?php esc_html_e( 'Back to blog', 'mozrest' ); ?>
           </a>
         </div>
 
@@ -66,9 +66,9 @@ get_header();
             <div class="col-lg-12 col-md-6">
               <div class="bg-pink r-3 text-white px-4 py-5 mb-4">
                 <div class="py-4">
-                  <h3 class="mb-4">Digital is complex and waste of time</h3>
+                  <h3 class="mb-4"><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h3>
                   <div class="text-center">
-                    <a href="#" class="btn btn-yellow">Call to action</a>
+                    <a href="#" class="btn btn-yellow"><?php esc_html_e( 'Call to action', 'mozrest' ); ?></a>
                   </div>
                 </div>
               </div>
@@ -76,8 +76,9 @@ get_header();
             <div class="col-lg-12 col-md-6">
               <div class="bg-yellow r-3 text-white px-4 py-5 mb-4">
                 <div class="py-4">
-                  <h3 class="mb-4">Digital is complex and waste of time</h3>
-                  <p class="m-0">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                  <h3 class="mb-4"><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h3>
+                  <p class="m-0">
+                    <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
                   </p>
                 </div>
               </div>
@@ -92,7 +93,7 @@ get_header();
 </section>
 <section class="pt-0 pb-4">
   <div class="container">
-    <h3 class="text-center mb-5 pb-3" data-aos="fade-up">Other articles</h3>
+    <h3 class="text-center mb-5 pb-3" data-aos="fade-up"><?php esc_html_e( 'Other articles', 'mozrest' ); ?></h3>
     <div class="row justify-content-center">
       <?php 
         $delay = 0;
@@ -122,12 +123,5 @@ get_header();
     </div>
   </div>
 </section>
-
-
-
-
-
-
 <?php
-//get_sidebar();
 get_footer();
