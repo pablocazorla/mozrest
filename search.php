@@ -10,44 +10,81 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
+<?php if ( have_posts() ) : ?>
+
+
+<header class="page-header" data-aos="fade-down" data-aos-delay="100">
+  <div class="container">
+    <h1 class="search-title">
+      <?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'mozrest' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Search Results for: %s', 'mozrest' ), '<em>' . get_search_query() . '</em>' );
 					?>
-				</h1>
-			</header><!-- .page-header -->
+    </h1>
+  </div>
+</header>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+<section>
+  <div class="container">
+    <div class="row">
 
-			endwhile;
 
-			the_posts_navigation();
+      <?php
+	/* Start the Loop */
+	$delay = 0;
+	while ( have_posts() ) :
+		the_post();
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
 		?>
+      <div class="col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-up" data-aos-delay="<?php echo $delay;?>">
+        <?php	get_template_part( 'template-parts/content', 'search' );		?>
+      </div>
+      <?php
+			$delay += 150;
+			if($delay >= 450){
+				$delay = 0;
+			}
+	endwhile;
+	?>
+      <div class="col-12">
+        <div class="moz_pagination">
+          <?php
+	$argsPag = array(
+		'prev_text'    => '<i class="icon mozresticons-chevron-left"></i> ' . __('Prev'),
+    'next_text'    => __('Next') . ' <i class="icon mozresticons-chevron-right"></i>',
+	);
+	echo paginate_links($argsPag);
+	?>
+        </div>
+      </div>
+      <?php
+else :
+	?>
 
-	</main><!-- #main -->
 
+      <header class="page-header" data-aos="fade-down" data-aos-delay="100">
+        <div class="container">
+          <h1 class="search-title">
+            <?php esc_html_e( 'Nothing Found', 'mozrest' ); ?>
+          </h1>
+        </div>
+      </header>
+      <section>
+        <div class="container">
+          <?php	get_template_part( 'template-parts/content', 'none' );?>
+        </div>
+      </section>
+
+
+
+      <?php
+endif;
+?>
+    </div>
+  </div>
+</section>
 <?php
-get_sidebar();
 get_footer();

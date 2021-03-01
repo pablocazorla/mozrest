@@ -12,7 +12,11 @@
 
 <div class="blog-card" id="post-<?php the_ID(); ?>">
   <a href="<?php the_permalink(); ?>" class="blog-card_img">
-    <?php the_post_thumbnail('full'); ?>
+    <?php if(has_post_thumbnail()){
+			the_post_thumbnail('full');
+		}else{ ?>
+    <img src="<?php bloginfo('template_url'); ?>/img/default-thumbnail.jpg" />
+    <?php } ?>
   </a>
   <div class="blog-card_text">
     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>

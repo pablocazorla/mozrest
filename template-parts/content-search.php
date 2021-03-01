@@ -9,27 +9,24 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			mozrest_posted_on();
-			mozrest_posted_by();
-			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php mozrest_post_thumbnail(); ?>
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php mozrest_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+<div class="blog-card" id="post-<?php the_ID(); ?>">
+  <a href="<?php the_permalink(); ?>" class="blog-card_img">
+    <?php if(has_post_thumbnail()){
+			the_post_thumbnail('full');
+		}else{ ?>
+    <img src="<?php bloginfo('template_url'); ?>/img/default-thumbnail.jpg" />
+    <?php } ?>
+  </a>
+  <div class="blog-card_text">
+    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+    <p><?php the_excerpt(); ?></p>
+    <div class="row align-items-center g-0">
+      <div class="col-6"><a href="<?php the_permalink(); ?>" class="read-more">Read more <i
+            class="icon mozresticons-chevron-right"></i></a>
+      </div>
+      <div class="col-6 text-right">
+        <span class="time-read"><?php the_reading_time(); ?> min read</span>
+      </div>
+    </div>
+  </div>
+</div>

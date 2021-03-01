@@ -61,7 +61,7 @@ get_header();
 
       </div>
       <div class="col-xl-3 col-lg-4 pt-5">
-        <div class="sidebar" data-aos="fade-up" data-aos-delay="450">
+        <div class="sidebar-container" data-aos="fade-up" data-aos-delay="450">
           <div class="row">
             <div class="col-lg-12 col-md-6">
               <div class="bg-pink r-3 text-white px-4 py-5 mb-4">
@@ -83,7 +83,7 @@ get_header();
               </div>
             </div>
           </div>
-          <?php // get_sidebar(); ?>
+          <?php get_sidebar(); ?>
         </div>
       </div>
     </div>
