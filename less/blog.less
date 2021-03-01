@@ -1,3 +1,7 @@
+.blog-cat-tabs {
+  position: relative;
+  z-index: 10;
+}
 .blog-presentation {
   height: 382px;
   background-color: #ddd;
@@ -98,4 +102,151 @@
 .time-read {
   font-size: 14px;
   color: #9a9a9a;
+}
+
+.back-to-blog {
+  font-size: 12px;
+  color: #838383;
+  text-decoration: none;
+  .icon {
+    vertical-align: middle;
+  }
+}
+
+.the-date {
+  font-size: 12px;
+  color: #838383;
+}
+
+.author-box {
+  display: flex;
+  padding: 40px 30px;
+
+  .author-box_img_container {
+    width: 123px;
+    .author-box_img_container_wrap {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+      background-color: #ddd;
+      box-shadow: 0 0 0 1px #ddd;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        .transform(translateY(-50%));
+        display: block;
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  }
+  .author-box_text {
+    padding-left: 30px;
+  }
+  .author-box_text_title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0.4em;
+  }
+}
+
+figcaption {
+  font-size: 13px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 25px !important;
+}
+blockquote {
+  padding: 1em 8%;
+  border-left: 5px solid @primary;
+  margin: 2em 0;
+  p {
+    font-style: italic;
+    font-size: 1.5em;
+    margin-bottom: 0.1em;
+    color: #000;
+  }
+  cite {
+    text-align: right;
+    display: block;
+  }
+}
+
+.wp-block-pullquote {
+  border-top-style: solid;
+  border-top-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  margin-bottom: 2em;
+  blockquote {
+    padding: 0 8%;
+    border-left: none;
+    margin: 0;
+    p {
+      margin-bottom: 1em;
+    }
+  }
+  cite {
+    text-align: center;
+  }
+}
+.wp-block-buttons .wp-block-button {
+  margin-bottom: 1.4em;
+}
+
+.content {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 20px;
+    .text-blue;
+  }
+  table {
+    border-top: 1px solid @border-table;
+    width: 100%;
+    tr {
+      border-bottom: 1px solid @border-table;
+      &:first-child {
+        background-color: fade(@green, 15%) !important;
+        font-weight: bold;
+      }
+    }
+    td,
+    th {
+      padding: 1em;
+    }
+    &.wp-calendar-table {
+      tr {
+        &:first-child {
+          background-color: #fff !important;
+          font-weight: normal;
+        }
+      }
+      caption {
+        text-align: center;
+        font-size: 80%;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: @md) {
+  .author-box {
+    display: block;
+    .author-box_img_container {
+      margin: 0 auto 20px;
+    }
+    .author-box_text {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
 }

@@ -9,55 +9,21 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
 
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				mozrest_posted_on();
-				mozrest_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php mozrest_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'mozrest' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mozrest' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php mozrest_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+<div class="blog-card" id="post-<?php the_ID(); ?>">
+  <a href="<?php the_permalink(); ?>" class="blog-card_img">
+    <?php the_post_thumbnail('full'); ?>
+  </a>
+  <div class="blog-card_text">
+    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+    <p><?php the_excerpt(); ?></p>
+    <div class="row align-items-center g-0">
+      <div class="col-6"><a href="<?php the_permalink(); ?>" class="read-more">Read more <i
+            class="icon mozresticons-chevron-right"></i></a>
+      </div>
+      <div class="col-6 text-right">
+        <span class="time-read"><?php the_reading_time(); ?> min read</span>
+      </div>
+    </div>
+  </div>
+</div>

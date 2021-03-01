@@ -279,70 +279,35 @@ get_header();
     </div>
   </div>
 </section>
-<section>
+<section class="pb-0">
   <div class="container">
     <h2 class="text-center mb-5" data-aos="fade-up">Article Blog</h2>
-    <div class="row g-3 align-items-stretch justify-content-center" data-aos="fade-up">
-      <div class="col-md-4">
-        <div class="blog-card">
-          <a href="#" class="blog-card_img">
-            <img src="<?php bloginfo('template_url'); ?>/img/photos/blog-1.jpg" alt="MOZREST" />
-          </a>
-          <div class="blog-card_text">
-            <h3><a href="#">Lorem ipsum text</a></h3>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...</p>
-            <div class="row align-items-center g-0">
-              <div class="col-6"><a href="#" class="read-more">Read more <i
-                    class="icon mozresticons-chevron-right"></i></a>
-              </div>
-              <div class="col-6 text-right">
-                <span class="time-read">3 min read</span>
-              </div>
-
-            </div>
-          </div>
-        </div>
+    <div class="row justify-content-center">
+      <?php 
+        $delay = 0;
+        // the query
+        $args = array(
+          'posts_per_page'   => 3,
+          'post_type'        => 'post',
+        );
+        $the_query = new WP_Query($args); 
+      ?>
+      <?php
+        if ( $the_query->have_posts() ) :
+        while ( $the_query->have_posts() ) : $the_query->the_post();
+      ?>
+      <div class="col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-up" data-aos-delay="<?php echo $delay;?>">
+        <?php	get_template_part( 'template-parts/content', get_post_type() );		?>
       </div>
-      <div class="col-md-4">
-        <div class="blog-card">
-          <a href="#" class="blog-card_img">
-            <img src="<?php bloginfo('template_url'); ?>/img/photos/blog-2.jpg" alt="MOZREST" />
-          </a>
-          <div class="blog-card_text">
-            <h3><a href="#">Lorem ipsum text</a></h3>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...</p>
-            <div class="row align-items-center g-0">
-              <div class="col-6"><a href="#" class="read-more">Read more <i
-                    class="icon mozresticons-chevron-right"></i></a>
-              </div>
-              <div class="col-6 text-right">
-                <span class="time-read">3 min read</span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="blog-card">
-          <a href="#" class="blog-card_img">
-            <img src="<?php bloginfo('template_url'); ?>/img/photos/blog-3.jpg" alt="MOZREST" />
-          </a>
-          <div class="blog-card_text">
-            <h3><a href="#">Lorem ipsum text</a></h3>
-            <p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...</p>
-            <div class="row align-items-center g-0">
-              <div class="col-6"><a href="#" class="read-more">Read more <i
-                    class="icon mozresticons-chevron-right"></i></a>
-              </div>
-              <div class="col-6 text-right">
-                <span class="time-read">3 min read</span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php
+        $delay += 150;
+        if($delay >= 450){
+          $delay = 0;
+        }
+        endwhile;
+        wp_reset_postdata();
+        endif;
+      ?>
     </div>
   </div>
 </section>
@@ -374,34 +339,4 @@ get_header();
   </div>
 </section>
 <?php
-	//	if ( have_posts() ) :
-			
-			
-
-		/* Start the Loop */
-	//	while ( have_posts() ) :
-	//		the_post();
-
-			/*
-				* Include the Post-Type-specific template for the content.
-				* If you want to override this in a child theme, then include a file
-				* called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				*/
-			//get_template_part( 'template-parts/content', get_post_type() );
-
-	//	endwhile;
-
-	//	the_posts_navigation();
-
-//	else :
-
-//		get_template_part( 'template-parts/content', 'none' );
-
-//	endif;
-	?>
-
-
-
-<?php
-//get_sidebar();
 get_footer();

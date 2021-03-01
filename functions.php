@@ -61,7 +61,14 @@ if ( ! function_exists( 'mozrest_setup' ) ) :
 		}
 		add_filter('excerpt_more', 'new_excerpt_more');
 
-
+		//estimated reading time
+		function the_reading_time() {
+			$content = get_post_field( 'post_content', $post->ID );
+			$word_count = str_word_count( strip_tags( $content ) );
+			$totalreadingtime = ceil($word_count / 200);
+		
+			echo $totalreadingtime;
+		}
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
@@ -78,7 +85,16 @@ if ( ! function_exists( 'mozrest_setup' ) ) :
 				'footer3' => esc_html__( 'Footer3', 'mozrest' ),
 			)
 		);
-
+		/**
+		 * Gets the URL for a category term archive based on the category's slug.
+		 *
+		 * @param string $category_slug The slug of the category to get the category arcive for.
+		 *
+		 * @return string The category (term) archive URL. Empty string on error.
+		 */
+		function the_category_url_by_slug( $category_slug ) {
+			echo get_category_link( get_cat_ID( $category_slug ) );
+		}
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.

@@ -1,0 +1,35 @@
+.moz_pagination {
+  text-align: center;
+  .noselect;
+
+  .page-numbers {
+    @h: 25px;
+    display: inline-block;
+    text-decoration: none;
+    height: @h;
+    line-height: @h;
+    padding: 0 5px;
+    font-weight: bold;
+    color: #000;
+    .transition(opacity 0.2s);
+
+    .icon {
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+    }
+    &.current {
+      cursor: default;
+    }
+
+    &.current,
+    &.prev,
+    &.next {
+      color: @primary;
+    }
+
+    &:not(.current):hover {
+      opacity: 0.6;
+    }
+  }
+}
