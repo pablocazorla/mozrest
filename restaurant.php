@@ -186,18 +186,44 @@ Template Name: Restaurant
           <?php esc_html_e( 'Feature', 'mozrest' ); ?></h2>
         <div class="row justify-content-between py-md-5">
           <div class="col-md-5" data-aos="fade-up">
-            <div class="titles-feature text-md-start text-center">
-              <div class="title-feature title-check"> <i class="icon mozresticons-ok"></i>
-                <?php esc_html_e( 'Visibility', 'mozrest' ); ?></div><br />
-              <div class="title-feature"><?php esc_html_e( 'Acquisition', 'mozrest' ); ?></div><br />
-              <div class="title-feature"><?php esc_html_e( 'Retention', 'mozrest' ); ?></div><br />
+            <div class="titles-feature text-md-start text-center slidetab-trigger" data-slidetab="slide-features">
+              <div class="title-feature slidetab-trig current">
+                <i class="icon mozresticons-ok"></i>
+                <?php esc_html_e( 'Visibility', 'mozrest' ); ?>
+              </div><br />
+              <div class="title-feature slidetab-trig">
+                <i class="icon mozresticons-ok"></i>
+                <?php esc_html_e( 'Acquisition', 'mozrest' ); ?>
+              </div>
+              <br />
+              <div class="title-feature slidetab-trig">
+                <i class="icon mozresticons-ok"></i>
+                <?php esc_html_e( 'Retention', 'mozrest' ); ?>
+              </div>
             </div>
           </div>
           <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
-            <img class="img-auto mb-4" src="<?php bloginfo('template_url'); ?>/img/restaurant-feature.svg"
-              alt="MOZREST" />
-            <p><?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
-            </p>
+            <div class="slidetab-content" id="slide-features">
+              <div class="slidetab-cont current">
+                <img class="img-auto mb-4"
+                  src="<?php bloginfo('template_url'); ?>/img/features/restaurant-feature-1.svg" alt="MOZREST" />
+                <p>
+                  <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+                </p>
+              </div>
+              <div class="slidetab-cont">
+                <img class="img-auto mb-4"
+                  src="<?php bloginfo('template_url'); ?>/img/features/restaurant-feature-2.svg" alt="MOZREST" />
+
+              </div>
+              <div class="slidetab-cont">
+                <img class="img-auto mb-4"
+                  src="<?php bloginfo('template_url'); ?>/img/features/restaurant-feature-3.svg" alt="MOZREST" />
+                <p>
+                  <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+                </p>
+              </div>
+            </div>
           </div>
           <div class="col-12" data-aos="fade-up">
             <div class="text-md-start text-center">

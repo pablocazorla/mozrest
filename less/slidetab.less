@@ -1,0 +1,22 @@
+.slidetab-trig {
+  cursor: pointer;
+}
+.slidetab-content {
+  position: relative;
+
+  .slidetab-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    .transition(opacity 0.2s);
+
+    &.current {
+      position: relative;
+      z-index: 12;
+      opacity: 1;
+      .transition(opacity 0.6s);
+    }
+  }
+}

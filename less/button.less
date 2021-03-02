@@ -4,20 +4,18 @@
   border: none;
   .transition(all 0.2s);
 
-  &,
-  &:hover,
-  &:focus {
-    color: #fff;
-  }
-
   .generate_btn_color(@col) {
     &.btn-@{col} {
       background-color: @@col;
+      color: #fff !important;
+
       &:hover {
         background-color: darken(@@col, 15%);
+        color: #fff !important;
       }
       &:focus {
         box-shadow: 0 0 0 0.25rem fade(@@col, 34%);
+        color: #fff !important;
       }
     }
   }
@@ -41,15 +39,16 @@
 
   .generate_btn_outline_color(@col) {
     &.btn-outline-@{col} {
-      color: @@col;
+      color: @@col !important;
       background-color: transparent;
       border: 1px solid @@col;
       &:hover {
         background-color: darken(@@col, 15%);
-        color: #fff;
+        color: #fff !important;
       }
       &:focus {
         box-shadow: 0 0 0 0.25rem fade(@@col, 34%);
+        color: #fff !important;
       }
     }
   }

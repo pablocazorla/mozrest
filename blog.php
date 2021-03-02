@@ -16,7 +16,7 @@ Template Name: Blog
 <?php if ( $the_query->have_posts() ) : ?>
 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 <div class="blog-presentation" data-aos="fade">
-  <?php the_post_thumbnail('full'); ?>
+  <?php the_post_thumbnail('medium'); ?>
   <div class="blog-presentation-content">
     <div class="container">
       <div class="blog-presentation-content-bg"></div>

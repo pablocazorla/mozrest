@@ -181,18 +181,39 @@ Template Name: Reservations
         <h2 class="mb-md-5 pb-md-5 text-md-start text-center" data-aos="fade-up">
           <?php esc_html_e( 'Feature', 'mozrest' ); ?></h2>
         <div class="row justify-content-between py-md-5">
-          <div class="col-md-7" data-aos="fade-up">
-            <div class="titles-feature text-md-start text-center">
-              <div class="title-feature title-check"> <i class="icon mozresticons-ok"></i>
-                <?php esc_html_e( 'Performance dashboard', 'mozrest' ); ?></div>
+          <div class="col-md-5" data-aos="fade-up">
+            <div class="titles-feature text-md-start text-center slidetab-trigger" data-slidetab="slide-features">
+              <div class="title-feature slidetab-trig current">
+                <i class="icon mozresticons-ok"></i>
+                <?php esc_html_e( 'Performance dashboard', 'mozrest' ); ?>
+              </div><br />
+              <div class="title-feature slidetab-trig">
+                <i class="icon mozresticons-ok"></i>
+                <?php esc_html_e( 'Billing', 'mozrest' ); ?>
+              </div>
               <br />
-              <div class="title-feature"><?php esc_html_e( 'Billing', 'mozrest' ); ?></div><br />
-              <div class="title-feature"><?php esc_html_e( 'Real time synchronisation', 'mozrest' ); ?></div><br />
+              <div class="title-feature slidetab-trig">
+                <i class="icon mozresticons-ok"></i>
+                <?php esc_html_e( 'Real time synchronisation', 'mozrest' ); ?>
+              </div>
             </div>
           </div>
           <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
-            <img class="img-auto mb-4" src="<?php bloginfo('template_url'); ?>/img/reservations-feature.svg"
-              alt="MOZREST" />
+            <div class="slidetab-content" id="slide-features">
+              <div class="slidetab-cont current">
+                <img class="img-auto mb-4"
+                  src="<?php bloginfo('template_url'); ?>/img/features/reservations-feature-1.svg" alt="MOZREST" />
+              </div>
+              <div class="slidetab-cont">
+                <img class="img-auto mb-4"
+                  src="<?php bloginfo('template_url'); ?>/img/features/reservations-feature-2.svg" alt="MOZREST" />
+
+              </div>
+              <div class="slidetab-cont">
+                <img class="img-auto mb-4"
+                  src="<?php bloginfo('template_url'); ?>/img/features/reservations-feature-3.svg" alt="MOZREST" />
+              </div>
+            </div>
           </div>
           <div class="col-12" data-aos="fade-up">
             <div class="text-md-start text-center">
