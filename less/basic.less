@@ -31,3 +31,21 @@ hr {
   padding: 10px;
   border-radius: 6px;
 }
+
+.icontext {
+  display: block;
+  color: @text-color;
+  text-decoration: none;
+  .transition(color 0.2s);
+
+  .icon-container {
+    .transition(opacity 0.2s);
+  }
+
+  &:hover {
+    color: @blue;
+    .icon-container {
+      opacity: 0.64;
+    }
+  }
+}

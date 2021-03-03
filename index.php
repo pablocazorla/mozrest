@@ -99,28 +99,34 @@ get_header();
     <h2 class="mb-5 pb-3" data-aos="fade-up"><?php esc_html_e( 'Enpower', 'mozrest' ); ?></h2>
     <div class="row justify-content-center">
       <div class="col-lg-4" data-aos="fade-up">
-        <div class="icon-container mx-auto bg-pink mb-5">
-          <i class="icon mozresticons-food"></i>
-        </div>
-        <h3><?php esc_html_e( 'Restaurants', 'mozrest' ); ?></h3>
-        <p class="block-size-1">
-          <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+        <a href="<?php bloginfo('url'); ?>/for-restaurants" class="icontext">
+          <div class="icon-container mx-auto bg-pink mb-5">
+            <i class="icon mozresticons-food"></i>
+          </div>
+          <h3><?php esc_html_e( 'Restaurants', 'mozrest' ); ?></h3>
+          <p class="block-size-1">
+            <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+        </a>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
-        <div class="icon-container mx-auto bg-yellow mb-5">
-          <i class="icon mozresticons-store"></i>
-        </div>
-        <h3><?php esc_html_e( 'Market place', 'mozrest' ); ?></h3>
-        <p class="block-size-1">
-          <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+        <a href="<?php bloginfo('url'); ?>/market-place" class="icontext">
+          <div class="icon-container mx-auto bg-yellow mb-5">
+            <i class="icon mozresticons-store"></i>
+          </div>
+          <h3><?php esc_html_e( 'Market place', 'mozrest' ); ?></h3>
+          <p class="block-size-1">
+            <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+        </a>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="icon-container mx-auto bg-green mb-5">
-          <i class="icon mozresticons-tablet"></i>
-        </div>
-        <h3><?php esc_html_e( 'Guest Management Software', 'mozrest' ); ?></h3>
-        <p class="block-size-1">
-          <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+        <a href="<?php bloginfo('url'); ?>/reservations-software" class="icontext">
+          <div class="icon-container mx-auto bg-green mb-5">
+            <i class="icon mozresticons-tablet"></i>
+          </div>
+          <h3><?php esc_html_e( 'Guest Management Software', 'mozrest' ); ?></h3>
+          <p class="block-size-1">
+            <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+        </a>
       </div>
     </div>
   </div>
