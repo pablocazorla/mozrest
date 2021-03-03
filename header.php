@@ -18,7 +18,6 @@
     rel="stylesheet">
 
   <!-- Google Tag Manager -->
-
   <?php
     $GTM = 'GTM-T33BZF3';
   ?>
@@ -40,6 +39,11 @@
   })(window, document, 'script', 'dataLayer', <?php echo $GTM; ?>);
   </script>
   <!-- End Google Tag Manager -->
+
+  <!-- Start cookieyes banner -->
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/4d662d622bac22e1dfdd5a44.js">
+  </script>
+  <!-- End cookieyes banner -->
 
   <?php wp_head(); ?>
 </head>
