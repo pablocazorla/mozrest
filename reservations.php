@@ -229,18 +229,18 @@ Template Name: Reservations
   <div class="container">
     <div class="bg-blue text-white r-4 px-5 py-4">
       <div class="row g-5 align-items-center">
-        <div class="col-md-5 order-1" data-aos="zoom-in">
+        <div class="col-xl-5 col-lg-4 order-1" data-aos="zoom-in">
           <h3><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h3>
           <p class="m-0">
             <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
           </p>
         </div>
-        <div class="col-md-2 text-center order-md-2 order-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="col-xl-3 col-lg-4 text-center order-md-2 order-3" data-aos="zoom-in" data-aos-delay="200">
           <a href="#" class="btn btn-green unwrap">
             <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
           </a>
         </div>
-        <div class="col-md-5 order-md-3 order-2" data-aos="zoom-in" data-aos-delay="400">
+        <div class="col-xl-4 col-lg-4 order-md-3 order-2" data-aos="zoom-in" data-aos-delay="400">
           <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/design-complex.svg" alt="MOZREST" />
         </div>
       </div>
