@@ -134,8 +134,8 @@ get_header();
 <section class="mb-7 p-0">
   <div class="container">
     <div class="row">
-      <div class="col-md-5 py-5" data-aos="fade-up">
-        <h2>One Platform endless possibilities<?php esc_html_e( 'One Platform endless possibilities', 'mozrest' ); ?>
+      <div class="col-xl-5 col-lg-6 py-5" data-aos="fade-up">
+        <h2><?php esc_html_e( 'One Platform endless possibilities', 'mozrest' ); ?>
         </h2>
         <ul class="list fz18">
           <li><?php esc_html_e( 'Marketing pagado', 'mozrest' ); ?></li>
@@ -145,7 +145,7 @@ get_header();
           <li><?php esc_html_e( 'Publicación social', 'mozrest' ); ?></li>
         </ul>
       </div>
-      <div class="col-md-7" data-aos="fade-left" data-aos-delay="200">
+      <div class="col-xl-7 col-lg-6" data-aos="fade-left" data-aos-delay="200">
         <img class="img-auto r-1 displaced-bg-green" src="<?php bloginfo('template_url'); ?>/img/photos/home-3.jpg"
           alt="MOZREST" />
       </div>
@@ -168,7 +168,7 @@ get_header();
         <div class="carousel-item active">
           <div class="bg-blue text-center text-white pt-md-7 pt-4">
             <div class="row justify-content-center mb-4">
-              <div class="col-md-7 col-9">
+              <div class="col-lg-7 col-9">
                 <h3><?php esc_html_e( 'Loren Ipsum', 'mozrest' ); ?></h3>
                 <p>
                   <?php esc_html_e( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.', 'mozrest' ); ?>
@@ -176,7 +176,7 @@ get_header();
               </div>
             </div>
             <div class="row justify-content-center">
-              <div class="col-md-5 col-9">
+              <div class="col-xl-5 col-lg-7 col-9">
                 <img class="img-auto r1-1 r2-1" src="<?php bloginfo('template_url'); ?>/img/screenshot-1.jpg"
                   alt="MOZREST" />
               </div>
@@ -186,7 +186,7 @@ get_header();
         <div class="carousel-item">
           <div class="bg-green text-center text-white pt-md-7 pt-4">
             <div class="row justify-content-center mb-4">
-              <div class="col-md-7 col-9">
+              <div class="col-lg-7 col-9">
                 <h3><?php esc_html_e( 'Loren Ipsum', 'mozrest' ); ?></h3>
                 <p>
                   <?php esc_html_e( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.', 'mozrest' ); ?>
@@ -194,7 +194,7 @@ get_header();
               </div>
             </div>
             <div class="row justify-content-center">
-              <div class="col-md-5 col-9">
+              <div class="col-xl-5 col-lg-7 col-9">
                 <img class="img-auto r1-1 r2-1" src="<?php bloginfo('template_url'); ?>/img/screenshot-1.jpg"
                   alt="MOZREST" />
               </div>
@@ -204,7 +204,7 @@ get_header();
         <div class="carousel-item">
           <div class="bg-pink text-center text-white pt-md-7 pt-4">
             <div class="row justify-content-center mb-4">
-              <div class="col-md-7 col-9">
+              <div class="col-lg-7 col-9">
                 <h3><?php esc_html_e( 'Loren Ipsum', 'mozrest' ); ?></h3>
                 <p>
                   <?php esc_html_e( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.', 'mozrest' ); ?>
@@ -212,7 +212,7 @@ get_header();
               </div>
             </div>
             <div class="row justify-content-center">
-              <div class="col-md-5 col-9">
+              <div class="col-xl-5 col-lg-7 col-9">
                 <img class="img-auto r1-1 r2-1" src="<?php bloginfo('template_url'); ?>/img/screenshot-1.jpg"
                   alt="MOZREST" />
               </div>
