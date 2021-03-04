@@ -101,9 +101,6 @@ Template Name: Blog
           </h3>
           <p class="mb-4">
             <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
-          <?php 
-          include 'subscribe-form.php';
-          ?>
         </div>
       </div>
     </div>
