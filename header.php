@@ -57,17 +57,17 @@
     <header class="main-header" id="main-header" data-aos="fade-down">
       <div class="container">
         <div class="row no-gutters align-items-md-center align-items-start">
-          <div class="col-sm col-6">
+          <div class="col-6">
             <a href="<?php bloginfo( 'url' ); ?>" class="main-brand">
               <img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="MOZREST">
             </a>
           </div>
-          <div class="col-6 d-md-none d-block">
+          <div class="col-6 d-lg-none d-block">
             <button class="main-menu_mobile-trigger" id="main-menu_mobile-trigger">
               <span class="line-1"></span><span class="line-2"></span><span class="line-3"></span>
             </button>
           </div>
-          <div class="col-md col-sm-12">
+          <div class="col-lg-6 col-md-12">
             <menu class="main-menu" id="main-menu">
               <?php
                 wp_nav_menu(
