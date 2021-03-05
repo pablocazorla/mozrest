@@ -153,8 +153,8 @@ get_header();
                 <h3><?php esc_html_e( 'Guests find', 'mozrest' ); ?></h3>
                 <p class="mb-0"><?php esc_html_e( '"64 Percent Of Mobile Restaurant Searchers Convert “Immediately Or Within An Hour"', 'mozrest' ); ?></p>
                 <p class="mb-0"><?php esc_html_e( '"80% of all these ‘Near Me’ search queries are unbranded. This means guest don’t necessarily have a name in mind."', 'mozrest' ); ?></p>
-                <p class="mb-0"><?php esc_html_e( 'Mozrest make you visible and stand out above your competitors.', 'mozrest' ); ?></p>
-                <p class="mb-0"><u class="mt-1"><?php esc_html_e( 'https://searchengineland.com/study-64-percent-of-mobile-restaurant-searchers-convert-immediately-or-within-an-hour-135188', 'mozrest' ); ?></u></p>
+                <p class="mb-2"><?php esc_html_e( 'Mozrest make you visible and stand out above your competitors.', 'mozrest' ); ?></p>
+                <p class="mb-0"><u><?php esc_html_e( 'https://searchengineland.com/study-64-percent-of-mobile-restaurant-searchers-convert-immediately-or-within-an-hour-135188', 'mozrest' ); ?></u></p>
               </div>
             </div>
             <div class="row justify-content-center">
