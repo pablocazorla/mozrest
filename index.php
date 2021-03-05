@@ -21,9 +21,10 @@ get_header();
       <div class="container">
         <div class="row">
           <div class="col-md-6 text-center text-md-start pt-md-0 pt-5" data-aos="fade-up">
-            <h1 class="text-blue"><?php esc_html_e( 'It is everything about guests!', 'mozrest' ); ?></h1>
+            <h1 class="text-blue"><?php esc_html_e( "It's everything about Guests", 'mozrest' ); ?></h1>
             <p>
-              <?php esc_html_e( 'Find guests be found by them get bookings discuss whith them share news', 'mozrest' ); ?>
+              <?php esc_html_e( '"How many guests are you not reaching when they are near you because you are not connecting with them on their platforms of choice?"', 'mozrest' ); ?>
+              <?php esc_html_e( 'Mozrest platform solves this problem and gives to the Restaurant, the Reservation Portals and the Reservation Softwares a unique opportunity to providing a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
             </p>
             <p>
               <a href="#" class="btn btn-primary">
@@ -85,8 +86,8 @@ get_header();
       </div>
     </div>
   </div>
-
 </section>
+
 <section class="pb-0">
   <div class="container">
     <div class="scroll-h" data-aos="fade-up">
@@ -94,6 +95,7 @@ get_header();
     </div>
   </div>
 </section>
+
 <section>
   <div class="container text-center">
     <h2 class="mb-5 pb-3" data-aos="fade-up"><?php esc_html_e( 'Enpower', 'mozrest' ); ?></h2>
@@ -105,7 +107,7 @@ get_header();
           </div>
           <h3><?php esc_html_e( 'Restaurants', 'mozrest' ); ?></h3>
           <p class="block-size-1">
-            <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+            <?php esc_html_e( 'Deliver personalised experience to your guests', 'mozrest' ); ?></p>
         </a>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
@@ -113,9 +115,9 @@ get_header();
           <div class="icon-container mx-auto bg-yellow mb-5">
             <i class="icon mozresticons-store"></i>
           </div>
-          <h3><?php esc_html_e( 'Market place', 'mozrest' ); ?></h3>
+          <h3><?php esc_html_e( 'Reservation Portal', 'mozrest' ); ?></h3>
           <p class="block-size-1">
-            <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+            <?php esc_html_e( 'Increase your Reach efficiently', 'mozrest' ); ?></p>
         </a>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
@@ -125,41 +127,20 @@ get_header();
           </div>
           <h3><?php esc_html_e( 'Guest Management Software', 'mozrest' ); ?></h3>
           <p class="block-size-1">
-            <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+            <?php esc_html_e( 'Increase your Customer Value', 'mozrest' ); ?></p>
         </a>
       </div>
     </div>
   </div>
 </section>
-<section class="mb-7 p-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-5 col-lg-6 py-5" data-aos="fade-up">
-        <h2><?php esc_html_e( 'One Platform endless possibilities', 'mozrest' ); ?>
-        </h2>
-        <ul class="list fz18">
-          <li><?php esc_html_e( 'Marketing pagado', 'mozrest' ); ?></li>
-          <li><?php esc_html_e( 'SEO local', 'mozrest' ); ?></li>
-          <li><?php esc_html_e( 'Reserva', 'mozrest' ); ?></li>
-          <li><?php esc_html_e( 'Revisión de la gestión', 'mozrest' ); ?></li>
-          <li><?php esc_html_e( 'Publicación social', 'mozrest' ); ?></li>
-        </ul>
-      </div>
-      <div class="col-xl-7 col-lg-6" data-aos="fade-left" data-aos-delay="200">
-        <img class="img-auto r-1 displaced-bg-green" src="<?php bloginfo('template_url'); ?>/img/photos/home-3.jpg"
-          alt="MOZREST" />
-      </div>
-    </div>
-  </div>
 
-</section>
-<section class="pb-4">
+<section>
   <div class="container">
     <div class="text-center mb-4" data-aos="fade-up">
-      <h2 class="mb-4"><?php esc_html_e( 'Feature', 'mozrest' ); ?></h2>
+      <h2 class="mb-0"><?php esc_html_e( 'Mozrest promise is to', 'mozrest' ); ?></h2>
       <div class="row justify-content-center">
         <div class="col-md-5">
-          <p><?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+          <p><?php esc_html_e( 'sublime restaurant digital marketing and deliver unique experience to guests', 'mozrest' ); ?></p>
         </div>
       </div>
     </div>
@@ -169,10 +150,11 @@ get_header();
           <div class="bg-blue text-center text-white pt-md-7 pt-4">
             <div class="row justify-content-center mb-4">
               <div class="col-lg-7 col-9">
-                <h3><?php esc_html_e( 'Loren Ipsum', 'mozrest' ); ?></h3>
-                <p>
-                  <?php esc_html_e( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.', 'mozrest' ); ?>
-                </p>
+                <h3><?php esc_html_e( 'Guests find', 'mozrest' ); ?></h3>
+                <p class="mb-0"><?php esc_html_e( '"64 Percent Of Mobile Restaurant Searchers Convert “Immediately Or Within An Hour"', 'mozrest' ); ?></p>
+                <p class="mb-0"><?php esc_html_e( '"80% of all these ‘Near Me’ search queries are unbranded. This means guest don’t necessarily have a name in mind."', 'mozrest' ); ?></p>
+                <p class="mb-0"><?php esc_html_e( 'Mozrest make you visible and stand out above your competitors.', 'mozrest' ); ?></p>
+                <p class="mb-0"><u class="mt-1"><?php esc_html_e( 'https://searchengineland.com/study-64-percent-of-mobile-restaurant-searchers-convert-immediately-or-within-an-hour-135188', 'mozrest' ); ?></u></p>
               </div>
             </div>
             <div class="row justify-content-center">
@@ -229,20 +211,43 @@ get_header();
     </div>
   </div>
 </section>
-<section>
 
+<section class="mb-7">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-5 col-lg-6 py-5" data-aos="fade-up">
+        <h2><?php esc_html_e( 'One connected platform, endless possibilities', 'mozrest' ); ?>
+        </h2>
+        <ul class="list fz18">
+          <li><?php esc_html_e( 'Marketing Acquisition Efficiency', 'mozrest' ); ?></li>
+          <li><?php esc_html_e( 'Profile Management', 'mozrest' ); ?></li>
+          <li><?php esc_html_e( 'Social Media Post Management', 'mozrest' ); ?></li>
+          <li><?php esc_html_e( 'Reservation Channel Enabler', 'mozrest' ); ?></li>
+          <li><?php esc_html_e( 'Review Aggregator', 'mozrest' ); ?></li>
+        </ul>
+      </div>
+      <div class="col-xl-7 col-lg-6" data-aos="fade-left" data-aos-delay="200">
+        <img class="img-auto r-1 displaced-bg-green" src="<?php bloginfo('template_url'); ?>/img/photos/home-3.jpg"
+          alt="MOZREST" />
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section>
   <div class="container text-center">
     <div class="bg-img-container" data-aos="fade-up">
       <img src="<?php bloginfo('template_url'); ?>/img/home-social-bg.jpg" alt="MOZREST" />
     </div>
     <div class="row justify-content-center mb-md-4 pb-md-5">
-      <div class="col-lg-4 col-8  pb-md-5">
-        <h2 class="mb-4" data-aos="fade-up"><?php esc_html_e( 'Loren Ipsum', 'mozrest' ); ?></h2>
+      <div class="col-lg-5 col-8  pb-md-5">
+        <h2 class="mb-4" data-aos="fade-up"><?php esc_html_e( 'Our Partner Network', 'mozrest' ); ?></h2>
         <p data-aos="fade-up">
-          <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+          <?php esc_html_e( 'Reservation Portals, Guest Management Software, Search Media, Voice Search, Map & Navigation, General Publishers', 'mozrest' ); ?></p>
         <p data-aos="fade-up">
-          <a href="#" class="btn btn-primary">
-            <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
+          <a href="<?php bloginfo('template_url'); ?>/contact" class="btn btn-primary">
+            <?php esc_html_e( 'Contact us', 'mozrest' ); ?>
           </a>
         </p>
       </div>

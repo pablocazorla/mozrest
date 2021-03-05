@@ -139,6 +139,28 @@ Template Name: Restaurant
 </section>
 <section>
   <div class="container">
+    <div class="bg-blue text-white r-4 px-5 py-4">
+      <div class="row g-5 align-items-center">
+        <div class="col-xl-5 col-lg-4 order-1" data-aos="zoom-in">
+          <h3><?php esc_html_e( 'aaaaaaa', 'mozrest' ); ?></h3>
+          <p class="m-0">
+            <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
+          </p>
+        </div>
+        <div class="col-xl-3 col-lg-4 text-center order-md-2 order-3" data-aos="zoom-in" data-aos-delay="200">
+          <a href="#" class="btn btn-primary unwrap">
+            <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
+          </a>
+        </div>
+        <div class="col-xl-4 col-lg-4 order-md-3 order-2" data-aos="zoom-in" data-aos-delay="400">
+          <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/design-complex.svg" alt="MOZREST" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
     <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
   </div>
   <div class="splide splide__pagination__pink" id="testimonials" data-aos="fade-up">
@@ -235,23 +257,26 @@ Template Name: Restaurant
     </div>
   </div>
 </section>
-<section>
+<section class="pt-md-5 pt-0">
   <div class="container">
-    <div class="bg-blue text-white r-4 px-5 py-4">
-      <div class="row g-5 align-items-center">
-        <div class="col-xl-5 col-lg-4 order-1" data-aos="zoom-in">
-          <h3><?php esc_html_e( 'aaaaaaa', 'mozrest' ); ?></h3>
-          <p class="m-0">
-            <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
-          </p>
+    <div class="bg-green r-4 text-white px-5">
+      <div class="row align-items-center">
+        <div class="col-md-5 order-md-1 order-2" data-aos="fade-right">
+          <div class="pt-md-6 ps-md-5 pt-4">
+            <img class="img-auto m-auto" style="max-width:255px" src="<?php bloginfo('template_url'); ?>/img/man-1.png"
+              alt="MOZREST" />
+          </div>
         </div>
-        <div class="col-xl-3 col-lg-4 text-center order-md-2 order-3" data-aos="zoom-in" data-aos-delay="200">
-          <a href="#" class="btn btn-primary unwrap">
-            <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
-          </a>
-        </div>
-        <div class="col-xl-4 col-lg-4 order-md-3 order-2" data-aos="zoom-in" data-aos-delay="400">
-          <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/design-complex.svg" alt="MOZREST" />
+        <div class="col-md-7 order-md-2 order-1">
+          <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade-left" data-aos-delay="300">
+            <h2 class="mb-3"><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h2>
+            <p>
+              <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
+            </p>
+            <?php 
+          include 'subscribe-form.php';
+          ?>
+          </div>
         </div>
       </div>
     </div>
