@@ -54,7 +54,7 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <div class="main-wrapper">
-    <header class="main-header" id="main-header" data-aos="fade-down">
+    <header class="main-header" id="main-header" data-aos="fade">
       <div class="container">
         <div class="row no-gutters align-items-md-center align-items-start">
           <div class="col-6">
