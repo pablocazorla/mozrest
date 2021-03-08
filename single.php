@@ -13,7 +13,7 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-xl-9 col-lg-8">
-        <div class="mb-3" data-aos="fade-left">
+        <div class="mb-3" data-aos="fade">
           <a href="<?php the_category_url_by_slug( 'blog' ); ?>" class="back-to-blog">
             <i class="icon mozresticons-long-arrow-left"></i> <?php esc_html_e( 'Back to blog', 'mozrest' ); ?>
           </a>

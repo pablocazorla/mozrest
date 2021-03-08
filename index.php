@@ -14,79 +14,40 @@
 
 get_header();
 ?>
+<section class="py-0  ps-3 pe-lg-0  px-3">
+  <div class="row g-0 align-items-center">
+    <div class="col-lg-6 py-5">
+      <div class="container semi-container-xxl me-xl-0 pe-lg-5 text-lg-start text-center" data-aos="fade-right">
+        <h1 class="text-blue"><?php esc_html_e( "It's everything about Guests", 'mozrest' ); ?></h1>
+        <p>
+          <?php esc_html_e( '"How many guests are you not reaching when they are near you because you are not connecting with them on their platforms of choice?"', 'mozrest' ); ?>
+          <?php esc_html_e( 'Mozrest platform solves this problem and gives to the Restaurant, the Reservation Portals and the Reservation Softwares a unique opportunity to providing a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
+        </p>
+        <p class="m-0">
+          <a href="#" class="btn btn-primary">
 
-<section class="home-presentation">
-  <div class="front-content">
-    <div class="v-md-centered">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start pt-md-0 pt-5" data-aos="fade-up">
-            <h1 class="text-blue"><?php esc_html_e( "It's everything about Guests", 'mozrest' ); ?></h1>
-            <p>
-              <?php esc_html_e( '"How many guests are you not reaching when they are near you because you are not connecting with them on their platforms of choice?"', 'mozrest' ); ?>
-              <?php esc_html_e( 'Mozrest platform solves this problem and gives to the Restaurant, the Reservation Portals and the Reservation Softwares a unique opportunity to providing a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
-            </p>
-            <p>
-              <a href="#" class="btn btn-primary">
-
-                <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
-              </a>
-            </p>
-          </div>
-        </div>
-
+            <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
+          </a>
+        </p>
       </div>
     </div>
-  </div>
-  <div class="back-content align-right">
-    <div class="back-content-col">
-      <div class="photo-mosaic">
-        <div class="row g-0">
-          <div class="col-7">
-            <div class="photo-mosaic-column">
-              <div class="photo-mosaic-content p-left">
-                <div class="icon-container  text-pink box-shadow-3 home-presentation-icon-search" data-aos="zoom-in"
-                  data-aos-delay="500">
-                  <i class="icon mozresticons-search"></i>
-                </div>
-                <figure class="photo-mosaic-figure" data-aos="fade-left">
-                  <img src="<?php bloginfo('template_url'); ?>/img/photos/home-1.jpg" alt="MOZREST" />
-                </figure>
-              </div>
-              <div class="photo-mosaic-content">
-                <div class="icon-container box-shadow-3 home-presentation-icon-user-card" data-aos="fade-left"
-                  data-aos-delay="150">
-                  <img src="<?php bloginfo('template_url'); ?>/img/user-card.svg" alt="MOZREST" />
-                </div>
-                <figure class="photo-mosaic-figure" data-aos="fade-left" data-aos-delay="100">
-                  <img src="<?php bloginfo('template_url'); ?>/img/photos/home-2.jpg" alt="MOZREST" />
-                </figure>
-              </div>
-            </div>
-          </div>
-          <div class="col-5">
-            <div class="photo-mosaic-column">
-              <div class="photo-mosaic-content c-4">
-                <figure class="photo-mosaic-figure r2-0 r3-0" data-aos="fade-left" data-aos-delay="300">
-                  <img src="<?php bloginfo('template_url'); ?>/img/photos/home-3.jpg" alt="MOZREST" />
-                </figure>
-              </div>
-              <div class="photo-mosaic-content c-8">
-                <div class="icon-container  text-green box-shadow-3 home-presentation-icon-location" data-aos="zoom-in"
-                  data-aos-delay="860">
-                  <i class="icon mozresticons-location-o"></i>
-                </div>
-                <figure class="photo-mosaic-figure r2-0 r3-0" data-aos="fade-left" data-aos-delay="400">
-                  <img src="<?php bloginfo('template_url'); ?>/img/photos/home-4.jpg" alt="MOZREST" />
-                </figure>
-              </div>
-            </div>
-          </div>
+    <div class="col-lg-6">
+      <div class="relative" data-aos="fade">
+        <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/photos/home-1.jpg" alt="MOZREST" />
+        <div class="icon-container vh-centered text-pink box-shadow-3 home-presentation-icon-search">
+          <i class="icon mozresticons-search"></i>
+        </div>
+        <div class="icon-container vh-centered box-shadow-3 home-presentation-icon-user-card d-lg-block d-none">
+          <img src="<?php bloginfo('template_url'); ?>/img/user-card.svg" alt="MOZREST" />
+        </div>
+        <div class="icon-container vh-centered text-green box-shadow-3 home-presentation-icon-location">
+          <i class="icon mozresticons-location-o"></i>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <section class="pb-0">
   <div class="container">
@@ -140,7 +101,9 @@ get_header();
       <h2 class="mb-0"><?php esc_html_e( 'Mozrest promise is to', 'mozrest' ); ?></h2>
       <div class="row justify-content-center">
         <div class="col-md-5">
-          <p><?php esc_html_e( 'sublime restaurant digital marketing and deliver unique experience to guests', 'mozrest' ); ?></p>
+          <p>
+            <?php esc_html_e( 'sublime restaurant digital marketing and deliver unique experience to guests', 'mozrest' ); ?>
+          </p>
         </div>
       </div>
     </div>
@@ -151,10 +114,18 @@ get_header();
             <div class="row justify-content-center mb-4">
               <div class="col-lg-7 col-9">
                 <h3><?php esc_html_e( 'Guests find', 'mozrest' ); ?></h3>
-                <p class="mb-0"><?php esc_html_e( '"64 Percent Of Mobile Restaurant Searchers Convert “Immediately Or Within An Hour"', 'mozrest' ); ?></p>
-                <p class="mb-0"><?php esc_html_e( '"80% of all these ‘Near Me’ search queries are unbranded. This means guest don’t necessarily have a name in mind."', 'mozrest' ); ?></p>
-                <p class="mb-2"><?php esc_html_e( 'Mozrest make you visible and stand out above your competitors.', 'mozrest' ); ?></p>
-                <p class="mb-0"><u><?php esc_html_e( 'https://searchengineland.com/study-64-percent-of-mobile-restaurant-searchers-convert-immediately-or-within-an-hour-135188', 'mozrest' ); ?></u></p>
+                <p class="mb-0">
+                  <?php esc_html_e( '"64 Percent Of Mobile Restaurant Searchers Convert “Immediately Or Within An Hour"', 'mozrest' ); ?>
+                </p>
+                <p class="mb-0">
+                  <?php esc_html_e( '"80% of all these ‘Near Me’ search queries are unbranded. This means guest don’t necessarily have a name in mind."', 'mozrest' ); ?>
+                </p>
+                <p class="mb-2">
+                  <?php esc_html_e( 'Mozrest make you visible and stand out above your competitors.', 'mozrest' ); ?>
+                </p>
+                <p class="mb-0">
+                  <u><?php esc_html_e( 'https://searchengineland.com/study-64-percent-of-mobile-restaurant-searchers-convert-immediately-or-within-an-hour-135188', 'mozrest' ); ?></u>
+                </p>
               </div>
             </div>
             <div class="row justify-content-center">
@@ -226,7 +197,7 @@ get_header();
           <li><?php esc_html_e( 'Review Aggregator', 'mozrest' ); ?></li>
         </ul>
       </div>
-      <div class="col-xl-7 col-lg-6" data-aos="fade-left" data-aos-delay="200">
+      <div class="col-xl-7 col-lg-6" data-aos="fade" data-aos-delay="200">
         <img class="img-auto r-1 displaced-bg-green" src="<?php bloginfo('template_url'); ?>/img/photos/home-3.jpg"
           alt="MOZREST" />
       </div>
@@ -244,7 +215,8 @@ get_header();
       <div class="col-lg-5 col-8  pb-md-5">
         <h2 class="mb-4" data-aos="fade-up"><?php esc_html_e( 'Our Partner Network', 'mozrest' ); ?></h2>
         <p data-aos="fade-up">
-          <?php esc_html_e( 'Reservation Portals, Guest Management Software, Search Media, Voice Search, Map & Navigation, General Publishers', 'mozrest' ); ?></p>
+          <?php esc_html_e( 'Reservation Portals, Guest Management Software, Search Media, Voice Search, Map & Navigation, General Publishers', 'mozrest' ); ?>
+        </p>
         <p data-aos="fade-up">
           <a href="<?php bloginfo('template_url'); ?>/contact" class="btn btn-primary">
             <?php esc_html_e( 'Contact us', 'mozrest' ); ?>
@@ -338,7 +310,7 @@ get_header();
           </div>
         </div>
         <div class="col-md-7 order-md-2 order-1">
-          <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade-left" data-aos-delay="300">
+          <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade" data-aos-delay="300">
             <h2><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h2>
             <p>
               <?php esc_html_e( 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>

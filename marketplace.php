@@ -4,52 +4,49 @@ Template Name: MarketPlace
 */
 ?>
 <?php get_header(); ?>
-<section class="restaurant-presentation">
-  <div class="front-content">
-    <div class="v-md-centered">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start pt-md-0 pt-5" data-aos="fade-up">
-            <h1 class="text-blue"><?php esc_html_e( 'Pains / Problem', 'mozrest' ); ?></h1>
-            <p>
-              <?php esc_html_e( 'Creating and growing a restaurant base and promoting them in front of your consumers is a costly and never-ending endeavor. You need more restaurants, more locations, to reach more consumers.', 'mozrest' ); ?>
-            </p>
-            <p>
-              <a href="#" class="btn btn-yellow">
-                <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
-              </a>
-            </p>
-          </div>
+
+
+
+
+<section class="py-0">
+  <div class="row g-0 align-items-center">
+    <div class="col-lg-6 py-5">
+      <div class="container semi-container-xxl me-xl-0 pe-lg-5" data-aos="fade-right">
+        <div class="ps-3 pe-lg-0 px-3 pb-4">
+          <h1 class="text-blue"><?php esc_html_e( 'Pains / Problem', 'mozrest' ); ?></h1>
+          <p>
+            <?php esc_html_e( 'Creating and growing a restaurant base and promoting them in front of your consumers is a costly and never-ending endeavor. You need more restaurants, more locations, to reach more consumers.', 'mozrest' ); ?>
+          </p>
+          <p class="m-0">
+            <a href="#" class="btn btn-yellow">
+              <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
+            </a>
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="back-content align-right">
-    <div class="back-content-col">
-      <div class="photo-mosaic">
-        <div class="photo-mosaic-column">
-
-          <div class="photo-mosaic-content c-12">
-
-            <figure class="photo-mosaic-figure r-0" data-aos="fade-left" data-aos-delay="200">
-              <img src="<?php bloginfo('template_url'); ?>/img/photos/marketplace-1.jpg" alt="MOZREST" />
-            </figure>
-
-            <div class="moz-pill bg-green restaurant-mp-green" data-aos="fade-left" data-aos-delay="400">
-              <i class="icon mozresticons-ok-circle"></i> <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
-            </div>
-            <div class="moz-pill bg-pink restaurant-mp-pink" data-aos="fade-left" data-aos-delay="500">
-              <i class="icon mozresticons-ok-circle"></i> <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
-            </div>
-            <div class="moz-pill bg-yellow restaurant-mp-yellow" data-aos="fade-left" data-aos-delay="600">
-              <i class="icon mozresticons-ok-circle"></i> <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
-            </div>
+    <div class="col-lg-6">
+      <div class="relative pt-lg-0 pt-5" data-aos="fade">
+        <div class="pt-lg-0 pt-5">
+          <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/photos/marketplace-1.jpg" alt="MOZREST" />
+          <div class="moz-pill bg-green restaurant-mp-green">
+            <i class="icon mozresticons-ok-circle"></i>
+            <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
+          </div>
+          <div class="moz-pill bg-pink restaurant-mp-pink">
+            <i class="icon mozresticons-ok-circle"></i>
+            <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
+          </div>
+          <div class="moz-pill bg-yellow restaurant-mp-yellow">
+            <i class="icon mozresticons-ok-circle"></i>
+            <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <section>
   <div class="container text-center">
     <h2 class="mb-5 pb-3" data-aos="fade-up"><?php esc_html_e( 'Why it is important', 'mozrest' ); ?></h2>
@@ -92,7 +89,7 @@ Template Name: MarketPlace
                   class="icon mozresticons-long-arrow-right"></i></a>
             </p>
           </div>
-          <div class="col-md-6 mb-5 pb-5" data-aos="fade-left" data-aos-delay="200">
+          <div class="col-md-6 mb-5 pb-5" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-mp-1.png" alt="MOZREST" />
           </div>
         </div>
@@ -100,7 +97,7 @@ Template Name: MarketPlace
           <div class="col-md-6 mb-5 pb-5 order-md-1 order-2" data-aos="fade-right" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-mp-2.png" alt="MOZREST" />
           </div>
-          <div class="col-md-5 order-md-2 order-1" data-aos="fade-left">
+          <div class="col-md-5 order-md-2 order-1" data-aos="fade">
             <h3><?php esc_html_e( 'Get restaurant updated description and photos', 'mozrest' ); ?></h3>
             <p class="block-size-2 ms-0">
               <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
@@ -122,7 +119,7 @@ Template Name: MarketPlace
                   class="icon mozresticons-long-arrow-right"></i></a>
             </p>
           </div>
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+          <div class="col-md-6" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-mp-3.png" alt="MOZREST" />
           </div>
         </div>

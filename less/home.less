@@ -1,9 +1,5 @@
 .home-presentation {
   padding: 0;
-
-  .front-content {
-    height: 80vh;
-  }
 }
 
 .home-brands {
@@ -15,42 +11,34 @@
 .home-presentation-icon-search {
   position: absolute;
   z-index: 10;
-  top: 40%;
-  left: 3em;
+  top: 23%;
+  left: 10%;
 }
 .home-presentation-icon-location {
   position: absolute;
   z-index: 10;
-  top: 40%;
-  left: -3em;
+  top: 83%;
+  left: 52%;
 }
 
 .home-presentation-icon-user-card {
   position: absolute;
   z-index: 10;
-  top: 40%;
-  left: -6em;
+  top: 88%;
+  left: -6%;
   width: 200px;
   height: auto;
   padding: 18px 40px 18px 22px;
 }
 
-@media (max-width: @xl) {
-  .home-presentation {
-    .front-content {
-      height: 50vh;
-    }
-  }
-  .home-presentation-icon-search {
-    top: 50%;
-    left: 1em;
-  }
-}
-
-@media (max-width: @md) {
-  .home-presentation {
-    .front-content {
-      height: auto;
+@media (max-width: @lg) {
+  .icon-container.home-presentation-icon-search,
+  .icon-container.home-presentation-icon-location {
+    @w: 40px;
+    width: @w;
+    height: @w;
+    .icon {
+      font-size: 22px;
     }
   }
 }

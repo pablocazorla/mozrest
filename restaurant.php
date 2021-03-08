@@ -4,48 +4,38 @@ Template Name: Restaurant
 */
 ?>
 <?php get_header(); ?>
-<section class="restaurant-presentation">
-  <div class="front-content">
-    <div class="v-md-centered">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-md-start pt-md-0 pt-5" data-aos="fade-up">
-            <h1 class="text-blue"><?php esc_html_e( 'We do local Marketing', 'mozrest' ); ?></h1>
-            <p>
-              <?php esc_html_e( 'Managing a restaurant digital "ecosistem" is a time consuming and "challenging" task. From public online profiles, to booking websites or customer reservation software, it all can take an important amount of your time. But in today\'s world,consumers are more than ever online and they simply cannot be ignored', 'mozrest' ); ?>
-            </p>
-            <p>
-              <a href="#" class="btn btn-primary">
-                <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
-              </a>
-            </p>
-          </div>
+
+<section class="py-0">
+  <div class="row g-0 align-items-center">
+    <div class="col-lg-6 py-5">
+      <div class="container semi-container-xxl me-xl-0 pe-lg-5" data-aos="fade-right">
+        <div class="ps-3 pe-lg-0 px-3 pb-4">
+          <h1 class="text-blue"><?php esc_html_e( 'We do local Marketing', 'mozrest' ); ?></h1>
+          <p>
+            <?php esc_html_e( 'Managing a restaurant digital "ecosistem" is a time consuming and "challenging" task. From public online profiles, to booking websites or customer reservation software, it all can take an important amount of your time. But in today\'s world,consumers are more than ever online and they simply cannot be ignored', 'mozrest' ); ?>
+          </p>
+          <p class="m-0">
+            <a href="#" class="btn btn-primary">
+              <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
+            </a>
+          </p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="back-content align-right">
-    <div class="back-content-col">
-      <div class="photo-mosaic">
-        <div class="photo-mosaic-column">
-
-          <div class="photo-mosaic-content c-12">
-
-            <figure class="photo-mosaic-figure r-0" data-aos="fade-left" data-aos-delay="200">
-              <img src="<?php bloginfo('template_url'); ?>/img/photos/restaurant-1.jpg" alt="MOZREST" />
-            </figure>
-
-            <div class="moz-pill bg-green restaurant-mp-green" data-aos="fade-left" data-aos-delay="400">
-              <i class="icon mozresticons-ok-circle"></i>
-              <?php esc_html_e( 'Manage your restaurant reviews', 'mozrest' ); ?>
-            </div>
-            <div class="moz-pill bg-pink restaurant-mp-pink" data-aos="fade-left" data-aos-delay="500">
-              <i class="icon mozresticons-ok-circle"></i> <?php esc_html_e( 'Manage booking channels', 'mozrest' ); ?>
-            </div>
-            <div class="moz-pill bg-yellow restaurant-mp-yellow" data-aos="fade-left" data-aos-delay="600">
-              <i class="icon mozresticons-ok-circle"></i>
-              <?php esc_html_e( 'Manage all your profiles online', 'mozrest' ); ?>
-            </div>
+    <div class="col-lg-6">
+      <div class="relative pt-lg-0 pt-5" data-aos="fade">
+        <div class="pt-lg-0 pt-5">
+          <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/photos/restaurant-1.jpg" alt="MOZREST" />
+          <div class="moz-pill bg-green restaurant-mp-green">
+            <i class="icon mozresticons-ok-circle"></i>
+            <?php esc_html_e( 'Manage your restaurant reviews', 'mozrest' ); ?>
+          </div>
+          <div class="moz-pill bg-pink restaurant-mp-pink">
+            <i class="icon mozresticons-ok-circle"></i> <?php esc_html_e( 'Manage booking channels', 'mozrest' ); ?>
+          </div>
+          <div class="moz-pill bg-yellow restaurant-mp-yellow">
+            <i class="icon mozresticons-ok-circle"></i>
+            <?php esc_html_e( 'Manage all your profiles online', 'mozrest' ); ?>
           </div>
         </div>
       </div>
@@ -84,7 +74,8 @@ Template Name: Restaurant
   <div class="container">
     <h2 class="mb-2 text-center" data-aos="fade-up"><?php esc_html_e( 'How we respond to the problem', 'mozrest' ); ?>
     </h2>
-    <p class="text-center mb-5" data-aos="fade-up"><?php esc_html_e( 'We provide you one platform for', 'mozrest' ); ?>:
+    <p class="text-center mb-5" data-aos="fade-up">
+      <?php esc_html_e( 'We provide you one platform for', 'mozrest' ); ?>:
     </p>
     <div class="row justify-content-center pt-4">
       <div class="col-lg-10">
@@ -99,7 +90,7 @@ Template Name: Restaurant
                   class="icon mozresticons-long-arrow-right"></i></a>
             </p>
           </div>
-          <div class="col-md-6 mb-5 pb-5" data-aos="fade-left" data-aos-delay="200">
+          <div class="col-md-6 mb-5 pb-5" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-1.png" alt="MOZREST" />
           </div>
         </div>
@@ -107,7 +98,7 @@ Template Name: Restaurant
           <div class="col-md-6 mb-5 pb-5 order-md-1 order-2" data-aos="fade-right" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-2.png" alt="MOZREST" />
           </div>
-          <div class="col-md-5 order-md-2 order-1" data-aos="fade-left">
+          <div class="col-md-5 order-md-2 order-1" data-aos="fade">
             <h3><?php esc_html_e( 'One platform all your reviews', 'mozrest' ); ?></h3>
             <p class="block-size-2 ms-0">
               <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
@@ -129,7 +120,7 @@ Template Name: Restaurant
                   class="icon mozresticons-long-arrow-right"></i></a>
             </p>
           </div>
-          <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+          <div class="col-md-6" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-3.png" alt="MOZREST" />
           </div>
         </div>
@@ -268,7 +259,7 @@ Template Name: Restaurant
           </div>
         </div>
         <div class="col-md-7 order-md-2 order-1">
-          <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade-left" data-aos-delay="300">
+          <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade" data-aos-delay="300">
             <h2 class="mb-3"><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h2>
             <p>
               <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>

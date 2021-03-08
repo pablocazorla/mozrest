@@ -13,12 +13,12 @@
 <div class="footer-top">
   <div class="container text-md-start text-center">
     <div class="row">
-      <div class="col-md-3" data-aos="fade-up">
+      <div class="col-md-3">
         <a href="<?php bloginfo( 'url' ); ?>" class="footer-top_brand">
           <img class="img-100" src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="MOZREST" class="img-100">
         </a>
       </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-3">
         <nav class="fotter-top_nav">
           <h4><?php esc_html_e( 'Company', 'mozrest' ); ?></h4>
           <?php
@@ -32,7 +32,7 @@
           ?>
         </nav>
       </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-md-3">
         <nav class="fotter-top_nav">
           <h4><?php esc_html_e( 'Resources', 'mozrest' ); ?></h4>
           <?php
@@ -46,7 +46,7 @@
           ?>
         </nav>
       </div>
-      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+      <div class="col-md-3">
         <nav class="fotter-top_nav">
           <h4><?php esc_html_e( 'Legal', 'mozrest' ); ?></h4>
           <?php
