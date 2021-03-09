@@ -1,1 +1,2 @@
-scp -r -i ~/code/mozrest/bastion-logger.pem * ubuntu@54.78.202.36:/var/www/html/wp-content/themes/mozrest
+#scp -r -i ~/code/mozrest/bastion-logger.pem * ubuntu@54.78.202.36:/var/www/html/wp-content/themes/mozrest
+rsync -e "ssh -i ~/code/mozrest/bastion-logger.pem" -avz --exclude 'deploy.sh' * ubuntu@54.78.202.36:/var/www/html/wp-content/themes/mozrest
