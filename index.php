@@ -325,12 +325,16 @@ get_header();
 <section>
   <div class="container">
     <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
-  </div>
-  <div class="splide" id="testimonials" data-aos="fade-up">
+
     <?php 
-      include 'testimonials.php';
+      include 'testimonial-solo.php';
     ?>
   </div>
+  <!-- <div class="splide" id="testimonials" data-aos="fade-up">
+    <?php 
+     // include 'testimonials.php';
+    ?>
+  </div> -->
 </section>
 <section class="pb-0">
   <div class="container">

@@ -135,12 +135,15 @@ Template Name: MarketPlace
 <section>
   <div class="container">
     <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
-  </div>
-  <div class="splide" id="testimonials" data-aos="fade-up">
     <?php 
-      include 'testimonials.php';
+      include 'testimonial-solo.php';
     ?>
   </div>
+  <!-- <div class="splide" id="testimonials" data-aos="fade-up">
+    <?php 
+     // include 'testimonials.php';
+    ?>
+  </div> -->
 </section>
 
 <section class="bg-light-yellow text-blue mb-5 pb-0 pt-5">
@@ -235,10 +238,9 @@ Template Name: MarketPlace
 </section>
 
 <script>
-    document.getElementById("know-more").addEventListener( 'click', function()
-    {
-      $zoho.salesiq.visitor.customaction("know-more");
-    });
+document.getElementById("know-more").addEventListener('click', function() {
+  $zoho.salesiq.visitor.customaction("know-more");
+});
 </script>
 
 <?php get_footer(); ?>

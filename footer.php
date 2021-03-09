@@ -79,7 +79,7 @@
             <i class="icon mozresticons-facebook"></i>
           </a>
           <a href="https://www.linkedin.com/company/mozrest/" target="_blank">
-            <i class="icon mozresticons-linkedin"></i>
+            <i class="icon mozresticons-linked-in"></i>
           </a>
           <a href="#">
             <i class="icon mozresticons-twitter"></i>

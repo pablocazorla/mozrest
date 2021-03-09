@@ -128,9 +128,14 @@ Template Name: Pricing
   </div>
 </section>
 <section class="pt-0">
-  <div class="splide" id="testimonials" data-aos="fade-up">
+  <!-- <div class="splide" id="testimonials" data-aos="fade-up">
     <?php 
-      include 'testimonials.php';
+     // include 'testimonials.php';
+    ?>
+  </div> -->
+  <div class="container">
+    <?php 
+      include 'testimonial-solo.php';
     ?>
   </div>
 </section>
