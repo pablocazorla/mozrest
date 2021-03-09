@@ -48,16 +48,35 @@ get_header();
     </div>
   </div>
 </section>
-
-
 <section class="pb-0">
-  <div class="container">
-    <div class="scroll-h" data-aos="fade-up">
-      <img class="home-brands" src="<?php bloginfo('template_url'); ?>/img/brands.png" alt="MOZREST" />
+  <div class="splide splide__pagination__pink" id="splide-brands" data-aos="fade-up">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="splide-brand-container">
+            <a href="#" class="splide-brand-link" target="_blank">
+              <img src="<?php bloginfo('template_url'); ?>/img/logos/city.png" alt="City">
+            </a>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="splide-brand-container">
+            <a href="https://www.guestonline.io/" class="splide-brand-link" target="_blank">
+              <img src="<?php bloginfo('template_url'); ?>/img/logos/guest-online.png" alt="Guest Online">
+            </a>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="splide-brand-container">
+            <a href="https://www.tableonline.fi/en" class="splide-brand-link" target="_blank">
+              <img src="<?php bloginfo('template_url'); ?>/img/logos/tableonline.png" alt="Table Online">
+            </a>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
-
 <section>
   <div class="container text-center">
     <h2 class="mb-5 pb-3" data-aos="fade-up"><?php esc_html_e( 'Empower', 'mozrest' ); ?></h2>
@@ -253,7 +272,6 @@ get_header();
       </div>
     </div>
   </div>
-
 </section>
 
 <section>
