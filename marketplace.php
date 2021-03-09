@@ -54,7 +54,7 @@ Template Name: MarketPlace
         <div class="icon-container big mx-auto text-yellow mb-3">
           <i class="icon mozresticons-store"></i>
         </div>
-        <p class="block-size-1">
+        <p class="block-size-1 fs20">
           <?php esc_html_e( 'Digital advertising on closed restaurants is wasted investment and frustrates my visitors.', 'mozrest' ); ?>
         </p>
       </div>
@@ -62,14 +62,14 @@ Template Name: MarketPlace
         <div class="icon-container big mx-auto text-yellow mb-3">
           <i class="icon mozresticons-down-percent"></i>
         </div>
-        <p class="block-size-1">
+        <p class="block-size-1 fs20">
           <?php esc_html_e( 'Maintaining up-to-date opening hours and content is time consuming.', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div class="icon-container big mx-auto text-yellow mb-3">
           <i class="icon mozresticons-hands"></i>
         </div>
-        <p class="block-size-1">
+        <p class="block-size-1 fs20">
           <?php esc_html_e( 'The acquisition cost of sign-up more restaurants to my inventory is awfully expensive.', 'mozrest' ); ?>
         </p>
       </div>

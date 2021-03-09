@@ -55,7 +55,7 @@ Template Name: Restaurant
         <div class="icon-container big mx-auto text-pink mb-3">
           <i class="icon mozresticons-user-connection"></i>
         </div>
-        <p class="block-size-1">
+        <p class="block-size-1 fs20">
           <?php esc_html_e( 'Your digital profile is everywhere, how do you ensure it is coherent and up-to-date?', 'mozrest' ); ?>
         </p>
       </div>
@@ -63,14 +63,14 @@ Template Name: Restaurant
         <div class="icon-container big mx-auto text-pink mb-3">
           <i class="icon mozresticons-ok-loading"></i>
         </div>
-        <p class="block-size-1">
+        <p class="block-size-1 fs20">
           <?php esc_html_e( 'The amount of time spend on digital tools never stops increasing.', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div class="icon-container big mx-auto text-pink mb-3">
           <i class="icon mozresticons-review"></i>
         </div>
-        <p class="block-size-1">
+        <p class="block-size-1 fs20">
           <?php esc_html_e( 'Answering customer´s reviews from many websites puts a strain on operations.', 'mozrest' ); ?>
         </p>
       </div>
@@ -140,14 +140,14 @@ Template Name: Restaurant
     <div class="bg-blue text-white r-4 px-5 py-4">
       <div class="row g-5 align-items-center">
         <div class="col-xl-5 col-lg-4 order-1" data-aos="zoom-in">
-          <h3><?php esc_html_e( 'aaaaaaa', 'mozrest' ); ?></h3>
+          <h3><?php esc_html_e( 'Check your online profile.', 'mozrest' ); ?></h3>
           <p class="m-0">
-            <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
+            <?php esc_html_e( 'We\'ll find missing or inaccurate data, and let you know so you can take advantage of every search opportunity.', 'mozrest' ); ?>
           </p>
         </div>
         <div class="col-xl-3 col-lg-4 text-center order-md-2 order-3" data-aos="zoom-in" data-aos-delay="200">
-          <a href="#" class="btn btn-primary unwrap">
-            <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
+          <a href="/restaurant-online-presence-check" class="btn btn-primary unwrap">
+            <?php esc_html_e( 'Check my Profile', 'mozrest' ); ?>
           </a>
         </div>
         <div class="col-xl-4 col-lg-4 order-md-3 order-2" data-aos="zoom-in" data-aos-delay="400">

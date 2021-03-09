@@ -9,9 +9,9 @@ Template Name: Reservations
     <div class="col-lg-6 py-5">
       <div class="container semi-container-xxl me-xl-0 pe-lg-5" data-aos="fade-right">
         <div class="ps-3 pe-lg-0 px-3 pb-4">
-          <h1 class="text-blue"><?php esc_html_e( 'Pains / Problem', 'mozrest' ); ?></h1>
-          <p>
-            <?php esc_html_e( 'Creating and growing a restaurant base and promoting them in front of your consumers is a costly and never-ending endeavor. You need more restaurants, more locations, to reach more consumers.', 'mozrest' ); ?>
+          <h1 class="text-blue"><?php esc_html_e( 'Worried about increasing your customer Value?', 'mozrest' ); ?></h1>
+          <p class="fs21">
+            <?php esc_html_e( 'At MozRest we provide your access to a network of partners so you can simplify your operations, allow your clients receive additional customers and offer up-to-date content throughout the web', 'mozrest' ); ?>
           </p>
           <p class="m-0">
             <a href="#" id="know-more" class="btn btn-green">
@@ -27,7 +27,7 @@ Template Name: Reservations
           <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/photos/reservations-1.jpg" alt="MOZREST" />
           <div class="moz-pill bg-green restaurant-mp-green">
             <i class="icon mozresticons-ok-circle"></i>
-            <?php esc_html_e( 'Marketing and booking platform', 'mozrest' ); ?>
+            <?php esc_html_e( 'Channel enabling platform', 'mozrest' ); ?>
           </div>
           <div class="moz-pill bg-pink restaurant-mp-pink">
             <i class="icon mozresticons-ok-circle"></i>
@@ -35,7 +35,7 @@ Template Name: Reservations
           </div>
           <div class="moz-pill bg-yellow restaurant-mp-yellow">
             <i class="icon mozresticons-ok-circle"></i>
-            <?php esc_html_e( 'A single software for reservations', 'mozrest' ); ?>
+            <?php esc_html_e( 'A single connection for multiple channels', 'mozrest' ); ?>
           </div>
         </div>
       </div>
@@ -51,19 +51,19 @@ Template Name: Reservations
         <div class="icon-container big mx-auto text-green mb-3">
           <i class="icon mozresticons-magnet"></i>
         </div>
-        <p class="block-size-1"><?php esc_html_e( 'Increase your retention', 'mozrest' ); ?></p>
+        <p class="block-size-1 fs20"><?php esc_html_e( 'Keep up with the competition without increasing development costs.', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
         <div class="icon-container big mx-auto text-green mb-3">
           <i class="icon mozresticons-down-percent"></i>
         </div>
-        <p class="block-size-1"><?php esc_html_e( 'Lower your it costs', 'mozrest' ); ?></p>
+        <p class="block-size-1 fs20"><?php esc_html_e( 'Supporting a network of partners is costly and time consuming.', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div class="icon-container big mx-auto text-green mb-3">
           <i class="icon mozresticons-flag"></i>
         </div>
-        <p class="block-size-1"><?php esc_html_e( 'Keep your independent positioning', 'mozrest' ); ?></p>
+        <p class="block-size-1 fs20"><?php esc_html_e( 'Work with reservation portals and maintain your positioning of independence.', 'mozrest' ); ?></p>
       </div>
     </div>
   </div>
@@ -76,14 +76,14 @@ Template Name: Reservations
       <div class="col-lg-10">
         <div class="row align-items-center justify-content-between">
           <div class="col-md-5" data-aos="fade-right">
-            <h3><?php esc_html_e( 'Access to a reservation network for your clients', 'mozrest' ); ?></h3>
+            <h3><?php esc_html_e( 'Provide content update services', 'mozrest' ); ?></h3>
             <p class="block-size-2 ms-0">
-              <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+              <?php esc_html_e( 'Provide a content information platform for multiple guides to your customers, including Google, TripAdvisor & Facebook all synchronised.', 'mozrest' ); ?>
             </p>
-            <p>
+            <!-- <p>
               <a href="" class="btn-link text-green"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p>
+            </p> -->
           </div>
           <div class="col-md-6 mb-5 pb-5" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-r-1.png" alt="MOZREST" />
@@ -94,26 +94,26 @@ Template Name: Reservations
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-r-2.png" alt="MOZREST" />
           </div>
           <div class="col-md-5 order-md-2 order-1" data-aos="fade">
-            <h3><?php esc_html_e( 'Simplify your technology', 'mozrest' ); ?></h3>
+            <h3><?php esc_html_e( 'Offer reviews and news management', 'mozrest' ); ?></h3>
             <p class="block-size-2 ms-0">
-              <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+              <?php esc_html_e( 'Help your clients engage with their customers online. Connect to our unified platform and provide a single point to view and respond reviews and post news in several channels in one click', 'mozrest' ); ?>
             </p>
-            <p>
+            <!-- <p>
               <a href="" class="btn-link text-green"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p>
+            </p> -->
           </div>
         </div>
         <div class="row align-items-center justify-content-between">
           <div class="col-md-5" data-aos="fade-right">
-            <h3><?php esc_html_e( 'Grow you Business', 'mozrest' ); ?></h3>
+            <h3><?php esc_html_e( 'Provide more reservation opportunities to your customers', 'mozrest' ); ?></h3>
             <p class="block-size-2 ms-0">
-              <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+              <?php esc_html_e( 'Access a curated inventory of reservation portals that allows you to grow your proposal to your customers. We provide access to an ever growing number of portals interested in generating reservations online.', 'mozrest' ); ?>
             </p>
-            <p>
+            <!-- <p>
               <a href="" class="btn-link text-green"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p>
+            </p> -->
           </div>
           <div class="col-md-6" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-r-3.png" alt="MOZREST" />
@@ -121,16 +121,6 @@ Template Name: Reservations
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
-  </div>
-  <div class="splide splide__pagination__green" id="testimonials" data-aos="fade-up">
-    <?php 
-    include 'testimonials.php';
-  ?>
   </div>
 </section>
 <section class="bg-light-green text-blue">
