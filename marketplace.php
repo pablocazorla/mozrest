@@ -5,21 +5,18 @@ Template Name: MarketPlace
 ?>
 <?php get_header(); ?>
 
-
-
-
 <section class="py-0">
   <div class="row g-0 align-items-center">
     <div class="col-lg-6 py-5">
       <div class="container semi-container-xxl me-xl-0 pe-lg-5" data-aos="fade-right">
         <div class="ps-3 pe-lg-0 px-3 pb-4">
-          <h1 class="text-blue"><?php esc_html_e( 'Pains / Problem', 'mozrest' ); ?></h1>
-          <p>
-            <?php esc_html_e( 'Creating and growing a restaurant base and promoting them in front of your consumers is a costly and never-ending endeavor. You need more restaurants, more locations, to reach more consumers.', 'mozrest' ); ?>
+          <h1 class="text-blue fs30"><?php esc_html_e( 'Worried about improving your return on investment and keeping the number of customers growing at the same time?', 'mozrest' ); ?></h1>
+          <p class="fs21">
+            <?php esc_html_e( 'At MozRest we provide you access to an inventory of restaurants through a simple technology to expand your offering and reach out more dinners with a better Return on Investment.', 'mozrest' ); ?>
           </p>
           <p class="m-0">
-            <a href="#" class="btn btn-yellow">
-              <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
+            <a href="#" id="know-more" class="btn btn-yellow">
+              <?php esc_html_e( 'Know more', 'mozrest' ); ?>
             </a>
           </p>
         </div>
@@ -31,15 +28,15 @@ Template Name: MarketPlace
           <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/photos/marketplace-1.jpg" alt="MOZREST" />
           <div class="moz-pill bg-green restaurant-mp-green">
             <i class="icon mozresticons-ok-circle"></i>
-            <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
+            <?php esc_html_e( 'Optimise your Marketing budget', 'mozrest' ); ?>
           </div>
           <div class="moz-pill bg-pink restaurant-mp-pink">
             <i class="icon mozresticons-ok-circle"></i>
-            <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
+            <?php esc_html_e( 'Access Restaurant faster', 'mozrest' ); ?>
           </div>
           <div class="moz-pill bg-yellow restaurant-mp-yellow">
             <i class="icon mozresticons-ok-circle"></i>
-            <?php esc_html_e( 'Lorem Ipsum Text', 'mozrest' ); ?>
+            <?php esc_html_e( 'Increase your Dinner offering', 'mozrest' ); ?>
           </div>
         </div>
       </div>
@@ -55,19 +52,19 @@ Template Name: MarketPlace
         <div class="icon-container big mx-auto text-yellow mb-3">
           <i class="icon mozresticons-store"></i>
         </div>
-        <p class="block-size-1"><?php esc_html_e( 'Showcase more restaurants', 'mozrest' ); ?></p>
+        <p class="block-size-1"><?php esc_html_e( 'Digital advertising on closed restaurants is wasted investment and frustrates my visitors.', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
         <div class="icon-container big mx-auto text-yellow mb-3">
           <i class="icon mozresticons-down-percent"></i>
         </div>
-        <p class="block-size-1"><?php esc_html_e( 'Reduce your sales cost', 'mozrest' ); ?></p>
+        <p class="block-size-1"><?php esc_html_e( 'Maintaining up-to-date opening hours and content is time consuming.', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div class="icon-container big mx-auto text-yellow mb-3">
           <i class="icon mozresticons-hands"></i>
         </div>
-        <p class="block-size-1"><?php esc_html_e( 'Increase engagement with your consumers', 'mozrest' ); ?></p>
+        <p class="block-size-1"><?php esc_html_e( 'The acquisition cost of sign-up more restaurants to my inventory is awfully expensive.', 'mozrest' ); ?></p>
       </div>
     </div>
   </div>
@@ -80,14 +77,14 @@ Template Name: MarketPlace
       <div class="col-lg-10">
         <div class="row align-items-center justify-content-between">
           <div class="col-md-5" data-aos="fade-right">
-            <h3><?php esc_html_e( 'Provide access to an enlarged network of restaurants', 'mozrest' ); ?></h3>
+            <h3><?php esc_html_e( 'Efficient performance Marketing', 'mozrest' ); ?></h3>
             <p class="block-size-2 ms-0">
-              <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece.', 'mozrest' ); ?>
+              <?php esc_html_e( 'Our Ads Automation Service increases the return of investment on your online digital advertising and saves time to your marketing team by optimising the visibility of your ads to match them with the opportunity for a reservation.', 'mozrest' ); ?>
             </p>
-            <p>
+            <!-- <p>
               <a href="" class="btn-link text-yellow"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p>
+            </p> -->
           </div>
           <div class="col-md-6 mb-5 pb-5" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-mp-1.png" alt="MOZREST" />
@@ -98,26 +95,26 @@ Template Name: MarketPlace
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-mp-2.png" alt="MOZREST" />
           </div>
           <div class="col-md-5 order-md-2 order-1" data-aos="fade">
-            <h3><?php esc_html_e( 'Get restaurant updated description and photos', 'mozrest' ); ?></h3>
+            <h3><?php esc_html_e( 'Access up-to-date Restaurant information ', 'mozrest' ); ?></h3>
             <p class="block-size-2 ms-0">
-              <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+              <?php esc_html_e( 'Our content information platform permits you showcase the latest information, like updates to opening hours, new menus, promotions...', 'mozrest' ); ?>
             </p>
-            <p>
+            <!-- <p>
               <a href="" class="btn-link text-yellow"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p>
+            </p> -->
           </div>
         </div>
         <div class="row align-items-center justify-content-between">
           <div class="col-md-5" data-aos="fade-right">
-            <h3><?php esc_html_e( 'Increase the ROI of your ads, access to new locations', 'mozrest' ); ?></h3>
+            <h3><?php esc_html_e( 'Add more restaurants to your inventory', 'mozrest' ); ?></h3>
             <p class="block-size-2 ms-0">
-              <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
+              <?php esc_html_e( 'Access a curated inventory of restaurants that allows you to grow your proposal to dinners. We provide access to an ever growing number of restaurants interested in receiving reservations online.', 'mozrest' ); ?>
             </p>
-            <p>
+           <!--  <p>
               <a href="" class="btn-link text-yellow"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p>
+            </p> -->
           </div>
           <div class="col-md-6" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-mp-3.png" alt="MOZREST" />
@@ -127,68 +124,27 @@ Template Name: MarketPlace
     </div>
   </div>
 </section>
-<section>
-  <div class="container">
-    <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
-  </div>
-  <div class="splide splide__pagination__yellow" id="testimonials" data-aos="fade-up">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <?php 
-        $count = 12;
-        while ( $count > 0 ) :?>
-        <li class="splide__slide">
-          <div class="testimonial-container">
-            <div class="testimonial">
-              <div class="rating">
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-              </div>
-              <p><?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
-              </p>
-              <div class="user-data">
-                <div class="user-data_photo">
-                  <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/user-photo.jpg"
-                    alt="Emely Wilson" />
-                </div>
-                <div class="user-data_text">
-                  <div class="user-data_title">
-                    Emely Wilson
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <?php $count = $count - 1; endwhile;?>
-      </ul>
-    </div>
-  </div>
-</section>
 <section class="bg-light-yellow text-blue">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 col-12">
         <h2 class="mb-md-5 pb-md-5 text-md-start text-center" data-aos="fade-up">
-          <?php esc_html_e( 'Feature', 'mozrest' ); ?></h2>
+          <?php esc_html_e( 'Features', 'mozrest' ); ?></h2>
         <div class="row justify-content-between py-md-5">
           <div class="col-md-5" data-aos="fade-up">
             <div class="titles-feature text-md-start text-center slidetab-trigger" data-slidetab="slide-features">
               <div class="title-feature slidetab-trig current">
                 <i class="icon mozresticons-ok"></i>
-                <?php esc_html_e( 'Content Update Plaftom', 'mozrest' ); ?>
+                <?php esc_html_e( 'Ads Automation Service', 'mozrest' ); ?>
               </div><br />
               <div class="title-feature slidetab-trig">
                 <i class="icon mozresticons-ok"></i>
-                <?php esc_html_e( 'Inventory Dashboard', 'mozrest' ); ?>
+                <?php esc_html_e( 'Content Information Platform', 'mozrest' ); ?>
               </div>
               <br />
               <div class="title-feature slidetab-trig">
                 <i class="icon mozresticons-ok"></i>
-                <?php esc_html_e( 'Performance Marketing optimizacion tool', 'mozrest' ); ?>
+                <?php esc_html_e( 'Restaurant Inventory', 'mozrest' ); ?>
               </div>
             </div>
           </div>

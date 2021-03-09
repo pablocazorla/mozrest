@@ -11,14 +11,14 @@ Template Name: Restaurant
       <div class="container semi-container-xxl me-xl-0 pe-lg-5" data-aos="fade-right">
         <div class="ps-3 pe-lg-0 px-3 pb-4">
           <h1 class="text-blue"><?php esc_html_e( 'Worried about where could be your next customer?', 'mozrest' ); ?></h1>
-          <p class="mb-2">
+          <p class="fs21 mb-2">
             <?php esc_html_e( 'At MozRest we provide a platform that simplifies and combines all the applications to support your digital marketing.', 'mozrest' ); ?>
           </p>
-          <p>
+          <p class="fs21">
             <?php esc_html_e( 'From getting found online to accessing new customers and maintaining your information up-to-date in one single place.', 'mozrest' ); ?>
           </p>
-          <p class="m-0">
-            <a href="#" class="btn btn-primary">
+          <p>
+            <a href="#" id="know-more" class="btn btn-primary">
               <?php esc_html_e( 'Know more', 'mozrest' ); ?>
             </a>
           </p>
@@ -270,4 +270,5 @@ Template Name: Restaurant
     </div>
   </div>
 </section>
+
 <?php get_footer(); ?>

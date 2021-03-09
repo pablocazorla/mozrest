@@ -265,8 +265,17 @@ a i {
 .fz18 {
   font-size: 18px;
 }
-.fs-21 {
+.fs20 {
+  font-size: 20px;
+}
+.fs21 {
   font-size: 21px;
+}
+.fs25 {
+  font-size: 25px;
+}
+.fs30 {
+  font-size: 30px;
 }
 .text-blue {
   color: #1f155a !important;
@@ -1178,8 +1187,6 @@ body {
 }
 .user-data .user-data_position {
   font-size: 14px;
-  font-family: "Roboto Slab", serif;
-  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   color: #fe9b02;
 }
@@ -1855,6 +1862,9 @@ body {
 .cky-switch input:checked + .cky-slider {
   background-color: #ec4467 !important;
 }
+#zcOptinOverLay {
+  background: none !important;
+}
 body {
   padding-top: 77px;
 }
@@ -2234,6 +2244,11 @@ body {
   .icon-container.home-presentation-icon-search .icon,
   .icon-container.home-presentation-icon-location .icon {
     font-size: 22px;
+  }
+}
+@media (max-width: 991px) {
+  .semi-container-xxl {
+    padding-left: 48px;
   }
 }
 .blog-cat-tabs {

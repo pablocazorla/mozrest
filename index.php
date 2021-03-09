@@ -19,17 +19,16 @@ get_header();
     <div class="col-lg-6 py-5">
       <div class="container semi-container-xxl me-xl-0 pe-lg-5 text-lg-start text-center" data-aos="fade-right">
         <h1 class="text-blue"><?php esc_html_e( "It's everything about Guests", 'mozrest' ); ?></h1>
-        <p class="fs-21">
+        <p class="fs21 mb-2">
           <?php esc_html_e( '"How many guests are you not reaching when they are near you because you are not connecting with them on their platforms of choice?"', 'mozrest' ); ?>
         </p>
-        <p class="fs-21">
+        <p class="fs21">
           <?php esc_html_e( 'Mozrest platform solves this problem and gives the Restaurant, the Reservation Portals and the Reservation Softwares a unique opportunity to provide a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
         </p>
         <p class="m-0">
-          <a href="#" class="btn btn-primary">
-
-            <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
-          </a>
+          <a href="#" id="know-more" class="btn btn-primary">
+              <?php esc_html_e( 'Know more', 'mozrest' ); ?>
+            </a>
         </p>
       </div>
     </div>
@@ -69,7 +68,7 @@ get_header();
             <i class="icon mozresticons-food"></i>
           </div>
           <h3><?php esc_html_e( 'Restaurants', 'mozrest' ); ?></h3>
-          <p class="block-size-1">
+          <p class="block-size-1 fs20">
             <?php esc_html_e( 'Deliver personalised experience to your guests', 'mozrest' ); ?></p>
         </a>
       </div>
@@ -79,7 +78,7 @@ get_header();
             <i class="icon mozresticons-store"></i>
           </div>
           <h3><?php esc_html_e( 'Reservation Portal', 'mozrest' ); ?></h3>
-          <p class="block-size-1">
+          <p class="block-size-1 fs20">
             <?php esc_html_e( 'Increase your Reach efficiently', 'mozrest' ); ?></p>
         </a>
       </div>
@@ -89,7 +88,7 @@ get_header();
             <i class="icon mozresticons-tablet"></i>
           </div>
           <h3><?php esc_html_e( 'Guest Management Software', 'mozrest' ); ?></h3>
-          <p class="block-size-1">
+          <p class="block-size-1 fs20">
             <?php esc_html_e( 'Increase your Customer Value', 'mozrest' ); ?></p>
         </a>
       </div>
@@ -102,130 +101,132 @@ get_header();
     <div class="text-center mb-4" data-aos="fade-up">
       <h2 class="mb-0"><?php esc_html_e( 'Mozrest provides', 'mozrest' ); ?></h2>
       <div class="row justify-content-center">
-        <div class="col-md-5">
-          <p>
-            <?php esc_html_e( 'a one-stop-shop for Digital Food & Beverage Marketing', 'mozrest' ); ?>
-          </p>
-        </div>
+        <p class="fs25">
+          <?php esc_html_e( 'a one-stop-shop for Digital Food & Beverage Marketing', 'mozrest' ); ?>
+        </p>
       </div>
     </div>
-    <div id="carouselFeatures" class="carousel slide carousel-dark" data-bs-ride="carousel" data-aos="fade-up">
-      <div class="carousel-inner r-4">
-        <div class="carousel-item active">
-          <div class="bg-blue text-center text-white pt-md-7 pt-4">
-            <div class="row justify-content-center mb-4">
-              <div class="col-lg-8 col-9">
-                <h3><?php esc_html_e( 'Guests find', 'mozrest' ); ?></h3>
-                <p class="mb-0">
-                  <?php esc_html_e( '"64 Percent Of Mobile Restaurant Searchers Convert “Immediately Or Within An Hour"', 'mozrest' ); ?>
-                </p>
-                <p class="mb-3">
-                  <?php esc_html_e( '"80% of all these ‘Near Me’ search queries are unbranded. This means guest don’t necessarily have a name in mind."', 'mozrest' ); ?>
-                </p>
-                <p class="mb-0">
-                  <?php esc_html_e( 'Mozrest make you visible and stand out above your competitors.', 'mozrest' ); ?>
-                </p>
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-sm-12">
+        <div id="carouselFeatures" class="carousel slide carousel-dark" data-bs-ride="carousel" data-aos="fade-up">
+          <div class="carousel-inner r-4">
+            <div class="carousel-item active">
+              <div class="bg-blue text-center text-white pt-md-7 pt-4">
+                <div class="row justify-content-center mb-4">
+                  <div class="col-lg-10 col-9">
+                    <h3><?php esc_html_e( 'Guests find', 'mozrest' ); ?></h3>
+                    <p class="mb-0">
+                      <?php esc_html_e( '"64 Percent Of Mobile Restaurant Searchers Convert “Immediately Or Within An Hour"', 'mozrest' ); ?>
+                    </p>
+                    <p class="mb-3">
+                      <?php esc_html_e( '"80% of all these ‘Near Me’ search queries are unbranded. This means guest don’t necessarily have a name in mind."', 'mozrest' ); ?>
+                    </p>
+                    <p class="mb-0">
+                      <?php esc_html_e( 'Mozrest make you visible and stand out above your competitors.', 'mozrest' ); ?>
+                    </p>
+                  </div>
+                </div>
+                <div class="row justify-content-center pb-5">
+                  <div class="col-xl-7 col-lg-7 col-9">
+                    <img class="img-auto r1-1 r2-1 r3-1 r4-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-find.jpg"
+                      alt="Guest find" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="row justify-content-center pb-5">
-              <div class="col-xl-5 col-lg-7 col-9">
-                <img class="img-auto r1-1 r2-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-find.jpg"
-                  alt="Guest find" />
+            <div class="carousel-item">
+              <div class="bg-green text-center text-white pt-md-7 pt-4">
+                <div class="row justify-content-center mb-4">
+                  <div class="col-lg-10 col-9">
+                    <h3><?php esc_html_e( 'Guests trust', 'mozrest' ); ?></h3>
+                    <p class="mb-3">
+                      <?php esc_html_e( '"88% of guests trust online reviews as much as personal recommendations."', 'mozrest' ); ?>
+                    </p>
+                    <p class="mb-0">
+                      <?php esc_html_e( 'Mozrest facilitate your social media exposure and leverage reviews & comments to increase guests engagement.', 'mozrest' ); ?>
+                    </p>
+                  </div>
+                </div>
+                <div class="row justify-content-center pb-5">
+                  <div class="col-xl-7 col-lg-7 col-9">
+                    <img class="img-auto r1-1 r2-1 r3-1 r4-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-trust.jpg"
+                      alt="Guest trust" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="bg-pink text-center text-white pt-md-7 pt-4">
+                <div class="row justify-content-center mb-4">
+                  <div class="col-lg-10 col-9">
+                    <h3><?php esc_html_e( 'Guests reserve', 'mozrest' ); ?></h3>
+                    <p class="mb-3">
+                      <?php esc_html_e( '"36% of guests believe that online reservations are the most important technology feature that a restaurant can offer guests."', 'mozrest' ); ?>
+                    </p>
+                    <p class="mb-0">
+                      <?php esc_html_e( 'Mozrest provides a greater convenience for guests by enabling reservation on their platform of choice.', 'mozrest' ); ?>
+                    </p>
+                  </div>
+                </div>
+                <div class="row justify-content-center pb-5">
+                  <div class="col-xl-7 col-lg-7 col-9">
+                    <img class="img-auto r1-1 r2-1 r3-1 r4-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-reserve.jpg"
+                      alt="Guest reserve" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="bg-blue text-center text-white pt-md-7 pt-4">
+                <div class="row justify-content-center mb-4">
+                  <div class="col-lg-10 col-9">
+                    <h3><?php esc_html_e( 'Guests recommend', 'mozrest' ); ?></h3>
+                    <p class="mb-3">
+                      <?php esc_html_e( '"When Businesses replied to negative reviews, a THIRD of customers either deleted their original negative review or replaced it with a positive review. Nearly A FIFTH went on to become loyal customers."', 'mozrest' ); ?>
+                    </p>
+                    <p class="mb-0">
+                      <?php esc_html_e( 'Mozrest simplifies the review management and keeps you updated.', 'mozrest' ); ?>
+                    </p>
+                  </div>
+                </div>
+                <div class="row justify-content-center pb-5">
+                  <div class="col-xl-7 col-lg-8 col-9">
+                    <img class="img-auto r1-1 r2-1 r3-1 r4-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-recommend.jpg"
+                      alt="Guest recommend" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="bg-green text-center text-white pt-md-7 pt-4">
+                <div class="row justify-content-center mb-4">
+                  <div class="col-lg-10 col-9">
+                    <h3><?php esc_html_e( 'Guests come back', 'mozrest' ); ?></h3>
+                    <p class="mb-3">
+                      <?php esc_html_e( '""80% of your revenue is generated by 20% of your repeat customers? Customer loyalty is considered a critical factor in business growth by 70% of businesses."', 'mozrest' ); ?>
+                    </p>
+                    <p class="mb-0">
+                      <?php esc_html_e( 'Mozrest combines news, menus and promotions posting on multiple medias to nurture your existing customers and maximise your chance to stay top of mind when guests choose to go out.', 'mozrest' ); ?>
+                    </p>
+                  </div>
+                </div>
+                <div class="row justify-content-center pb-5">
+                  <div class="col-xl-7 col-lg-7 col-9">
+                    <img class="img-auto r1-1 r2-1 r3-1 r4-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-comeback.jpg"
+                      alt="Guest come back" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="bg-green text-center text-white pt-md-7 pt-4">
-            <div class="row justify-content-center mb-4">
-              <div class="col-lg-8 col-9">
-                <h3><?php esc_html_e( 'Guests trust', 'mozrest' ); ?></h3>
-                <p class="mb-3">
-                  <?php esc_html_e( '"88% of guests trust online reviews as much as personal recommendations."', 'mozrest' ); ?>
-                </p>
-                <p class="mb-0">
-                  <?php esc_html_e( 'Mozrest facilitate your social media exposure and leverage reviews & comments to increase guests engagement.', 'mozrest' ); ?>
-                </p>
-              </div>
-            </div>
-            <div class="row justify-content-center pb-5">
-              <div class="col-xl-5 col-lg-7 col-9">
-                <img class="img-auto r1-1 r2-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-trust.jpg"
-                  alt="Guest trust" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="bg-pink text-center text-white pt-md-7 pt-4">
-            <div class="row justify-content-center mb-4">
-              <div class="col-lg-8 col-9">
-                <h3><?php esc_html_e( 'Guests reserve', 'mozrest' ); ?></h3>
-                <p class="mb-3">
-                  <?php esc_html_e( '"36% of guests believe that online reservations are the most important technology feature that a restaurant can offer guests."', 'mozrest' ); ?>
-                </p>
-                <p class="mb-0">
-                  <?php esc_html_e( 'Mozrest provides a greater convenience for guests by enabling reservation on their platform of choice.', 'mozrest' ); ?>
-                </p>
-              </div>
-            </div>
-            <div class="row justify-content-center pb-5">
-              <div class="col-xl-5 col-lg-7 col-9">
-                <img class="img-auto r1-1 r2-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-reserve.jpg"
-                  alt="Guest reserve" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="bg-blue text-center text-white pt-md-7 pt-4">
-            <div class="row justify-content-center mb-4">
-              <div class="col-lg-8 col-9">
-                <h3><?php esc_html_e( 'Guests recommend', 'mozrest' ); ?></h3>
-                <p class="mb-3">
-                  <?php esc_html_e( '"When Businesses replied to negative reviews, a THIRD of customers either deleted their original negative review or replaced it with a positive review. Nearly A FIFTH went on to become loyal customers."', 'mozrest' ); ?>
-                </p>
-                <p class="mb-0">
-                  <?php esc_html_e( 'Mozrest simplifies the review management and keeps you updated.', 'mozrest' ); ?>
-                </p>
-              </div>
-            </div>
-            <div class="row justify-content-center pb-5">
-              <div class="col-xl-5 col-lg-8 col-9">
-                <img class="img-auto r1-1 r2-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-recommend.jpg"
-                  alt="Guest recommend" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="bg-green text-center text-white pt-md-7 pt-4">
-            <div class="row justify-content-center mb-4">
-              <div class="col-lg-8 col-9">
-                <h3><?php esc_html_e( 'Guests come back', 'mozrest' ); ?></h3>
-                <p class="mb-3">
-                  <?php esc_html_e( '""80% of your revenue is generated by 20% of your repeat customers? Customer loyalty is considered a critical factor in business growth by 70% of businesses."', 'mozrest' ); ?>
-                </p>
-                <p class="mb-0">
-                  <?php esc_html_e( 'Mozrest combines news, menus and promotions posting on multiple medias to nurture your existing customers and maximise your chance to stay top of mind when guests choose to go out.', 'mozrest' ); ?>
-                </p>
-              </div>
-            </div>
-            <div class="row justify-content-center pb-5">
-              <div class="col-xl-5 col-lg-7 col-9">
-                <img class="img-auto r1-1 r2-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-comeback.jpg"
-                  alt="Guest come back" />
-              </div>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeatures" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselFeatures" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeatures" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselFeatures" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
     </div>
   </div>
 </section>
@@ -361,15 +362,13 @@ get_header();
         </div>
         <div class="col-md-7 order-md-2 order-1">
           <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade" data-aos-delay="300">
-            <h2><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h2>
+            <h2 class="mb-3"><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h2>
             <p>
               <?php esc_html_e( 'is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
             </p>
-            <p class="m-0">
-              <a href="#" class="btn btn-blue uppercase d-block">
-                <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
-              </a>
-            </p>
+            <?php 
+            include 'subscribe-form-home.php';
+            ?>
           </div>
         </div>
       </div>

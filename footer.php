@@ -91,6 +91,12 @@
   </div>
 </footer>
 
+<script>
+    document.getElementById("know-more").addEventListener( 'click', function()
+    {
+      $zoho.salesiq.visitor.customaction("know-more");
+    });
+</script>
 
 <?php wp_footer(); ?>
 
