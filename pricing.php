@@ -129,40 +129,9 @@ Template Name: Pricing
 </section>
 <section class="pt-0">
   <div class="splide" id="testimonials" data-aos="fade-up">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <?php 
-        $count = 12;
-        while ( $count > 0 ) :?>
-        <li class="splide__slide">
-          <div class="testimonial-container">
-            <div class="testimonial">
-              <div class="rating">
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-              </div>
-              <p><?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?>
-              </p>
-              <div class="user-data">
-                <div class="user-data_photo">
-                  <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/user-photo.jpg"
-                    alt="Emely Wilson" />
-                </div>
-                <div class="user-data_text">
-                  <div class="user-data_title">
-                    Emely Wilson
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <?php $count = $count - 1; endwhile;?>
-      </ul>
-    </div>
+    <?php 
+      include 'testimonials.php';
+    ?>
   </div>
 </section>
 <section class="pt-0">

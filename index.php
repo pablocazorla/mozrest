@@ -27,8 +27,8 @@ get_header();
         </p>
         <p class="m-0">
           <a href="#" id="know-more" class="btn btn-primary">
-              <?php esc_html_e( 'Know more', 'mozrest' ); ?>
-            </a>
+            <?php esc_html_e( 'Know more', 'mozrest' ); ?>
+          </a>
         </p>
       </div>
     </div>
@@ -128,8 +128,8 @@ get_header();
                 </div>
                 <div class="row justify-content-center pb-5">
                   <div class="col-xl-7 col-lg-7 col-9">
-                    <img class="img-auto r1-1 r2-1 r3-1 r4-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-find.jpg"
-                      alt="Guest find" />
+                    <img class="img-auto r1-1 r2-1 r3-1 r4-1"
+                      src="<?php bloginfo('template_url'); ?>/img/compromises/guest-find.jpg" alt="Guest find" />
                   </div>
                 </div>
               </div>
@@ -149,8 +149,8 @@ get_header();
                 </div>
                 <div class="row justify-content-center pb-5">
                   <div class="col-xl-7 col-lg-7 col-9">
-                    <img class="img-auto r1-1 r2-1 r3-1 r4-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-trust.jpg"
-                      alt="Guest trust" />
+                    <img class="img-auto r1-1 r2-1 r3-1 r4-1"
+                      src="<?php bloginfo('template_url'); ?>/img/compromises/guest-trust.jpg" alt="Guest trust" />
                   </div>
                 </div>
               </div>
@@ -170,8 +170,8 @@ get_header();
                 </div>
                 <div class="row justify-content-center pb-5">
                   <div class="col-xl-7 col-lg-7 col-9">
-                    <img class="img-auto r1-1 r2-1 r3-1 r4-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-reserve.jpg"
-                      alt="Guest reserve" />
+                    <img class="img-auto r1-1 r2-1 r3-1 r4-1"
+                      src="<?php bloginfo('template_url'); ?>/img/compromises/guest-reserve.jpg" alt="Guest reserve" />
                   </div>
                 </div>
               </div>
@@ -191,7 +191,8 @@ get_header();
                 </div>
                 <div class="row justify-content-center pb-5">
                   <div class="col-xl-7 col-lg-8 col-9">
-                    <img class="img-auto r1-1 r2-1 r3-1 r4-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-recommend.jpg"
+                    <img class="img-auto r1-1 r2-1 r3-1 r4-1"
+                      src="<?php bloginfo('template_url'); ?>/img/compromises/guest-recommend.jpg"
                       alt="Guest recommend" />
                   </div>
                 </div>
@@ -212,7 +213,8 @@ get_header();
                 </div>
                 <div class="row justify-content-center pb-5">
                   <div class="col-xl-7 col-lg-7 col-9">
-                    <img class="img-auto r1-1 r2-1 r3-1 r4-1" src="<?php bloginfo('template_url'); ?>/img/compromises/guest-comeback.jpg"
+                    <img class="img-auto r1-1 r2-1 r3-1 r4-1"
+                      src="<?php bloginfo('template_url'); ?>/img/compromises/guest-comeback.jpg"
                       alt="Guest come back" />
                   </div>
                 </div>
@@ -279,43 +281,9 @@ get_header();
     <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
   </div>
   <div class="splide" id="testimonials" data-aos="fade-up">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <?php 
-        $count = 3;
-        while ( $count > 0 ) :?>
-        <li class="splide__slide">
-          <div class="testimonial-container">
-            <div class="testimonial">
-              <div class="rating">
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-                <i class="icon mozresticons-star"></i>
-              </div>
-              <p><?php esc_html_e( 'MozRest’s Ads solution drives 16% lower cost on our digital advertising.', 'mozrest' ); ?>
-              </p>
-              <div class="user-data">
-                <div class="user-data_photo">
-                  <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/testimonials/ville-heinonen.jpg"
-                    alt="Ville Heinonen" />
-                </div>
-                <div class="user-data_text">
-                  <div class="user-data_title">
-                    Ville Heinonen
-                  </div>
-                  <div class="user-data_position">
-                    TableOnline.fi CEO
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <?php $count = $count - 1; endwhile;?>
-      </ul>
-    </div>
+    <?php 
+      include 'testimonials.php';
+    ?>
   </div>
 </section>
 <section class="pb-0">
