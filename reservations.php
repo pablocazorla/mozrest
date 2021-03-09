@@ -172,40 +172,84 @@ Template Name: Reservations
           <?php esc_html_e( 'Feature', 'mozrest' ); ?></h2>
         <div class="row justify-content-between py-md-5">
           <div class="col-md-5" data-aos="fade-up">
-            <div class="titles-feature text-md-start text-center slidetab-trigger" data-slidetab="slide-features">
-              <div class="title-feature slidetab-trig current">
-                <i class="icon mozresticons-ok"></i>
-                <?php esc_html_e( 'Performance dashboard', 'mozrest' ); ?>
-              </div><br />
-              <div class="title-feature slidetab-trig">
-                <i class="icon mozresticons-ok"></i>
-                <?php esc_html_e( 'Billing', 'mozrest' ); ?>
+            <div class="tabs-feature slidetab text-md-start text-center slidetab-trigger"
+              data-slidetab="slide-features">
+              <div class="tab-feature slidetab-tab current">
+                <div class="title-feature slidetab-trig">
+                  <i class="icon mozresticons-ok"></i>
+                  <?php esc_html_e( 'Content Information Platform', 'mozrest' ); ?>
+                </div>
+                <div class="content-tab-feature">
+                  <ul>
+                    <li>
+                      <?php esc_html_e( 'Centralised profile information', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'Seamless synchronization', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'Over 40 publishing partners', 'mozrest' ); ?>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <br />
-              <div class="title-feature slidetab-trig">
-                <i class="icon mozresticons-ok"></i>
-                <?php esc_html_e( 'Real time synchronisation', 'mozrest' ); ?>
+              <div class="tab-feature slidetab-tab">
+                <div class="title-feature slidetab-trig">
+                  <i class="icon mozresticons-ok"></i>
+                  <?php esc_html_e( 'One connection technology', 'mozrest' ); ?>
+                </div>
+                <div class="content-tab-feature">
+                  <ul>
+                    <li>
+                      <?php esc_html_e( 'Reviews & news management', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'Real time publishing', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'Covid-19 specific update section', 'mozrest' ); ?>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-feature slidetab-tab">
+                <div class="title-feature slidetab-trig">
+                  <i class="icon mozresticons-ok"></i>
+                  <?php esc_html_e( 'Partner Network', 'mozrest' ); ?>
+                </div>
+                <div class="content-tab-feature">
+                  <ul>
+                    <li>
+                      <?php esc_html_e( 'Numerous reservation portals', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'Real time demand', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'One connection, multiple guides', 'mozrest' ); ?>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="slidetab-content" id="slide-features">
               <div class="slidetab-cont current">
                 <img class="img-auto mb-4"
-                  src="<?php bloginfo('template_url'); ?>/img/features/reservations-feature-1.svg" alt="MOZREST" />
+                  src="<?php bloginfo('template_url'); ?>/img/features/reservations-feature-1.png" alt="MOZREST" />
               </div>
               <div class="slidetab-cont">
                 <img class="img-auto mb-4"
-                  src="<?php bloginfo('template_url'); ?>/img/features/reservations-feature-2.svg" alt="MOZREST" />
-
+                  src="<?php bloginfo('template_url'); ?>/img/features/reservations-feature-2.png" alt="MOZREST" />
               </div>
               <div class="slidetab-cont">
                 <img class="img-auto mb-4"
-                  src="<?php bloginfo('template_url'); ?>/img/features/reservations-feature-3.svg" alt="MOZREST" />
+                  src="<?php bloginfo('template_url'); ?>/img/features/reservations-feature-3.png" alt="MOZREST" />
               </div>
             </div>
           </div>
-          <div class="col-12" data-aos="fade-up">
+          <div class="col-12 pt-5" data-aos="fade-up">
             <div class="text-md-start text-center">
               <a href="#" class="btn btn-blue"><?php esc_html_e( 'Call to action', 'mozrest' ); ?></a>
             </div>

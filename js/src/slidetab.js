@@ -1,35 +1,34 @@
 // SlideTab
-$(".slidetab-trigger").each(function () {
+$(".slidetab").each(function () {
+  var autoplayTimeMS = 5000;
+
   var $this = $(this),
-    $slideTrig = $this.find(".slidetab-trig"),
+    $slidetabTab = $this.find(".slidetab-tab"),
     slideTabId = $this.data("slidetab"),
     $slideTabContent = $("#" + slideTabId),
     $slideTabCont = $slideTabContent.find(".slidetab-cont");
 
-  if ($slideTabCont.length > 0) {
-    $slideTrig.eq(0).addClass("current");
+  if ($slidetabTab.length > 0) {
+    $slidetabTab.eq(0).addClass("current");
     $slideTabCont.eq(0).addClass("current");
-
     var current = 0;
     var changeSlide = function (i) {
-      $slideTrig.removeClass("current").eq(i).addClass("current");
+      $slidetabTab.removeClass("current").eq(i).addClass("current");
       $slideTabCont.removeClass("current").eq(i).addClass("current");
       current = i;
     };
-
     var timer = setInterval(function () {
       var next = current + 1;
-      next = next >= $slideTrig.length ? 0 : next;
+      next = next >= $slidetabTab.length ? 0 : next;
       changeSlide(next);
-    }, 4000);
-
-    $slideTrig.each(function (i) {
-      var $trig = $(this);
-
-      $trig.click(function () {
-        clearInterval(timer);
-        changeSlide(i);
-      });
+    }, autoplayTimeMS);
+    $slidetabTab.each(function (i) {
+      $(this)
+        .find(".slidetab-trig")
+        .click(function () {
+          clearInterval(timer);
+          changeSlide(i);
+        });
     });
   }
 });

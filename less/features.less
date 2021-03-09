@@ -1,24 +1,53 @@
-.titles-feature {
-  .title-feature {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.2;
+.tabs-feature {
+  .tab-feature {
     margin-bottom: 1em;
-    position: relative;
-    display: inline-block;
-    .icon {
-      position: absolute;
-      top: 6px;
-      left: -1.3em;
-      opacity: 0;
-      .transition(opacity 0.2s);
+
+    .title-feature {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.2;
+
+      position: relative;
+      .icon {
+        position: absolute;
+        top: 6px;
+        left: -1.3em;
+        opacity: 0;
+        .transition(opacity 0.3s);
+      }
+    }
+
+    .content-tab-feature {
+      overflow: hidden;
+      max-height: 0;
+      padding: 0;
     }
 
     &.current {
-      text-decoration: underline;
-      .icon {
-        opacity: 1;
-        .transition(opacity 0.6s);
+      .title-feature {
+        text-decoration: underline;
+        .icon {
+          opacity: 1;
+          .transition(opacity 0.6s);
+        }
+      }
+      .content-tab-feature {
+        max-height: 600px;
+        padding-top: 1em;
+        .transition(all 0.3s);
+      }
+    }
+  }
+}
+
+@media (max-width: @md) {
+  .tabs-feature {
+    .tab-feature {
+      .content-tab-feature {
+        ul {
+          text-align: left;
+          padding-left: 25%;
+        }
       }
     }
   }

@@ -10,7 +10,8 @@ Template Name: Restaurant
     <div class="col-lg-6 py-5">
       <div class="container semi-container-xxl me-xl-0 pe-lg-5" data-aos="fade-right">
         <div class="ps-3 pe-lg-0 px-3 pb-4">
-          <h1 class="text-blue"><?php esc_html_e( 'Worried about where could be your next customer?', 'mozrest' ); ?></h1>
+          <h1 class="text-blue"><?php esc_html_e( 'Worried about where could be your next customer?', 'mozrest' ); ?>
+          </h1>
           <p class="fs21 mb-2">
             <?php esc_html_e( 'At MozRest we provide a platform that simplifies and combines all the applications to support your digital marketing.', 'mozrest' ); ?>
           </p>
@@ -34,7 +35,8 @@ Template Name: Restaurant
             <?php esc_html_e( 'Manage all your profiles online', 'mozrest' ); ?>
           </div>
           <div class="moz-pill bg-pink restaurant-mp-pink">
-            <i class="icon mozresticons-ok-circle"></i> <?php esc_html_e( 'Manage your reviews and posts', 'mozrest' ); ?>
+            <i class="icon mozresticons-ok-circle"></i>
+            <?php esc_html_e( 'Manage your reviews and posts', 'mozrest' ); ?>
           </div>
           <div class="moz-pill bg-yellow restaurant-mp-yellow">
             <i class="icon mozresticons-ok-circle"></i>
@@ -53,7 +55,9 @@ Template Name: Restaurant
         <div class="icon-container big mx-auto text-pink mb-3">
           <i class="icon mozresticons-user-connection"></i>
         </div>
-        <p class="block-size-1"><?php esc_html_e( 'Your digital profile is everywhere, how do you ensure it is coherent and up-to-date?', 'mozrest' ); ?></p>
+        <p class="block-size-1">
+          <?php esc_html_e( 'Your digital profile is everywhere, how do you ensure it is coherent and up-to-date?', 'mozrest' ); ?>
+        </p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
         <div class="icon-container big mx-auto text-pink mb-3">
@@ -202,36 +206,80 @@ Template Name: Restaurant
           <?php esc_html_e( 'Feature', 'mozrest' ); ?></h2>
         <div class="row justify-content-between py-md-5">
           <div class="col-md-5" data-aos="fade-up">
-            <div class="titles-feature text-md-start text-center slidetab-trigger" data-slidetab="slide-features">
-              <div class="title-feature slidetab-trig current">
-                <i class="icon mozresticons-ok"></i>
-                <?php esc_html_e( 'Content Information ', 'mozrest' ); ?>
-              </div><br />
-              <div class="title-feature slidetab-trig">
-                <i class="icon mozresticons-ok"></i>
-                <?php esc_html_e( 'Reviews & Posting ', 'mozrest' ); ?>
+            <div class="tabs-feature slidetab text-md-start text-center slidetab-trigger"
+              data-slidetab="slide-features">
+              <div class="tab-feature slidetab-tab current">
+                <div class="title-feature slidetab-trig">
+                  <i class="icon mozresticons-ok"></i>
+                  <?php esc_html_e( 'Content Information ', 'mozrest' ); ?>
+                </div>
+                <div class="content-tab-feature">
+                  <ul>
+                    <li>
+                      <?php esc_html_e( 'Up-to-date profile information', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'Seamless synchronization', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'More than 40 partners', 'mozrest' ); ?>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <br />
-              <div class="title-feature slidetab-trig">
-                <i class="icon mozresticons-ok"></i>
-                <?php esc_html_e( 'Partner Network', 'mozrest' ); ?>
+              <div class="tab-feature slidetab-tab">
+                <div class="title-feature slidetab-trig">
+                  <i class="icon mozresticons-ok"></i>
+                  <?php esc_html_e( 'Reviews & Posting', 'mozrest' ); ?>
+                </div>
+                <div class="content-tab-feature">
+                  <ul>
+                    <li>
+                      <?php esc_html_e( 'News & Promotions distributions', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'Centralised review management', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'All from one simple tool', 'mozrest' ); ?>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-feature slidetab-tab">
+                <div class="title-feature slidetab-trig">
+                  <i class="icon mozresticons-ok"></i>
+                  <?php esc_html_e( 'Partner Network', 'mozrest' ); ?>
+                </div>
+                <div class="content-tab-feature">
+                  <ul>
+                    <li>
+                      <?php esc_html_e( 'Simple connection to more Reservation portals', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'Real time availability', 'mozrest' ); ?>
+                    </li>
+                    <li>
+                      <?php esc_html_e( 'Wide coverage', 'mozrest' ); ?>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="slidetab-content" id="slide-features">
               <div class="slidetab-cont current">
                 <img class="img-auto mb-4"
-                  src="<?php bloginfo('template_url'); ?>/img/features/restaurant-feature-1.svg" alt="MOZREST" />
-                
+                  src="<?php bloginfo('template_url'); ?>/img/features/restaurant-feature-1.png" alt="MOZREST" />
               </div>
               <div class="slidetab-cont">
                 <img class="img-auto mb-4"
-                  src="<?php bloginfo('template_url'); ?>/img/features/restaurant-feature-2.svg" alt="MOZREST" />
+                  src="<?php bloginfo('template_url'); ?>/img/features/restaurant-feature-2.png" alt="MOZREST" />
               </div>
               <div class="slidetab-cont">
                 <img class="img-auto mb-4"
-                  src="<?php bloginfo('template_url'); ?>/img/features/restaurant-feature-3.svg" alt="MOZREST" />
+                  src="<?php bloginfo('template_url'); ?>/img/features/restaurant-feature-3.png" alt="MOZREST" />
               </div>
             </div>
           </div>
