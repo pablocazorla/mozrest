@@ -90,7 +90,7 @@ Template Name: Restaurant
               <?php esc_html_e( 'Publish anything, like new menus, changes to your opening hours or special promotions and make them visible on Google & Facebook immediately. Get found online more often, attract more visits, get more customers.  ', 'mozrest' ); ?>
             </p>
             <p>
-              <a href="#" class="btn-link chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
+              <a href="/restaurant-online-presence-check" class="btn-link chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
             </p>
           </div>
