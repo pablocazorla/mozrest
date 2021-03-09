@@ -49,7 +49,7 @@ get_header();
   </div>
 </section>
 <section class="pb-0">
-  <div class="splide splide__pagination__pink" id="splide-brands" data-aos="fade-up">
+  <!-- <div class="splide splide__pagination__pink" id="splide-brands" data-aos="fade-up">
     <div class="splide__track">
       <ul class="splide__list">
         <li class="splide__slide">
@@ -74,6 +74,32 @@ get_header();
           </div>
         </li>
       </ul>
+    </div>
+  </div> -->
+  <div class="container">
+
+    <div class="row justify-content-center align-items-center">
+      <div class="col-auto">
+        <div class="static-brand-container">
+          <a href="#" class="splide-brand-link" target="_blank">
+            <img src="<?php bloginfo('template_url'); ?>/img/logos/city.png" alt="City">
+          </a>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="static-brand-container">
+          <a href="https://www.guestonline.io/" class="splide-brand-link" target="_blank">
+            <img src="<?php bloginfo('template_url'); ?>/img/logos/guest-online.png" alt="Guest Online">
+          </a>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="static-brand-container">
+          <a href="https://www.tableonline.fi/en" class="splide-brand-link" target="_blank">
+            <img src="<?php bloginfo('template_url'); ?>/img/logos/tableonline.png" alt="Table Online">
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -363,10 +389,9 @@ get_header();
 </section>
 
 <script>
-    document.getElementById("know-more").addEventListener( 'click', function()
-    {
-      $zoho.salesiq.visitor.customaction("know-more");
-    });
+document.getElementById("know-more").addEventListener('click', function() {
+  $zoho.salesiq.visitor.customaction("know-more");
+});
 </script>
 
 <?php
