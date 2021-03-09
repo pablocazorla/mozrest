@@ -154,16 +154,7 @@ Template Name: Restaurant
     </div>
   </div>
 </section>
-<section>
-  <div class="container">
-    <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
-  </div>
-  <div class="splide splide__pagination__pink" id="testimonials" data-aos="fade-up">
-    <?php 
-      include 'testimonials.php';
-    ?>
-  </div>
-</section>
+
 <section class="bg-light-pink text-blue pb-0 pt-5">
   <div class="container">
     <div class="row justify-content-center">

@@ -131,6 +131,18 @@ Template Name: MarketPlace
     </div>
   </div>
 </section>
+
+<section>
+  <div class="container">
+    <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
+  </div>
+  <div class="splide" id="testimonials" data-aos="fade-up">
+    <?php 
+      include 'testimonials.php';
+    ?>
+  </div>
+</section>
+
 <section class="bg-light-yellow text-blue mb-5 pb-0 pt-5">
   <div class="container">
     <div class="row justify-content-center">
