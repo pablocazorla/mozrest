@@ -248,4 +248,12 @@ Template Name: MarketPlace
     </div>
   </div>
 </section>
+
+<script>
+    document.getElementById("know-more").addEventListener( 'click', function()
+    {
+      $zoho.salesiq.visitor.customaction("know-more");
+    });
+</script>
+
 <?php get_footer(); ?>

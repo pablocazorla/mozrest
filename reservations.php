@@ -14,8 +14,8 @@ Template Name: Reservations
             <?php esc_html_e( 'Creating and growing a restaurant base and promoting them in front of your consumers is a costly and never-ending endeavor. You need more restaurants, more locations, to reach more consumers.', 'mozrest' ); ?>
           </p>
           <p class="m-0">
-            <a href="#" class="btn btn-green">
-              <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
+            <a href="#" id="know-more" class="btn btn-green">
+              <?php esc_html_e( 'Know more', 'mozrest' ); ?>
             </a>
           </p>
         </div>
@@ -250,4 +250,12 @@ Template Name: Reservations
     </div>
   </div>
 </section>
+
+<script>
+    document.getElementById("know-more").addEventListener( 'click', function()
+    {
+      $zoho.salesiq.visitor.customaction("know-more");
+    });
+</script>
+
 <?php get_footer(); ?>
