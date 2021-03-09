@@ -312,7 +312,7 @@ get_header();
           <?php esc_html_e( 'Reservation Portals, Guest Management Software, Search Media, Voice Search, Map & Navigation, General Publishers', 'mozrest' ); ?>
         </p>
         <p data-aos="fade-up">
-          <a href="<?php bloginfo('template_url'); ?>/contact" class="btn btn-primary">
+          <a href="/contact" class="btn btn-primary">
             <?php esc_html_e( 'Contact us', 'mozrest' ); ?>
           </a>
         </p>

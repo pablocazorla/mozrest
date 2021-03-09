@@ -17,7 +17,7 @@ Template Name: MarketPlace
             <?php esc_html_e( 'At MozRest we provide you access to an inventory of restaurants through a simple technology to expand your offering and reach out more dinners with a better Return on Investment.', 'mozrest' ); ?>
           </p>
           <p class="m-0">
-            <a href="#" id="know-more" class="btn btn-yellow">
+            <a href="#" class="btn btn-yellow chat-bot">
               <?php esc_html_e( 'Know more', 'mozrest' ); ?>
             </a>
           </p>
@@ -88,10 +88,10 @@ Template Name: MarketPlace
             <p class="block-size-2 ms-0">
               <?php esc_html_e( 'Our Ads Automation Service increases the return of investment on your online digital advertising and saves time to your marketing team by optimising the visibility of your ads to match them with the opportunity for a reservation.', 'mozrest' ); ?>
             </p>
-            <!-- <p>
-              <a href="" class="btn-link text-yellow"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
+            <p>
+              <a href="" class="btn-link text-yellow chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p> -->
+            </p>
           </div>
           <div class="col-md-6 mb-5 pb-5" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-mp-1.png" alt="MOZREST" />
@@ -106,10 +106,10 @@ Template Name: MarketPlace
             <p class="block-size-2 ms-0">
               <?php esc_html_e( 'Our content information platform permits you showcase the latest information, like updates to opening hours, new menus, promotions...', 'mozrest' ); ?>
             </p>
-            <!-- <p>
-              <a href="" class="btn-link text-yellow"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
+            <p>
+              <a href="" class="btn-link text-yellow chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p> -->
+            </p>
           </div>
         </div>
         <div class="row align-items-center justify-content-between">
@@ -118,10 +118,10 @@ Template Name: MarketPlace
             <p class="block-size-2 ms-0">
               <?php esc_html_e( 'Access a curated inventory of restaurants that allows you to grow your proposal to dinners. We provide access to an ever growing number of restaurants interested in receiving reservations online.', 'mozrest' ); ?>
             </p>
-            <!--  <p>
-              <a href="" class="btn-link text-yellow"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
+            <p>
+              <a href="" class="btn-link text-yellow chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p> -->
+            </p>
           </div>
           <div class="col-md-6" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-mp-3.png" alt="MOZREST" />
@@ -131,11 +131,11 @@ Template Name: MarketPlace
     </div>
   </div>
 </section>
-<section class="bg-light-yellow text-blue">
+<section class="bg-light-yellow text-blue mb-5 pb-0 pt-5">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-8 col-12">
-        <h2 class="mb-md-5 pb-md-5 text-md-start text-center" data-aos="fade-up">
+      <div class="col-lg-10 col-12">
+        <h2 class="mb-2 text-md-start text-center" data-aos="fade-up">
           <?php esc_html_e( 'Features', 'mozrest' ); ?></h2>
         <div class="row justify-content-between py-md-5">
           <div class="col-md-6" data-aos="fade-up">
@@ -147,7 +147,7 @@ Template Name: MarketPlace
                   <?php esc_html_e( 'Ads Automation Service', 'mozrest' ); ?>
                 </div>
                 <div class="content-tab-feature">
-                  <ul>
+                  <ul class="fs20">
                     <li>
                       <?php esc_html_e( 'Automatic online ads update', 'mozrest' ); ?>
                     </li>
@@ -166,7 +166,7 @@ Template Name: MarketPlace
                   <?php esc_html_e( 'Content Information Platform', 'mozrest' ); ?>
                 </div>
                 <div class="content-tab-feature">
-                  <ul>
+                  <ul class="fs20">
                     <li>
                       <?php esc_html_e( 'Branded platform', 'mozrest' ); ?>
                     </li>
@@ -185,7 +185,7 @@ Template Name: MarketPlace
                   <?php esc_html_e( 'Restaurant Inventory', 'mozrest' ); ?>
                 </div>
                 <div class="content-tab-feature">
-                  <ul>
+                  <ul class="fs20">
                     <li>
                       <?php esc_html_e( 'Simple connection', 'mozrest' ); ?>
                     </li>
@@ -216,33 +216,6 @@ Template Name: MarketPlace
               </div>
             </div>
           </div>
-          <div class="col-12 pt-5" data-aos="fade-up">
-            <div class="text-md-start text-center">
-              <a href="#" class="btn btn-blue"><?php esc_html_e( 'Call to action', 'mozrest' ); ?></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container">
-    <div class="bg-blue text-white r-4 px-5 py-4">
-      <div class="row g-5 align-items-center">
-        <div class="col-xl-5 col-lg-4 order-1" data-aos="zoom-in">
-          <h3><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h3>
-          <p class="m-0">
-            <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
-          </p>
-        </div>
-        <div class="col-xl-3 col-lg-4 text-center order-md-2 order-3" data-aos="zoom-in" data-aos-delay="200">
-          <a href="#" class="btn btn-yellow unwrap">
-            <?php esc_html_e( 'Call to action', 'mozrest' ); ?>
-          </a>
-        </div>
-        <div class="col-xl-4 col-lg-4 order-md-3 order-2" data-aos="zoom-in" data-aos-delay="400">
-          <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/design-complex.svg" alt="MOZREST" />
         </div>
       </div>
     </div>

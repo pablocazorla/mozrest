@@ -19,7 +19,7 @@ Template Name: Restaurant
             <?php esc_html_e( 'From getting found online to accessing new customers and maintaining your information up-to-date in one single place.', 'mozrest' ); ?>
           </p>
           <p>
-            <a href="#" id="know-more" class="btn btn-primary">
+            <a href="#" class="btn btn-primary chat-bot">
               <?php esc_html_e( 'Know more', 'mozrest' ); ?>
             </a>
           </p>
@@ -79,11 +79,8 @@ Template Name: Restaurant
 </section>
 <section class="pt-2">
   <div class="container">
-    <h2 class="mb-2 text-center" data-aos="fade-up"><?php esc_html_e( 'How we respond to the problem', 'mozrest' ); ?>
+    <h2 class="mb-5 text-center" data-aos="fade-up"><?php esc_html_e( 'How we respond to the problem', 'mozrest' ); ?>
     </h2>
-    <p class="text-center mb-5" data-aos="fade-up">
-      <?php esc_html_e( 'Improve your online ranking', 'mozrest' ); ?>
-    </p>
     <div class="row justify-content-center pt-4">
       <div class="col-lg-10">
         <div class="row align-items-center justify-content-between">
@@ -92,10 +89,10 @@ Template Name: Restaurant
             <p class="block-size-2 ms-0">
               <?php esc_html_e( 'Publish anything, like new menus, changes to your opening hours or special promotions and make them visible on Google & Facebook immediately. Get found online more often, attract more visits, get more customers.  ', 'mozrest' ); ?>
             </p>
-            <!-- <p>
-              <a href="" class="btn-link"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
+            <p>
+              <a href="#" class="btn-link chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p> -->
+            </p>
           </div>
           <div class="col-md-6 mb-5 pb-5" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-1.png" alt="MOZREST" />
@@ -110,10 +107,10 @@ Template Name: Restaurant
             <p class="block-size-2 ms-0">
               <?php esc_html_e( 'Be alerted the moment a review about your restaurant is created and reply to them from one single place, whether they come from Google, TripAdvisor or many other sites.', 'mozrest' ); ?>
             </p>
-            <!-- <p>
-              <a href="" class="btn-link"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
+            <p>
+              <a href="#" class="btn-link chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p> -->
+            </p>
           </div>
         </div>
         <div class="row align-items-center justify-content-between">
@@ -122,10 +119,10 @@ Template Name: Restaurant
             <p class="block-size-2 ms-0">
               <?php esc_html_e( 'Maintain your profile updated and accurate on a large portfolio of online guides, from directories to car navigation services.', 'mozrest' ); ?>
             </p>
-            <!-- <p>
-              <a href="" class="btn-link"><?php esc_html_e( 'Call to action', 'mozrest' ); ?> <i
+            <p>
+              <a href="#" class="btn-link chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
-            </p> -->
+            </p>
           </div>
           <div class="col-md-6" data-aos="fade" data-aos-delay="200">
             <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/respond-3.png" alt="MOZREST" />
@@ -140,7 +137,7 @@ Template Name: Restaurant
     <div class="bg-blue text-white r-4 px-5 py-4">
       <div class="row g-5 align-items-center">
         <div class="col-xl-5 col-lg-4 order-1" data-aos="zoom-in">
-          <h3><?php esc_html_e( 'Check your online profile.', 'mozrest' ); ?></h3>
+          <h3><?php esc_html_e( 'Check your online profile', 'mozrest' ); ?></h3>
           <p class="m-0">
             <?php esc_html_e( 'We\'ll find missing or inaccurate data, and let you know so you can take advantage of every search opportunity.', 'mozrest' ); ?>
           </p>
@@ -157,7 +154,7 @@ Template Name: Restaurant
     </div>
   </div>
 </section>
-<!-- <section>
+<section>
   <div class="container">
     <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
   </div>
@@ -166,13 +163,13 @@ Template Name: Restaurant
       include 'testimonials.php';
     ?>
   </div>
-</section> -->
-<section class="bg-light-pink text-blue">
+</section>
+<section class="bg-light-pink text-blue pb-0 pt-5">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-8 col-12">
-        <h2 class="mb-md-5 pb-md-5 text-md-start text-center" data-aos="fade-up">
-          <?php esc_html_e( 'Feature', 'mozrest' ); ?></h2>
+      <div class="col-lg-10 col-12">
+        <h2 class="mb-2 text-md-start text-center" data-aos="fade-up">
+          <?php esc_html_e( 'Features', 'mozrest' ); ?></h2>
         <div class="row justify-content-between py-md-5">
           <div class="col-md-5" data-aos="fade-up">
             <div class="tabs-feature slidetab text-md-start text-center slidetab-trigger"
@@ -287,12 +284,5 @@ Template Name: Restaurant
     </div>
   </div>
 </section>
-
-<script>
-    document.getElementById("know-more").addEventListener( 'click', function()
-    {
-      $zoho.salesiq.visitor.customaction("know-more");
-    });
-</script>
 
 <?php get_footer(); ?>
