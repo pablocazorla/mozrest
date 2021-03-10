@@ -132,26 +132,11 @@ Template Name: Restaurant
     </div>
   </div>
 </section>
+
 <section>
   <div class="container">
-    <div class="bg-blue text-white r-4 px-5 py-4">
-      <div class="row g-5 align-items-center">
-        <div class="col-xl-5 col-lg-4 order-1" data-aos="zoom-in">
-          <h3><?php esc_html_e( 'Check your online profile', 'mozrest' ); ?></h3>
-          <p class="m-0">
-            <?php esc_html_e( 'We\'ll find missing or inaccurate data, and let you know so you can take advantage of every search opportunity.', 'mozrest' ); ?>
-          </p>
-        </div>
-        <div class="col-xl-3 col-lg-4 text-center order-md-2 order-3" data-aos="zoom-in" data-aos-delay="200">
-          <a href="/restaurant-online-presence-check" class="btn btn-primary unwrap">
-            <?php esc_html_e( 'Check my Profile', 'mozrest' ); ?>
-          </a>
-        </div>
-        <div class="col-xl-4 col-lg-4 order-md-3 order-2" data-aos="zoom-in" data-aos-delay="400">
-          <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/design-complex.svg" alt="MOZREST" />
-        </div>
-      </div>
-    </div>
+    <div class="ub_status_check_widget" data-showtable="true" data-showgraph="true" data-showtopinfo="true" data-pdfexport="true" data-showdirectorygrid="true" data-urlbase="https://uberall.com" data-ctabuttontext="Optimise now" data-ctatext="Optimise your restaurant's online presence" data-ctalink="https://www.mozrest.com/contact" data-headertext="Complete the details below to check your online status" data-countries="DK,EE,FI,FR,NO,ES,SE,UK" data-directories="" data-language="EN" data-key="kPjOoEqrjkHLnwgxZQ6XW3e3mgjXuLoDRkH5Di47rqojPdtocHckfpHETIFaWcskectvODHreQJAO03F9vcdfND8qSHEJzVbsxpUCoolhTuNtTL56WS5LEXQZFwhSl5L" data-recentsearches="false" data-bgcolor="#1c1259" data-buttonbgcolor="#007f73" data-buttontextcolor="#ffffff" data-linkcolor="#239fe6" data-textcolor="#1c1259" data-contactphone="" data-contactemail="" data-sharelink="true">&nbsp;</div>
+    <script type="text/javascript" src="https://uberall.com/assets/status-check-embed.js"></script>
   </div>
 </section>
 

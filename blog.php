@@ -96,11 +96,15 @@ Template Name: Blog
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
 
         <div class="bg-blue text-white r-4 px-5 pt-4 pb-5">
-          <h3 class="mb-4">
-            <?php esc_html_e( 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 'mozrest' ); ?>
+          <h3 class="mb-1">
+            <?php esc_html_e( 'Check your online profile', 'mozrest' ); ?>
           </h3>
           <p class="mb-4">
-            <?php esc_html_e( 'Contrary to popular belief, Lorem Ipsum is not simply random text.', 'mozrest' ); ?></p>
+            <?php esc_html_e( 'We\'ll find missing or inaccurate data', 'mozrest' ); ?>
+            </p>
+            <a href="/restaurant-online-presence-check" class="btn btn-primary uppercase d-block w-100">
+              <?php esc_html_e( 'Check my profile', 'mozrest' ); ?>
+            </a>
         </div>
       </div>
     </div>

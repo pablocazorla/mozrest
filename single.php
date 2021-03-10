@@ -14,7 +14,7 @@ get_header();
     <div class="row">
       <div class="col-xl-9 col-lg-8">
         <div class="mb-3" data-aos="fade">
-          <a href="<?php the_category_url_by_slug( 'blog' ); ?>" class="back-to-blog">
+          <a href="/blog" class="back-to-blog">
             <i class="icon mozresticons-long-arrow-left"></i> <?php esc_html_e( 'Back to blog', 'mozrest' ); ?>
           </a>
         </div>
@@ -64,12 +64,15 @@ get_header();
         <div class="sidebar-container" data-aos="fade-up" data-aos-delay="450">
           <div class="row">
             <div class="col-lg-12 col-md-6">
-              <div class="bg-pink r-3 text-white px-4 py-5 mb-4">
+              <div class="bg-green r-3 text-white px-4 py-3 mb-4">
                 <div class="py-4">
-                  <h3 class="mb-4"><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h3>
-                  <div class="text-center">
-                    <a href="#" class="btn btn-yellow"><?php esc_html_e( 'Call to action', 'mozrest' ); ?></a>
-                  </div>
+                  <h3 class="mb-2"><?php esc_html_e( 'Digital Marketing complex', 'mozrest' ); ?></h3>
+                  <p>
+                    <?php esc_html_e( 'Get the latest tips on Digital Marketing for Restaurants sent to you!', 'mozrest' ); ?>
+                  </p>
+                  <?php 
+                    include 'subscribe-form.php';
+                    ?>
                 </div>
               </div>
             </div>
