@@ -77,12 +77,15 @@ get_header();
               </div>
             </div>
             <div class="col-lg-12 col-md-6">
-              <div class="bg-yellow r-3 text-white px-4 py-5 mb-4">
+              <div class="bg-yellow r-3 text-white px-4 py-3 mb-4">
                 <div class="py-4">
-                  <h3 class="mb-4"><?php esc_html_e( 'Digital is complex and waste of time', 'mozrest' ); ?></h3>
-                  <p class="m-0">
-                    <?php esc_html_e( 'Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever', 'mozrest' ); ?>
+                  <h3 class="mb-4"><?php esc_html_e( 'Lets talk!', 'mozrest' ); ?></h3>
+                  <p class="m-3">
+                    <?php esc_html_e( 'Do you have a question? Chat  with a member of our team.', 'mozrest' ); ?>
                   </p>
+                  <a href="#" class="btn btn-blue uppercase d-block w-100 chat-bot">
+                    <?php esc_html_e( 'Talk to us', 'mozrest' ); ?>
+                  </a>
                 </div>
               </div>
             </div>

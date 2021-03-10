@@ -16,16 +16,14 @@ Template Name: Blog
 <?php if ( $the_query->have_posts() ) : ?>
 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 <div class="blog-presentation" data-aos="fade">
-  <?php the_post_thumbnail('medium'); ?>
+  <!-- <?php the_post_thumbnail('medium'); ?> -->
+  <img src="<?php bloginfo('template_url'); ?>/img/blog-header.jpg" alt="MozRest blog" />
   <div class="blog-presentation-content">
     <div class="container">
       <div class="blog-presentation-content-bg"></div>
       <div class="blog-presentation-content-text">
-        <div class="category mb-1 text-yellow" data-aos="fade-up">
-          <?php the_category(','); ?>
-        </div>
-        <h2 class="text-black" data-aos="fade-up">
-          <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        <h2 class="text-black fs30" data-aos="fade-up">
+        <?php esc_html_e( 'Discover the latest information on Food & Beverage Digital Marketing', 'mozrest' ); ?>
         </h2>
       </div>
     </div>
