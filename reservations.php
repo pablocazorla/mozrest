@@ -7,8 +7,8 @@ Template Name: Reservations
 <section class="py-0">
   <div class="row g-0 align-items-center">
     <div class="col-lg-6 py-5">
-      <div class="container semi-container-xxl me-xl-0 pe-lg-5" data-aos="fade-right">
-        <div class="ps-3 pe-lg-0 px-3 pb-4">
+      <div class="container semi-container me-lg-0" data-aos="fade-right">
+        <div class="ps-3 pe-lg-5 px-3 pb-4">
           <h1 class="text-blue"><?php esc_html_e( 'Worried about increasing your customer Value?', 'mozrest' ); ?></h1>
           <p class="fs21">
             <?php esc_html_e( 'At MozRest we provide your access to a network of partners so you can simplify your operations, allow your clients receive additional customers and offer up-to-date content throughout the web', 'mozrest' ); ?>
@@ -51,19 +51,23 @@ Template Name: Reservations
         <div class="icon-container big mx-auto text-green mb-3">
           <i class="icon mozresticons-magnet"></i>
         </div>
-        <p class="block-size-1 fs20"><?php esc_html_e( 'Keep up with the competition without increasing development costs.', 'mozrest' ); ?></p>
+        <p class="block-size-1 fs20">
+          <?php esc_html_e( 'Keep up with the competition without increasing development costs.', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
         <div class="icon-container big mx-auto text-green mb-3">
           <i class="icon mozresticons-down-percent"></i>
         </div>
-        <p class="block-size-1 fs20"><?php esc_html_e( 'Supporting a network of partners is costly and time consuming.', 'mozrest' ); ?></p>
+        <p class="block-size-1 fs20">
+          <?php esc_html_e( 'Supporting a network of partners is costly and time consuming.', 'mozrest' ); ?></p>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div class="icon-container big mx-auto text-green mb-3">
           <i class="icon mozresticons-flag"></i>
         </div>
-        <p class="block-size-1 fs20"><?php esc_html_e( 'Work with reservation portals and maintain your positioning of independence.', 'mozrest' ); ?></p>
+        <p class="block-size-1 fs20">
+          <?php esc_html_e( 'Work with reservation portals and maintain your positioning of independence.', 'mozrest' ); ?>
+        </p>
       </div>
     </div>
   </div>

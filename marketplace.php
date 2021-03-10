@@ -8,8 +8,8 @@ Template Name: MarketPlace
 <section class="py-0">
   <div class="row g-0 align-items-center">
     <div class="col-lg-6 py-5">
-      <div class="container semi-container-xxl me-xl-0 pe-lg-5" data-aos="fade-right">
-        <div class="ps-3 pe-lg-0 px-3 pb-4">
+      <div class="container semi-container me-lg-0" data-aos="fade-right">
+        <div class="ps-3 pe-lg-5 px-3 pb-4">
           <h1 class="text-blue fs30">
             <?php esc_html_e( 'Worried about improving your return on investment and keeping the number of customers growing at the same time?', 'mozrest' ); ?>
           </h1>

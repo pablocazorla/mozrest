@@ -8,8 +8,8 @@ Template Name: Restaurant
 <section class="py-0">
   <div class="row g-0 align-items-center">
     <div class="col-lg-6 py-5">
-      <div class="container semi-container-xxl me-xl-0 pe-lg-5" data-aos="fade-right">
-        <div class="ps-3 pe-lg-0 px-3 pb-4">
+      <div class="container semi-container me-lg-0" data-aos="fade-right">
+        <div class="ps-3 pe-lg-5 px-3 pb-4">
           <h1 class="text-blue"><?php esc_html_e( 'Worried about where could be your next customer?', 'mozrest' ); ?>
           </h1>
           <p class="fs21 mb-2">
@@ -90,7 +90,8 @@ Template Name: Restaurant
               <?php esc_html_e( 'Publish anything, like new menus, changes to your opening hours or special promotions and make them visible on Google & Facebook immediately. Get found online more often, attract more visits, get more customers.  ', 'mozrest' ); ?>
             </p>
             <p>
-              <a href="/restaurant-online-presence-check" class="btn-link chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
+              <a href="/restaurant-online-presence-check"
+                class="btn-link chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
             </p>
           </div>
@@ -135,7 +136,16 @@ Template Name: Restaurant
 
 <section>
   <div class="container">
-    <div class="ub_status_check_widget" data-showtable="true" data-showgraph="true" data-showtopinfo="true" data-pdfexport="true" data-showdirectorygrid="true" data-urlbase="https://uberall.com" data-ctabuttontext="Optimise now" data-ctatext="Optimise your restaurant's online presence" data-ctalink="https://www.mozrest.com/contact" data-headertext="Complete the details below to check your online status" data-countries="DK,EE,FI,FR,NO,ES,SE,UK" data-directories="" data-language="EN" data-key="kPjOoEqrjkHLnwgxZQ6XW3e3mgjXuLoDRkH5Di47rqojPdtocHckfpHETIFaWcskectvODHreQJAO03F9vcdfND8qSHEJzVbsxpUCoolhTuNtTL56WS5LEXQZFwhSl5L" data-recentsearches="false" data-bgcolor="#1c1259" data-buttonbgcolor="#007f73" data-buttontextcolor="#ffffff" data-linkcolor="#239fe6" data-textcolor="#1c1259" data-contactphone="" data-contactemail="" data-sharelink="true">&nbsp;</div>
+    <div class="ub_status_check_widget" data-showtable="true" data-showgraph="true" data-showtopinfo="true"
+      data-pdfexport="true" data-showdirectorygrid="true" data-urlbase="https://uberall.com"
+      data-ctabuttontext="Optimise now" data-ctatext="Optimise your restaurant's online presence"
+      data-ctalink="https://www.mozrest.com/contact"
+      data-headertext="Complete the details below to check your online status" data-countries="DK,EE,FI,FR,NO,ES,SE,UK"
+      data-directories="" data-language="EN"
+      data-key="kPjOoEqrjkHLnwgxZQ6XW3e3mgjXuLoDRkH5Di47rqojPdtocHckfpHETIFaWcskectvODHreQJAO03F9vcdfND8qSHEJzVbsxpUCoolhTuNtTL56WS5LEXQZFwhSl5L"
+      data-recentsearches="false" data-bgcolor="#1c1259" data-buttonbgcolor="#007f73" data-buttontextcolor="#ffffff"
+      data-linkcolor="#239fe6" data-textcolor="#1c1259" data-contactphone="" data-contactemail="" data-sharelink="true">
+      &nbsp;</div>
     <script type="text/javascript" src="https://uberall.com/assets/status-check-embed.js"></script>
   </div>
 </section>
