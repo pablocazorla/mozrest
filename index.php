@@ -17,19 +17,21 @@ get_header();
 <section class="py-0  ps-3 pe-lg-0  px-3">
   <div class="row g-0 align-items-center">
     <div class="col-lg-6 py-5">
-      <div class="container semi-container-xxl me-xl-0 pe-lg-5 text-lg-start text-center" data-aos="fade-right">
-        <h1 class="text-blue"><?php esc_html_e( "It's everything about Guests", 'mozrest' ); ?></h1>
-        <p class="fs21 mb-2">
-          <?php esc_html_e( '"How many guests are you not reaching when they are near you because you are not connecting with them on their platforms of choice?"', 'mozrest' ); ?>
-        </p>
-        <p class="fs21">
-          <?php esc_html_e( 'Mozrest platform solves this problem and gives the Restaurant, the Reservation Portals and the Reservation Softwares a unique opportunity to provide a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
-        </p>
-        <p class="m-0">
-          <a href="#" id="know-more" class="btn btn-primary">
-            <?php esc_html_e( 'Know more', 'mozrest' ); ?>
-          </a>
-        </p>
+      <div class="container semi-container me-lg-0 text-lg-start text-center" data-aos="fade-right">
+        <div class="pe-lg-5">
+          <h1 class="text-blue"><?php esc_html_e( "It's everything about Guests", 'mozrest' ); ?></h1>
+          <p class="fs21 mb-2">
+            <?php esc_html_e( '"How many guests are you not reaching when they are near you because you are not connecting with them on their platforms of choice?"', 'mozrest' ); ?>
+          </p>
+          <p class="fs21">
+            <?php esc_html_e( 'Mozrest platform solves this problem and gives the Restaurant, the Reservation Portals and the Reservation Softwares a unique opportunity to provide a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
+          </p>
+          <p class="m-0">
+            <a href="#" id="know-more" class="btn btn-primary">
+              <?php esc_html_e( 'Know more', 'mozrest' ); ?>
+            </a>
+          </p>
+        </div>
       </div>
     </div>
     <div class="col-lg-6">
