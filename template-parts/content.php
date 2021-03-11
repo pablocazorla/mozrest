@@ -20,7 +20,7 @@
   </a>
   <div class="blog-card_text">
     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-    <p><?php the_excerpt(); ?></p>
+    <?php the_excerpt(); ?>
     <div class="row align-items-center g-0">
       <div class="col-6"><a href="<?php the_permalink(); ?>"
           class="read-more"><?php esc_html_e( 'Read more', 'mozrest' ); ?> <i

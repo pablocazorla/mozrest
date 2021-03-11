@@ -14,7 +14,29 @@ get_header();
 
 <?php if ( have_posts() ) : ?>
 
-<header class="page-header" data-aos="fade-down" data-aos-delay="100">
+<?php 
+
+  $catClass = '';
+
+  if(is_category()){    
+
+    $cat = get_queried_object();
+
+    $catParentID = $cat->parent;
+
+    if($catParentID !== 0){
+
+      $catParent = get_category($catParentID);
+
+      if($catParent->slug === 'blog'){
+        $catClass = $cat->slug;
+      }else{
+        $catClass = $catParent->slug;
+      }
+    }
+  }
+?>
+<header class="page-header <?php echo $catClass;?>" data-aos="fade-down" data-aos-delay="100">
   <div class="container">
     <?php $cat_name = single_cat_title('',false);?>
     <h1>

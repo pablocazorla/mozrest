@@ -23,7 +23,7 @@ Template Name: Blog
       <div class="blog-presentation-content-bg"></div>
       <div class="blog-presentation-content-text">
         <h2 class="text-black fs30" data-aos="fade-up">
-        <?php esc_html_e( 'Discover the latest information on Food & Beverage Digital Marketing', 'mozrest' ); ?>
+          <?php esc_html_e( 'Discover the latest information on Food & Beverage Digital Marketing', 'mozrest' ); ?>
         </h2>
       </div>
     </div>
@@ -38,16 +38,26 @@ Template Name: Blog
       <div class="row align-items-end">
         <div class="col-md-8">
           <ul class="nav nav-tabs no-border blog-cat-tabs" role="tablist">
-            <?php $categories = get_categories(); 
+            <?php $categories = get_terms( array(
+                'taxonomy' => 'category',
+               // 'childless' => false,
+               // 'hierarchical' => false, //can be 1, '1' too
+            ) );
             $firstCat = ' active';
             foreach($categories as $category) {
-              $catName = $category->name;
+             
+              $catParentID = $category->parent;
+
+              $catParent = get_category($catParentID);
+
               if($category->slug === 'blog'){
                 //
               }else{
-                echo '<li class="nav-item" role="presentation"><button class="nav-link' . $firstCat . '" data-bs-toggle="tab" data-bs-target="#' . $category->slug .'-tab" type="button"
-                role="tab">'. $catName . '</button></li>';
-                $firstCat = '';
+                if($catParent->slug === 'blog'){
+                  echo '<li class="nav-item" role="presentation"><button class="nav-link' . $firstCat . '" data-bs-toggle="tab" data-bs-target="#' . $category->slug .'-tab" type="button"
+                  role="tab">'. $category->name . '</button></li>';
+                  $firstCat = '';
+                }                
               }              
             }
           ?>
@@ -66,28 +76,31 @@ Template Name: Blog
           <?php 
         $firstCat = ' show active';
         foreach($categories as $category) {
-          if($category->slug !== 'blog'){          
-
-          echo '<div class="tab-pane fade'.$firstCat.'" id="'.$category->slug.'-tab" role="tabpanel" aria-labelledby="profile-tab">';
-      ?>
-          <?php 
-        // the query
-        $the_query = new WP_Query( array(
-            'category_name' => $category->slug,
-            'posts_per_page' => 1,
-        )); 
-      ?>
-          <?php if ( $the_query->have_posts() ) : ?>
-          <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-          <?php	get_template_part( 'template-parts/content', get_post_type() );		?>
-          <?php endwhile; ?>
-          <?php wp_reset_postdata(); ?>
-          <?php endif; ?>
-          <?php   
-          echo '</div>';
-          $firstCat = '';
-          }
-        }
+          $catParentID = $category->parent;
+          $catParent = get_category($catParentID);
+          if($category->slug === 'blog'){
+            //
+          }else{
+            if($catParent->slug === 'blog'){
+              echo '<div class="tab-pane fade'.$firstCat.'" id="'.$category->slug.'-tab" role="tabpanel" aria-labelledby="profile-tab">';
+          
+                // the query
+                $the_query = new WP_Query( array(
+                    'category_name' => $category->slug,
+                    'posts_per_page' => 1,
+                )); 
+              if ( $the_query->have_posts() ) : 
+                while ( $the_query->have_posts() ) : $the_query->the_post(); 
+                  get_template_part( 'template-parts/content', get_post_type() );	
+                endwhile;
+                wp_reset_postdata();
+                endif; 
+              
+              echo '</div>';
+              $firstCat = '';
+            }
+          } 
+        }//end foreach
       ?>
         </div>
       </div>
@@ -99,10 +112,10 @@ Template Name: Blog
           </h3>
           <p class="mb-4">
             <?php esc_html_e( 'We\'ll find missing or inaccurate data', 'mozrest' ); ?>
-            </p>
-            <a href="/restaurant-online-presence-check" class="btn btn-primary uppercase d-block w-100">
-              <?php esc_html_e( 'Check my profile', 'mozrest' ); ?>
-            </a>
+          </p>
+          <a href="/restaurant-online-presence-check" class="btn btn-primary uppercase d-block w-100">
+            <?php esc_html_e( 'Check my profile', 'mozrest' ); ?>
+          </a>
         </div>
       </div>
     </div>
