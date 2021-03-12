@@ -4,8 +4,8 @@ $(".chat-bot").each(function () {
     e.preventDefault();
     $zoho.salesiq.floatwindow.visible("show");
     if(action !== 'undefined') {
-      $zoho.salesiq.visitor.info({"CTA" : action});
-      console.log("action1", action)
+      $zoho.salesiq.visitor.info({"CTA" : action, "CTA2" : action, "CTA3" : action });
+      console.log("action3", action)
     }
   });
 });
