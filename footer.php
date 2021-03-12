@@ -75,7 +75,7 @@
       </div>
       <div class="col-lg-3 col-md-4 order-md-2 order-1">
         <nav class="footer-social">
-          <a href="#">
+          <a href="https://www.facebook.com/MozRest-103981881706191" target="_blank">
             <i class="icon mozresticons-facebook"></i>
           </a>
           <a href="https://www.linkedin.com/company/mozrest/" target="_blank">

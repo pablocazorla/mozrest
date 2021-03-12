@@ -24,7 +24,7 @@ get_header();
             <?php esc_html_e( '"How many guests are you not reaching when they are near you because you are not connecting with them on their platforms of choice?"', 'mozrest' ); ?>
           </p>
           <p class="fs21">
-            <?php esc_html_e( 'Mozrest platform solves this problem and gives the Restaurant, the Reservation Portals and the Reservation Softwares a unique opportunity to provide a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
+            <?php esc_html_e( 'Mozrest platform solves this problem and gives the Restaurant, the Reservation Portals and the Guest Management Software a unique opportunity to provide a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
           </p>
           <p class="m-0">
             <a href="#" class="btn btn-primary chat-bot">
@@ -120,7 +120,7 @@ get_header();
         </a>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
-        <a href="<?php bloginfo('url'); ?>/market-place" class="icontext">
+        <a href="<?php bloginfo('url'); ?>/for-reservation-portals" class="icontext">
           <div class="icon-container mx-auto bg-yellow mb-5">
             <i class="icon mozresticons-store"></i>
           </div>
@@ -130,7 +130,7 @@ get_header();
         </a>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <a href="<?php bloginfo('url'); ?>/reservations-software" class="icontext">
+        <a href="<?php bloginfo('url'); ?>/for-guest-management-software/" class="icontext">
           <div class="icon-container mx-auto bg-green mb-5">
             <i class="icon mozresticons-tablet"></i>
           </div>
@@ -381,7 +381,7 @@ get_header();
         </div>
         <div class="col-md-7 order-md-2 order-1">
           <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade" data-aos-delay="300">
-            <h2 class="mb-3"><?php esc_html_e( 'Digital Marketing complex', 'mozrest' ); ?></h2>
+            <h2 class="mb-3"><?php esc_html_e( 'Digital Marketing is complex', 'mozrest' ); ?></h2>
             <p>
               <?php esc_html_e( 'Get the latest tips on Digital Marketing for Restaurants sent to you!', 'mozrest' ); ?>
             </p>
