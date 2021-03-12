@@ -24,7 +24,7 @@ get_header();
             <?php esc_html_e( '"How many guests are you not reaching when they are near you because you are not connecting with them on their platforms of choice?"', 'mozrest' ); ?>
           </p>
           <p class="fs21">
-            <?php esc_html_e( 'Mozrest platform solves this problem and gives the Restaurant, the Reservation Portals and the Reservation Software a unique opportunity to provide a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
+            <?php esc_html_e( 'Mozrest platform solves this problem and gives the Restaurant, the Reservation Portals and the Guest Management Software a unique opportunity to provide a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
           </p>
           <p class="m-0">
             <a href="#" class="btn btn-primary chat-bot">
