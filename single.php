@@ -66,7 +66,7 @@ get_header();
             <div class="col-lg-12 col-md-6">
               <div class="bg-green r-3 text-white px-4 py-3 mb-4">
                 <div class="py-4">
-                  <h3 class="mb-2"><?php esc_html_e( 'Digital Marketing complex', 'mozrest' ); ?></h3>
+                  <h3 class="mb-2"><?php esc_html_e( 'Digital Marketing is complex', 'mozrest' ); ?></h3>
                   <p>
                     <?php esc_html_e( 'Get the latest tips on Digital Marketing for Restaurants sent to you!', 'mozrest' ); ?>
                   </p>
