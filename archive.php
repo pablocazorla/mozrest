@@ -9,13 +9,11 @@
 
 get_header();
 ?>
-
-
-
 <?php if ( have_posts() ) : ?>
 
 <?php 
 
+  $isCatBlog = false;
   $catClass = '';
 
   if(is_category()){    
@@ -34,47 +32,153 @@ get_header();
         $catClass = $catParent->slug;
       }
     }
+
+    if($cat->slug === 'blog'){
+      $isCatBlog = true;
+    }
   }
 ?>
-<header class="page-header <?php echo $catClass;?>" data-aos="fade-down" data-aos-delay="100">
+
+<?php if($isCatBlog){ ?>
+
+
+
+
+
+<div class="blog-presentation" data-aos="fade">
+  <!-- <?php the_post_thumbnail('medium'); ?> -->
+  <img src="<?php bloginfo('template_url'); ?>/img/blog-header.jpg" alt="MozRest blog" />
+  <div class="blog-presentation-content">
+    <div class="container">
+      <div class="blog-presentation-content-bg"></div>
+      <div class="blog-presentation-content-text">
+        <h2 class="text-black fs30" data-aos="fade-up">
+          <?php esc_html_e( 'Discover the latest information on Food & Beverage Digital Marketing', 'mozrest' ); ?>
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="pt-1 pb-4">
+  <div class="container">
+    <div data-aos="fade-up">
+      <div class="row align-items-end">
+        <div class="col-md-8">
+          <ul class="nav nav-tabs no-border blog-cat-tabs" role="tablist">
+            <?php $categories = get_terms( array(
+                'taxonomy' => 'category',
+                'hide_empty' => false,
+               // 'childless' => false,
+               // 'hierarchical' => false, //can be 1, '1' too
+            ) );
+            $firstCat = ' active';
+            foreach($categories as $category) {
+             
+              $catParentID = $category->parent;
+
+              $catParent = get_category($catParentID);
+
+              if($category->slug === 'blog'){
+                //
+              }else{
+                if($catParent->slug === 'blog'){                  
+                  $category_link = get_category_link($category->term_id);
+                  echo '<li class="nav-item" role="presentation">
+                  <a href="'.$category_link.'" class="nav-link' . $firstCat . '">'. $category->name . '</a>
+                  </li>';
+                  $firstCat = '';
+                  //echo "<script>console.log('" . json_encode($category) . "');</script>";
+                }                
+              }              
+            }
+          ?>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <?php get_search_form(); ?>
+        </div>
+      </div>
+      <hr class="m-0" />
+    </div>
+  </div>
+</section>
+<?php }else{ ?>
+<header class="page-header <?php echo $catClass;?> mb-5" data-aos="fade-down" data-aos-delay="100">
   <div class="container">
     <?php $cat_name = single_cat_title('',false);?>
     <h1>
       <?php if(is_category()):
-          echo $cat_name; 
-        elseif(is_tag()):
-          esc_html_e( 'Tag', 'mozrest' );
-          echo " <i>".$cat_name."</i>"; 
-        elseif(is_author()):
-          esc_html_e( 'Author', 'mozrest' );
-          echo ": <i>".$cat_name."<i>"; 
-        elseif(is_archive()):
-          esc_html_e( 'In file', 'mozrest' );
-          echo " <i>".$cat_name."<i>";
-        endif; ?>
+            echo $cat_name; 
+          elseif(is_tag()):
+            esc_html_e( 'Tag', 'mozrest' );
+            echo " <i>".$cat_name."</i>"; 
+          elseif(is_author()):
+            esc_html_e( 'Author', 'mozrest' );
+            echo ": <i>".$cat_name."<i>"; 
+          elseif(is_archive()):
+            esc_html_e( 'In file', 'mozrest' );
+            echo " <i>".$cat_name."<i>";
+          endif; ?>
     </h1>
   </div>
 </header>
-<section>
+<?php } // End if blog ?>
+
+<section class="pt-0">
   <div class="container">
     <div class="row">
 
 
       <?php
 	/* Start the Loop */
+  $firstPost = true;
 	$delay = 0;
 	while ( have_posts() ) :
 		the_post();
 
-		?>
+    if($firstPost && $isCatBlog ){
+    ?>
+
+      <div class="col-12 pb-5">
+        <div class="row">
+          <div class="col-md-8" data-aos="fade-up" data-aos-delay="100">
+            <?php	get_template_part( 'template-parts/content', get_post_type() );		?>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="bg-blue text-white r-4 px-5 pt-4 pb-5">
+              <h3 class="mb-1">
+                <?php esc_html_e( 'Check your online profile', 'mozrest' ); ?>
+              </h3>
+              <p class="mb-4">
+                <?php esc_html_e( 'We\'ll find missing or inaccurate data', 'mozrest' ); ?>
+              </p>
+              <a href="/restaurant-online-presence-check" class="btn btn-primary uppercase d-block w-100">
+                <?php esc_html_e( 'Check my profile', 'mozrest' ); ?>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <?php 
+      $firstPost = false;
+      }else{      
+    ?>
       <div class="col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-up" data-aos-delay="<?php echo $delay;?>">
         <?php	get_template_part( 'template-parts/content', get_post_type() );		?>
       </div>
-      <?php
-			$delay += 150;
-			if($delay >= 450){
-				$delay = 0;
-			}
+      <?php 
+        $delay += 150;
+        if($delay >= 450){
+          $delay = 0;
+        }
+      } // END $firstPost && $isCatBlog 
+      
+			
 	endwhile;
 	?>
       <div class="col-12">
@@ -100,6 +204,9 @@ endif;
     </div>
   </div>
 </section>
+
+
+
 <section class="pt-0">
   <div class="container">
     <div class="bg-green r-4 text-white px-5">
