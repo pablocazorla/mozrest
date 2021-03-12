@@ -40,6 +40,7 @@ Template Name: Blog
           <ul class="nav nav-tabs no-border blog-cat-tabs" role="tablist">
             <?php $categories = get_terms( array(
                 'taxonomy' => 'category',
+                'hide_empty' => false,
                // 'childless' => false,
                // 'hierarchical' => false, //can be 1, '1' too
             ) );
@@ -53,10 +54,13 @@ Template Name: Blog
               if($category->slug === 'blog'){
                 //
               }else{
-                if($catParent->slug === 'blog'){
-                  echo '<li class="nav-item" role="presentation"><button class="nav-link' . $firstCat . '" data-bs-toggle="tab" data-bs-target="#' . $category->slug .'-tab" type="button"
-                  role="tab">'. $category->name . '</button></li>';
+                if($catParent->slug === 'blog'){                  
+                  $category_link = get_category_link($category->term_id);
+                  echo '<li class="nav-item" role="presentation">
+                  <a href="'.$category_link.'" class="nav-link' . $firstCat . '">'. $category->name . '</a>
+                  </li>';
                   $firstCat = '';
+                  //echo "<script>console.log('" . json_encode($category) . "');</script>";
                 }                
               }              
             }
@@ -74,34 +78,21 @@ Template Name: Blog
       <div class="col-md-8" data-aos="fade-up" data-aos-delay="100">
         <div class="tab-content">
           <?php 
-        $firstCat = ' show active';
-        foreach($categories as $category) {
-          $catParentID = $category->parent;
-          $catParent = get_category($catParentID);
-          if($category->slug === 'blog'){
-            //
-          }else{
-            if($catParent->slug === 'blog'){
-              echo '<div class="tab-pane fade'.$firstCat.'" id="'.$category->slug.'-tab" role="tabpanel" aria-labelledby="profile-tab">';
-          
-                // the query
-                $the_query = new WP_Query( array(
-                    'category_name' => $category->slug,
-                    'posts_per_page' => 1,
-                )); 
-              if ( $the_query->have_posts() ) : 
-                while ( $the_query->have_posts() ) : $the_query->the_post(); 
-                  get_template_part( 'template-parts/content', get_post_type() );	
-                endwhile;
-                wp_reset_postdata();
-                endif; 
+            echo '<div class="tab-pane fade show active">';
               
-              echo '</div>';
-              $firstCat = '';
-            }
-          } 
-        }//end foreach
-      ?>
+              // the query
+              $the_query = new WP_Query( array(
+                  'posts_per_page' => 1,
+              )); 
+            if ( $the_query->have_posts() ) : 
+              while ( $the_query->have_posts() ) : $the_query->the_post(); 
+                get_template_part( 'template-parts/content', get_post_type() );	
+              endwhile;
+              wp_reset_postdata();
+              endif; 
+            
+            echo '</div>';
+          ?>
         </div>
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
@@ -118,14 +109,7 @@ Template Name: Blog
           </a>
         </div>
       </div>
-      <div>
-        <?php
-          $categories = get_terms( 
-            'category', 
-            array('parent' => 0)
-         );
-        ?>
-      </div>
+
     </div>
   </div>
 </section>
@@ -133,10 +117,11 @@ Template Name: Blog
   <div class="container">
     <div class="row justify-content-center">
       <?php 
+        $firstPost = true;
         $delay = 0;
         // the query
         $args = array(
-          'posts_per_page'   => 9,
+          'posts_per_page'   => 10,
           'post_type'        => 'post',
         );
         $the_query = new WP_Query($args); 
@@ -144,15 +129,21 @@ Template Name: Blog
       <?php
         if ( $the_query->have_posts() ) :
         while ( $the_query->have_posts() ) : $the_query->the_post();
+        if($firstPost){
+          $firstPost = false;
+        }else{
       ?>
+
       <div class="col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-up" data-aos-delay="<?php echo $delay;?>">
         <?php	get_template_part( 'template-parts/content', get_post_type() );		?>
       </div>
+
       <?php
-        $delay += 150;
-        if($delay >= 450){
-          $delay = 0;
-        }
+          $delay += 150;
+          if($delay >= 450){
+            $delay = 0;
+          }
+        }//end if firstPost
         endwhile;
         wp_reset_postdata();
         endif;

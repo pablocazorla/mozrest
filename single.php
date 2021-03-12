@@ -13,27 +13,46 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-xl-9 col-lg-8">
-        <div class="mb-3" data-aos="fade">
-          <a href="/blog" class="back-to-blog">
-            <i class="icon mozresticons-long-arrow-left"></i> <?php esc_html_e( 'Back to blog', 'mozrest' ); ?>
-          </a>
-        </div>
 
         <?php
+        
 				while ( have_posts() ) :
-					the_post();
-					get_template_part( 'template-parts/complete', get_post_type() );
-					// the_post_navigation(
-					// 	array(
-					// 		'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'mozrest' ) . '</span> <span class="nav-title">%title</span>',
-					// 		'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'mozrest' ) . '</span> <span class="nav-title">%title</span>',
-					// 	)
-					// );
-					// If comments are open or we have at least one comment, load up the comment template.
-					// if ( comments_open() || get_comments_number() ) :
-					// 	comments_template();
-					// endif;					
-					?>
+					the_post();			
+				?>
+        <div class="mb-3" data-aos="fade">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <?php
+              // $homeUrl = get_bloginfo( 'url' );
+              // echo '<li class="breadcrumb-item"><a href="'.$homeUrl.'"><i class="icon mozresticons-store"></i></a></li>';
+
+              $category = get_the_category();
+              $categoryID = $category[0]->term_id;
+              $catName = $category[0]->cat_name;
+              $catFatherID = $category[0]->category_parent;
+              $catFather = get_category($catFatherID);
+              $catGrandFatherID = $catFather->category_parent;
+              $catGrandFather = get_category($catGrandFatherID);
+              
+              if($catGrandFatherID !== 0){
+                $catGrandFatherLink = get_category_link($catGrandFatherID);
+                echo '<li class="breadcrumb-item"><a href="'.$catGrandFatherLink.'">'. $catGrandFather->name . '</a></li>';
+                
+              }
+              if($catFatherID !== 0){
+                $catFatherLink = get_category_link($catFatherID);
+                echo '<li class="breadcrumb-item"><a href="'.$catFatherLink.'">'. $catFather->name . '</a></li>';
+                
+              }
+              $categoryLink = get_category_link($categoryID);
+              echo '<li class="breadcrumb-item"><a href="'.$categoryLink.'">'. $category[0]->cat_name . '</a></li>';        
+            ?>
+            </ol>
+          </nav>
+        </div>
+        <?php
+					get_template_part( 'template-parts/complete', get_post_type() );				
+				?>
         <hr class="mt-5 mb-0" data-aos="fade-up" />
         <div class="author-box" data-aos="fade-up">
           <div class="author-box_img">
