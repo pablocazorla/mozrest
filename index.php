@@ -27,7 +27,7 @@ get_header();
             <?php esc_html_e( 'Mozrest platform solves this problem and gives the Restaurant, the Reservation Portals and the Reservation Softwares a unique opportunity to provide a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
           </p>
           <p class="m-0">
-            <a href="#" id="know-more" class="btn btn-primary">
+            <a href="#" class="btn btn-primary chat-bot">
               <?php esc_html_e( 'Know more', 'mozrest' ); ?>
             </a>
           </p>
@@ -315,8 +315,8 @@ get_header();
           <?php esc_html_e( 'Reservation Portals, Guest Management Software, Search Media, Voice Search, Map & Navigation, General Publishers', 'mozrest' ); ?>
         </p>
         <p data-aos="fade-up">
-          <a href="/contact" class="btn btn-primary">
-            <?php esc_html_e( 'Contact us', 'mozrest' ); ?>
+          <a href="/partners" class="btn btn-primary">
+            <?php esc_html_e( 'Our Partners', 'mozrest' ); ?>
           </a>
         </p>
       </div>
@@ -394,12 +394,6 @@ get_header();
     </div>
   </div>
 </section>
-
-<script>
-document.getElementById("know-more").addEventListener('click', function() {
-  $zoho.salesiq.visitor.customaction("know-more");
-});
-</script>
 
 <?php
 get_footer();

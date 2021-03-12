@@ -118,6 +118,14 @@ Template Name: Blog
           </a>
         </div>
       </div>
+      <div>
+        <?php
+          $categories = get_terms( 
+            'category', 
+            array('parent' => 0)
+         );
+        ?>
+      </div>
     </div>
   </div>
 </section>

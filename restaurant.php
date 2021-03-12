@@ -109,7 +109,7 @@ Template Name: Restaurant
               <?php esc_html_e( 'Be alerted the moment a review about your restaurant is created and reply to them from one single place, whether they come from Google, TripAdvisor or many other sites.', 'mozrest' ); ?>
             </p>
             <p>
-              <a href="#" class="btn-link chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
+              <a href="#" class="btn-link chat-bot" action="talk-customer"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
             </p>
           </div>
@@ -121,7 +121,7 @@ Template Name: Restaurant
               <?php esc_html_e( 'Maintain your profile updated and accurate on a large portfolio of online guides, from directories to car navigation services.', 'mozrest' ); ?>
             </p>
             <p>
-              <a href="#" class="btn-link chat-bot"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
+              <a href="#" class="btn-link chat-bot" action="profile-consistency"><?php esc_html_e( 'Know more', 'mozrest' ); ?> <i
                   class="icon mozresticons-long-arrow-right"></i></a>
             </p>
           </div>

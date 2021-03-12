@@ -12,9 +12,9 @@
 
 <div class="blog-post" id="blog-post-<?php the_ID(); ?>">
   <h1 data-aos="fade-up"><?php the_title(); ?></h1>
-  <div class="the-date mb-5" data-aos="fade-up" data-aos-delay="150">
+  <!-- <div class="the-date mb-5" data-aos="fade-up" data-aos-delay="150">
     <?php the_date('F j, Y');?>
-  </div>
+  </div> -->
 
   <div class="content" data-aos="fade-up" data-aos-delay="300">
     <?php the_content();
