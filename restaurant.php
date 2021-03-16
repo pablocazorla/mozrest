@@ -13,7 +13,7 @@ Template Name: Restaurant
           <h1 class="text-blue"><?php esc_html_e( 'Worried about where could be your next customer?', 'mozrest' ); ?>
           </h1>
           <p class="fs21 mb-2">
-            <?php esc_html_e( 'At MozRest we provide a platform that simplifies and combines all the applications to support your digital marketing.', 'mozrest' ); ?>
+            <?php esc_html_e( 'At Mozrest we provide a platform that simplifies and combines all the applications to support your digital marketing.', 'mozrest' ); ?>
           </p>
           <p class="fs21">
             <?php esc_html_e( 'From getting found online to accessing new customers and maintaining your information up-to-date in one single place.', 'mozrest' ); ?>
@@ -245,7 +245,7 @@ Template Name: Restaurant
     </div>
   </div>
 </section>
-<section class="pt-md-5 pt-0">
+<section class="pt-5">
   <div class="container">
     <div class="bg-green r-4 text-white px-5">
       <div class="row align-items-center">

@@ -83,21 +83,21 @@ get_header();
     <div class="row justify-content-center align-items-center">
       <div class="col-auto">
         <div class="static-brand-container">
-          <a href="#" class="splide-brand-link" target="_blank">
+          <a href="javascript:void(0);" class="splide-brand-link">
             <img src="<?php bloginfo('template_url'); ?>/img/logos/city.png" alt="City">
           </a>
         </div>
       </div>
       <div class="col-auto">
         <div class="static-brand-container">
-          <a href="https://www.guestonline.io/" class="splide-brand-link" target="_blank">
+          <a href="javascript:void(0);" class="splide-brand-link">
             <img src="<?php bloginfo('template_url'); ?>/img/logos/guest-online.png" alt="Guest Online">
           </a>
         </div>
       </div>
       <div class="col-auto">
         <div class="static-brand-container">
-          <a href="https://www.tableonline.fi/en" class="splide-brand-link" target="_blank">
+          <a href="javascript:void(0);" class="splide-brand-link">
             <img src="<?php bloginfo('template_url'); ?>/img/logos/tableonline.png" alt="Table Online">
           </a>
         </div>
@@ -295,8 +295,8 @@ get_header();
           <li><?php esc_html_e( 'Review Aggregator', 'mozrest' ); ?></li>
         </ul>
       </div>
-      <div class="col-xl-7 col-lg-6" data-aos="fade" data-aos-delay="200">
-        <img class="img-auto r-1 displaced-bg-blue" src="<?php bloginfo('template_url'); ?>/img/home/possibilities.jpg"
+      <div class="col-xl-7 col-lg-6 aligncenter" data-aos="fade" data-aos-delay="200">
+        <img class="img-auto r-1 connected-platform" src="<?php bloginfo('template_url'); ?>/img/home/connected-platform.png"
           alt="One connected platform, endless possibilities" />
       </div>
     </div>

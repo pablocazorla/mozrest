@@ -14,7 +14,7 @@ Template Name: MarketPlace
             <?php esc_html_e( 'Worried about improving your return on investment and keeping the number of customers growing at the same time?', 'mozrest' ); ?>
           </h1>
           <p class="fs21">
-            <?php esc_html_e( 'At MozRest we provide you access to an inventory of restaurants through a simple technology to expand your offering and reach out more dinners with a better Return on Investment.', 'mozrest' ); ?>
+            <?php esc_html_e( 'At Mozrest we provide you access to an inventory of restaurants through a simple technology to expand your offering and reach out more dinners with a better Return on Investment.', 'mozrest' ); ?>
           </p>
           <p class="m-0">
             <a href="#" class="btn btn-yellow chat-bot">

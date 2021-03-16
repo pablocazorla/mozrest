@@ -14,7 +14,7 @@
             <i class="icon mozresticons-star"></i>
           </div>
           <p>
-            <?php esc_html_e( 'MozRest’s Ads solution drives 16% lower cost on our digital advertising.', 'mozrest' ); ?>
+            <?php esc_html_e( 'Mozrest’s Ads solution drives 16% lower cost on our digital advertising.', 'mozrest' ); ?>
           </p>
           <div class="user-data">
             <div class="user-data_photo">

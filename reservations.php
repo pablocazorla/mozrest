@@ -11,7 +11,7 @@ Template Name: Reservations
         <div class="ps-3 pe-lg-5 px-3 pb-4">
           <h1 class="text-blue"><?php esc_html_e( 'Worried about how to increase your Customer Value?', 'mozrest' ); ?></h1>
           <p class="fs21">
-            <?php esc_html_e( 'At MozRest we provide you access to a network of partners so you can simplify your operations, allow your clients receive additional customers and offer up-to-date content throughout the web.', 'mozrest' ); ?>
+            <?php esc_html_e( 'At Mozrest we provide you access to a network of partners so you can simplify your operations, allow your clients receive additional customers and offer up-to-date content throughout the web.', 'mozrest' ); ?>
           </p>
           <p class="m-0">
             <a href="#" class="btn btn-green chat-bot">

@@ -16,7 +16,7 @@
             <div class="testimonial-solo-text_container">
               <h3>Ville Heinonen</h3>
               <div class="subtitle">TableOnline.fi CEO</div>
-              <p>MozRest’s Ads solution drives <b>16% lower cost</b> on our digital advertising.</p>
+              <p>Mozrest’s Ads solution drives <b>16% lower cost</b> on our digital advertising.</p>
               <div class="rating">
                 <i class="icon mozresticons-star"></i>
                 <i class="icon mozresticons-star"></i>

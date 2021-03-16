@@ -47,7 +47,7 @@ get_header();
 
 <div class="blog-presentation" data-aos="fade">
   <!-- <?php the_post_thumbnail('medium'); ?> -->
-  <img src="<?php bloginfo('template_url'); ?>/img/blog-header.jpg" alt="MozRest blog" />
+  <img src="<?php bloginfo('template_url'); ?>/img/blog-header.jpg" alt="Mozrest blog" />
   <div class="blog-presentation-content">
     <div class="container">
       <div class="blog-presentation-content-bg"></div>
