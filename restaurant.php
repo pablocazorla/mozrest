@@ -32,7 +32,7 @@ Template Name: Restaurant
           <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/photos/restaurant-1.jpg" alt="MOZREST" />
           <div class="moz-pill bg-green restaurant-mp-green">
             <i class="icon mozresticons-ok-circle"></i>
-            <?php esc_html_e( 'Manage all your profiles online', 'mozrest' ); ?>
+            <?php esc_html_e( 'Edit all your profiles in one place', 'mozrest' ); ?>
           </div>
           <div class="moz-pill bg-pink restaurant-mp-pink">
             <i class="icon mozresticons-ok-circle"></i>
@@ -71,7 +71,7 @@ Template Name: Restaurant
           <i class="icon mozresticons-review"></i>
         </div>
         <p class="block-size-1 fs20">
-          <?php esc_html_e( 'Answering customer´s reviews from many websites puts a strain on operations.', 'mozrest' ); ?>
+          <?php esc_html_e( 'Answering customer\'s reviews from many websites puts a strain on operations.', 'mozrest' ); ?>
         </p>
       </div>
     </div>
@@ -136,11 +136,17 @@ Template Name: Restaurant
 
 <section>
   <div class="container">
+  <h3 class="mb-3 text-center" data-aos="fade-up"><?php esc_html_e( 'Is your restaurant Up-to-date? Check your status online', 'mozrest' ); ?></h3>
+  <div class="row text-center">
+      <p class="fs21 mb-0">
+        <?php esc_html_e( 'Check your profile on Google, Facebook, Bing, and many other guides. Get an instant report on the visibility, accuracy, and completeness of your local listings.', 'mozrest' ); ?>
+      </p>
+    </div>
     <div class="ub_status_check_widget" data-showtable="true" data-showgraph="true" data-showtopinfo="true"
       data-pdfexport="true" data-showdirectorygrid="true" data-urlbase="https://uberall.com"
       data-ctabuttontext="Optimise now" data-ctatext="Optimise your restaurant's online presence"
       data-ctalink="https://www.mozrest.com/contact"
-      data-headertext="Complete the details below to check your online status" data-countries="DK,EE,FI,FR,NO,ES,SE,UK"
+      data-headertext=" " data-countries="DK,EE,FI,FR,NO,ES,SE,UK"
       data-directories="" data-language="EN"
       data-key="kPjOoEqrjkHLnwgxZQ6XW3e3mgjXuLoDRkH5Di47rqojPdtocHckfpHETIFaWcskectvODHreQJAO03F9vcdfND8qSHEJzVbsxpUCoolhTuNtTL56WS5LEXQZFwhSl5L"
       data-recentsearches="false" data-bgcolor="#1c1259" data-buttonbgcolor="#007f73" data-buttontextcolor="#ffffff"

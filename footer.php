@@ -81,7 +81,7 @@
           <a href="https://www.linkedin.com/company/mozrest/" target="_blank">
             <i class="icon mozresticons-linked-in"></i>
           </a>
-          <a href="#">
+          <a href="https://twitter.com/Simply_MOZREST" target="_blank">
             <i class="icon mozresticons-twitter"></i>
           </a>
         </nav>
