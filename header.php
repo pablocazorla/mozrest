@@ -36,6 +36,8 @@
   <meta name="msapplication-TileImage" content="<?php bloginfo('template_url'); ?>/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <script src="https://cdn-eu.pagesense.io/js/mozrest/8eefa95843d84b1e80f6150a68c9802f.js"></script>
+
   <!-- Google Tag Manager -->
   <?php
     $GTM = 'GTM-T33BZF3';
@@ -63,6 +65,10 @@
   <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/4d662d622bac22e1dfdd5a44.js">
   </script>
   <!-- End cookieyes banner -->
+
+   <!-- Start zoho marketing hub -->
+  <script>var w=window;var p = w.location.protocol;if(p.indexOf("http") < 0){p = "http"+":";}var d = document;var f = d.getElementsByTagName('script')[0],s = d.createElement('script');s.type = 'text/javascript'; s.async = false; if (s.readyState){s.onreadystatechange = function(){if (s.readyState=="loaded"||s.readyState == "complete"){s.onreadystatechange = null;try{loadwaprops('3z403f7d55ff9c7e60971f2ca6bc94d4ed','3zb42549bdf1e018a5d207df703d42728e','3z46d6bf38e5e4be8033b83fd919e8499f98db014cf2b1cced545f58fe34c57e24','3zfd790c7b29b80a7cb831ecd55872cc53',0.0);}catch(e){}}};}else {s.onload = function(){try{loadwaprops('3z403f7d55ff9c7e60971f2ca6bc94d4ed','3zb42549bdf1e018a5d207df703d42728e','3z46d6bf38e5e4be8033b83fd919e8499f98db014cf2b1cced545f58fe34c57e24','3zfd790c7b29b80a7cb831ecd55872cc53',0.0);}catch(e){}};};s.src =p+'//mh.zoho.eu/hub/js/WebsiteAutomation.js'; f.parentNode.insertBefore(s, f);</script>
+  <!-- End zoho marketing hub -->
 
   <?php wp_head(); ?>
 </head>
