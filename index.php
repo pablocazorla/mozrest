@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -19,16 +20,16 @@ get_header();
     <div class="col-lg-6 py-5">
       <div class="container semi-container me-lg-0 text-lg-start text-center" data-aos="fade-right">
         <div class="pe-lg-5">
-          <h1 class="text-blue"><?php esc_html_e( "It's everything about Guests", 'mozrest' ); ?></h1>
+          <h1 class="text-blue"><?php esc_html_e("It's everything about Guests", 'mozrest'); ?></h1>
           <p class="fs21 mb-2">
-            <?php esc_html_e( '"How many guests are you not reaching when they are near you because you are not connecting with them on their platforms of choice?"', 'mozrest' ); ?>
+            <?php esc_html_e('"How many guests are you not reaching when they are near you because you are not connecting with them on their platforms of choice?"', 'mozrest'); ?>
           </p>
           <p class="fs21">
-            <?php esc_html_e( 'Mozrest platform solves this problem and gives the Restaurant, the Reservation Portals and the Guest Management Software a unique opportunity to provide a personalised experience across all touchpoints to their Guests.', 'mozrest' ); ?>
+            <?php esc_html_e('Mozrest platform solves this problem and gives the Restaurant, the Reservation Portals and the Guest Management Software a unique opportunity to provide a personalised experience across all touchpoints to their Guests.', 'mozrest'); ?>
           </p>
           <p class="m-0">
             <a href="#" class="btn btn-primary chat-bot">
-              <?php esc_html_e( 'Know more', 'mozrest' ); ?>
+              <?php esc_html_e('Know more', 'mozrest'); ?>
             </a>
           </p>
         </div>
@@ -107,16 +108,16 @@ get_header();
 </section>
 <section>
   <div class="container text-center">
-    <h2 class="mb-5 pb-3" data-aos="fade-up"><?php esc_html_e( 'Empower', 'mozrest' ); ?></h2>
+    <h2 class="mb-5 pb-3" data-aos="fade-up"><?php esc_html_e('Empower', 'mozrest'); ?></h2>
     <div class="row justify-content-center">
       <div class="col-lg-4" data-aos="fade-up">
         <a href="<?php bloginfo('url'); ?>/for-restaurants" class="icontext">
           <div class="icon-container mx-auto bg-pink mb-3 mb-lg-4">
             <i class="icon mozresticons-food"></i>
           </div>
-          <h3><?php esc_html_e( 'Restaurants', 'mozrest' ); ?></h3>
+          <h3><?php esc_html_e('Restaurants', 'mozrest'); ?></h3>
           <p class="block-size-1 fs20">
-            <?php esc_html_e( 'Deliver personalised experience to your guests', 'mozrest' ); ?></p>
+            <?php esc_html_e('Deliver personalised experience to your guests', 'mozrest'); ?></p>
         </a>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
@@ -124,9 +125,9 @@ get_header();
           <div class="icon-container mx-auto bg-yellow mb-3 mb-lg-4">
             <i class="icon mozresticons-store"></i>
           </div>
-          <h3><?php esc_html_e( 'Reservation Portal', 'mozrest' ); ?></h3>
+          <h3><?php esc_html_e('Reservation Portal', 'mozrest'); ?></h3>
           <p class="block-size-1 fs20">
-            <?php esc_html_e( 'Increase your Reach efficiently', 'mozrest' ); ?></p>
+            <?php esc_html_e('Increase your Reach efficiently', 'mozrest'); ?></p>
         </a>
       </div>
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
@@ -134,9 +135,9 @@ get_header();
           <div class="icon-container mx-auto bg-green mb-3 mb-lg-4">
             <i class="icon mozresticons-tablet"></i>
           </div>
-          <h3><?php esc_html_e( 'Guest Management Software', 'mozrest' ); ?></h3>
+          <h3><?php esc_html_e('Guest Management Software', 'mozrest'); ?></h3>
           <p class="block-size-1 fs20">
-            <?php esc_html_e( 'Increase your Customer Value', 'mozrest' ); ?></p>
+            <?php esc_html_e('Increase your Customer Value', 'mozrest'); ?></p>
         </a>
       </div>
     </div>
@@ -146,10 +147,10 @@ get_header();
 <section>
   <div class="container">
     <div class="text-center mb-4" data-aos="fade-up">
-      <h2 class="mb-0"><?php esc_html_e( 'Mozrest provides', 'mozrest' ); ?></h2>
+      <h2 class="mb-0"><?php esc_html_e('Mozrest provides', 'mozrest'); ?></h2>
       <div class="row justify-content-center">
         <p class="fs25">
-          <?php esc_html_e( 'a one-stop-shop for Food & Beverage Digital Marketing', 'mozrest' ); ?>
+          <?php esc_html_e('a one-stop-shop for Food & Beverage Digital Marketing', 'mozrest'); ?>
         </p>
       </div>
     </div>
@@ -161,15 +162,15 @@ get_header();
               <div class="bg-blue text-center text-white pt-5">
                 <div class="row justify-content-center mb-4">
                   <div class="col-lg-8 col-9">
-                    <h3><?php esc_html_e( 'Guests find you', 'mozrest' ); ?></h3>
+                    <h3><?php esc_html_e('Guests find you', 'mozrest'); ?></h3>
                     <p class="mb-0">
-                      <?php esc_html_e( '"64% of mobile restaurant searchers convert “immediately or within an hour."', 'mozrest' ); ?>
+                      <?php esc_html_e('"64% of mobile restaurant searchers convert “immediately or within an hour."', 'mozrest'); ?>
                     </p>
                     <p class="mb-3">
-                      <?php esc_html_e( '"80% of all these ‘Near Me’ search queries are unbranded. This means guest don’t necessarily have a name in mind."', 'mozrest' ); ?>
+                      <?php esc_html_e('"80% of all these ‘Near Me’ search queries are unbranded. This means guest don’t necessarily have a name in mind."', 'mozrest'); ?>
                     </p>
                     <p class="mb-0">
-                      <?php esc_html_e( 'Mozrest make you visible and stand out above your competitors.', 'mozrest' ); ?>
+                      <?php esc_html_e('Mozrest make you visible and stand out above your competitors.', 'mozrest'); ?>
                     </p>
                   </div>
                 </div>
@@ -185,12 +186,12 @@ get_header();
               <div class="bg-green text-center text-white pt-5">
                 <div class="row justify-content-center mb-4">
                   <div class="col-lg-8 col-9">
-                    <h3><?php esc_html_e( 'Guests trust you', 'mozrest' ); ?></h3>
+                    <h3><?php esc_html_e('Guests trust you', 'mozrest'); ?></h3>
                     <p class="mb-3">
-                      <?php esc_html_e( '"88% of guests trust online reviews as much as personal recommendations."', 'mozrest' ); ?>
+                      <?php esc_html_e('"88% of guests trust online reviews as much as personal recommendations."', 'mozrest'); ?>
                     </p>
                     <p class="mb-0">
-                      <?php esc_html_e( 'Mozrest facilitate your social media exposure and leverage reviews and comments to increase guests engagement.', 'mozrest' ); ?>
+                      <?php esc_html_e('Mozrest facilitate your social media exposure and leverage reviews and comments to increase guests engagement.', 'mozrest'); ?>
                     </p>
                     <p></p>
                   </div>
@@ -207,12 +208,12 @@ get_header();
               <div class="bg-pink text-center text-white pt-5">
                 <div class="row justify-content-center mb-4">
                   <div class="col-lg-8 col-9">
-                    <h3><?php esc_html_e( 'Guests reserve', 'mozrest' ); ?></h3>
+                    <h3><?php esc_html_e('Guests reserve', 'mozrest'); ?></h3>
                     <p class="mb-3">
-                      <?php esc_html_e( '"36% of guests believe that online reservations are the most important technology feature that a restaurant can offer guests."', 'mozrest' ); ?>
+                      <?php esc_html_e('"36% of guests believe that online reservations are the most important technology feature that a restaurant can offer guests."', 'mozrest'); ?>
                     </p>
                     <p class="mb-0">
-                      <?php esc_html_e( 'Mozrest provides a greater convenience for guests by enabling reservation on their platform of choice.', 'mozrest' ); ?>
+                      <?php esc_html_e('Mozrest provides a greater convenience for guests by enabling reservation on their platform of choice.', 'mozrest'); ?>
                     </p>
                   </div>
                 </div>
@@ -228,12 +229,12 @@ get_header();
               <div class="bg-blue text-center text-white pt-5">
                 <div class="row justify-content-center mb-4">
                   <div class="col-lg-8 col-9">
-                    <h3><?php esc_html_e( 'Guests recommend you', 'mozrest' ); ?></h3>
+                    <h3><?php esc_html_e('Guests recommend you', 'mozrest'); ?></h3>
                     <p class="mb-3">
-                      <?php esc_html_e( '"When Businesses replied to negative reviews, a THIRD of customers either deleted their original negative review or replaced it with a positive review. Nearly a FIFTH went on to become loyal customers."', 'mozrest' ); ?>
+                      <?php esc_html_e('"When Businesses replied to negative reviews, a THIRD of customers either deleted their original negative review or replaced it with a positive review. Nearly a FIFTH went on to become loyal customers."', 'mozrest'); ?>
                     </p>
                     <p class="mb-0">
-                      <?php esc_html_e( 'Mozrest simplifies the review management and keeps you updated.', 'mozrest' ); ?>
+                      <?php esc_html_e('Mozrest simplifies the review management and keeps you updated.', 'mozrest'); ?>
                     </p>
                   </div>
                 </div>
@@ -250,12 +251,12 @@ get_header();
               <div class="bg-green text-center text-white pt-5">
                 <div class="row justify-content-center mb-4">
                   <div class="col-lg-8 col-9">
-                    <h3><?php esc_html_e( 'Guests come back', 'mozrest' ); ?></h3>
+                    <h3><?php esc_html_e('Guests come back', 'mozrest'); ?></h3>
                     <p class="mb-3">
-                      <?php esc_html_e( '"80% of your revenue is generated by 20% of your repeat customers."', 'mozrest' ); ?>
+                      <?php esc_html_e('"80% of your revenue is generated by 20% of your repeat customers."', 'mozrest'); ?>
                     </p>
                     <p class="mb-0">
-                      <?php esc_html_e( 'Mozrest combines news, menus and promotions posting on multiple media to nurture your existing customers and maximise your chance to stay top of mind when guests choose to go out.', 'mozrest' ); ?>
+                      <?php esc_html_e('Mozrest combines news, menus and promotions posting on multiple media to nurture your existing customers and maximise your chance to stay top of mind when guests choose to go out.', 'mozrest'); ?>
                     </p>
                   </div>
                 </div>
@@ -285,18 +286,19 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-xl-5 col-lg-6 py-5" data-aos="fade-up">
-        <h2><?php esc_html_e( 'One connected platform, endless possibilities', 'mozrest' ); ?>
+        <h2><?php esc_html_e('One connected platform, endless possibilities', 'mozrest'); ?>
         </h2>
         <ul class="list fz18">
-          <li><?php esc_html_e( 'Marketing Acquisition Efficiency', 'mozrest' ); ?></li>
-          <li><?php esc_html_e( 'Profile Management', 'mozrest' ); ?></li>
-          <li><?php esc_html_e( 'Social Media Post Management', 'mozrest' ); ?></li>
-          <li><?php esc_html_e( 'Reservation Channel Enabler', 'mozrest' ); ?></li>
-          <li><?php esc_html_e( 'Review Aggregator', 'mozrest' ); ?></li>
+          <li><?php esc_html_e('Marketing Acquisition Efficiency', 'mozrest'); ?></li>
+          <li><?php esc_html_e('Profile Management', 'mozrest'); ?></li>
+          <li><?php esc_html_e('Social Media Post Management', 'mozrest'); ?></li>
+          <li><?php esc_html_e('Reservation Channel Enabler', 'mozrest'); ?></li>
+          <li><?php esc_html_e('Review Aggregator', 'mozrest'); ?></li>
         </ul>
       </div>
       <div class="col-xl-7 col-lg-6 aligncenter" data-aos="fade" data-aos-delay="200">
-        <img class="img-auto r-1 connected-platform" src="<?php bloginfo('template_url'); ?>/img/home/connected-platform.png"
+        <img class="img-auto r-1 connected-platform"
+          src="<?php bloginfo('template_url'); ?>/img/home/connected-platform.png"
           alt="One connected platform, endless possibilities" />
       </div>
     </div>
@@ -310,13 +312,13 @@ get_header();
     </div>
     <div class="row justify-content-center mb-md-4 pb-md-5">
       <div class="col-lg-5 col-8  pb-md-5">
-        <h2 class="mb-4" data-aos="fade-up"><?php esc_html_e( 'Our Partner Network', 'mozrest' ); ?></h2>
+        <h2 class="mb-4" data-aos="fade-up"><?php esc_html_e('Our Partner Network', 'mozrest'); ?></h2>
         <p data-aos="fade-up">
-          <?php esc_html_e( 'Reservation Portals, Guest Management Software, Search Media, Voice Search, Map & Navigation, General Publishers', 'mozrest' ); ?>
+          <?php esc_html_e('Reservation Portals, Guest Management Software, Search Media, Voice Search, Map & Navigation, General Publishers', 'mozrest'); ?>
         </p>
         <p data-aos="fade-up">
           <a href="/partners" class="btn btn-primary">
-            <?php esc_html_e( 'Our Partners', 'mozrest' ); ?>
+            <?php esc_html_e('Our Partners', 'mozrest'); ?>
           </a>
         </p>
       </div>
@@ -325,46 +327,46 @@ get_header();
 </section>
 <section>
   <div class="container">
-    <h2 class="text-center" data-aos="fade-up"><?php esc_html_e( 'Testimonials', 'mozrest' ); ?></h2>
+    <h2 class="text-center" data-aos="fade-up"><?php esc_html_e('Testimonials', 'mozrest'); ?></h2>
 
-    <?php 
-      include 'testimonial-solo.php';
+    <?php
+    include 'parts/testimonials/testimonial-solo.php';
     ?>
   </div>
   <!-- <div class="splide" id="testimonials" data-aos="fade-up">
-    <?php 
-     // include 'testimonials.php';
+    <?php
+    // include 'parts/testimonials/testimonials.php';
     ?>
   </div> -->
 </section>
 <section class="pb-0">
   <div class="container">
-    <h2 class="text-center mb-5" data-aos="fade-up"><?php esc_html_e( 'Article Blog', 'mozrest' ); ?></h2>
+    <h2 class="text-center mb-5" data-aos="fade-up"><?php esc_html_e('Article Blog', 'mozrest'); ?></h2>
     <div class="row justify-content-center">
-      <?php 
-        $delay = 0;
-        // the query
-        $args = array(
-          'posts_per_page'   => 3,
-          'post_type'        => 'post',
-        );
-        $the_query = new WP_Query($args); 
+      <?php
+      $delay = 0;
+      // the query
+      $args = array(
+        'posts_per_page'   => 3,
+        'post_type'        => 'post',
+      );
+      $the_query = new WP_Query($args);
       ?>
       <?php
-        if ( $the_query->have_posts() ) :
-        while ( $the_query->have_posts() ) : $the_query->the_post();
+      if ($the_query->have_posts()) :
+        while ($the_query->have_posts()) : $the_query->the_post();
       ?>
-      <div class="col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-up" data-aos-delay="<?php echo $delay;?>">
-        <?php	get_template_part( 'template-parts/content', get_post_type() );		?>
+      <div class="col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-up" data-aos-delay="<?php echo $delay; ?>">
+        <?php get_template_part('parts/blog/content', get_post_type());    ?>
       </div>
       <?php
-        $delay += 150;
-        if($delay >= 450){
-          $delay = 0;
-        }
+          $delay += 150;
+          if ($delay >= 450) {
+            $delay = 0;
+          }
         endwhile;
         wp_reset_postdata();
-        endif;
+      endif;
       ?>
     </div>
   </div>
@@ -381,12 +383,12 @@ get_header();
         </div>
         <div class="col-md-7 order-md-2 order-1">
           <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade" data-aos-delay="300">
-            <h2 class="mb-3"><?php esc_html_e( 'Digital Marketing is complex', 'mozrest' ); ?></h2>
+            <h2 class="mb-3"><?php esc_html_e('Digital Marketing is complex', 'mozrest'); ?></h2>
             <p>
-              <?php esc_html_e( 'Get the latest tips on Digital Marketing for Restaurants sent to you!', 'mozrest' ); ?>
+              <?php esc_html_e('Get the latest tips on Digital Marketing for Restaurants sent to you!', 'mozrest'); ?>
             </p>
-            <?php 
-            include 'subscribe-form-home.php';
+            <?php
+            include 'parts/subscribe/subscribe-form-home.php';
             ?>
           </div>
         </div>

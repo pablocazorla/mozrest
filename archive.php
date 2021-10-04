@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying archive pages
  *
@@ -9,37 +10,37 @@
 
 get_header();
 ?>
-<?php if ( have_posts() ) : ?>
+<?php if (have_posts()) : ?>
 
-<?php 
+<?php
 
   $isCatBlog = false;
   $catClass = '';
 
-  if(is_category()){    
+  if (is_category()) {
 
     $cat = get_queried_object();
 
     $catParentID = $cat->parent;
 
-    if($catParentID !== 0){
+    if ($catParentID !== 0) {
 
       $catParent = get_category($catParentID);
 
-      if($catParent->slug === 'blog'){
+      if ($catParent->slug === 'blog') {
         $catClass = $cat->slug;
-      }else{
+      } else {
         $catClass = $catParent->slug;
       }
     }
 
-    if($cat->slug === 'blog'){
+    if ($cat->slug === 'blog') {
       $isCatBlog = true;
     }
   }
-?>
+  ?>
 
-<?php if($isCatBlog){ ?>
+<?php if ($isCatBlog) { ?>
 
 
 
@@ -53,7 +54,7 @@ get_header();
       <div class="blog-presentation-content-bg"></div>
       <div class="blog-presentation-content-text">
         <h2 class="text-black fs30" data-aos="fade-up">
-          <?php esc_html_e( 'Discover the latest information on Food & Beverage Digital Marketing', 'mozrest' ); ?>
+          <?php esc_html_e('Discover the latest information on Food & Beverage Digital Marketing', 'mozrest'); ?>
         </h2>
       </div>
     </div>
@@ -66,33 +67,33 @@ get_header();
       <div class="row align-items-end">
         <div class="col-md-8">
           <ul class="nav nav-tabs no-border blog-cat-tabs" role="tablist">
-            <?php $categories = get_terms( array(
-                'taxonomy' => 'category',
-                'hide_empty' => false,
-               // 'childless' => false,
-               // 'hierarchical' => false, //can be 1, '1' too
-            ) );
-            $firstCat = ' active';
-            foreach($categories as $category) {
-             
-              $catParentID = $category->parent;
+            <?php $categories = get_terms(array(
+                  'taxonomy' => 'category',
+                  'hide_empty' => false,
+                  // 'childless' => false,
+                  // 'hierarchical' => false, //can be 1, '1' too
+                ));
+                $firstCat = ' active';
+                foreach ($categories as $category) {
 
-              $catParent = get_category($catParentID);
+                  $catParentID = $category->parent;
 
-              if($category->slug === 'blog'){
-                //
-              }else{
-                if($catParent->slug === 'blog'){                  
-                  $category_link = get_category_link($category->term_id);
-                  echo '<li class="nav-item" role="presentation">
-                  <a href="'.$category_link.'" class="nav-link' . $firstCat . '">'. $category->name . '</a>
+                  $catParent = get_category($catParentID);
+
+                  if ($category->slug === 'blog') {
+                    //
+                  } else {
+                    if ($catParent->slug === 'blog') {
+                      $category_link = get_category_link($category->term_id);
+                      echo '<li class="nav-item" role="presentation">
+                  <a href="' . $category_link . '" class="nav-link' . $firstCat . '">' . $category->name . '</a>
                   </li>';
-                  $firstCat = '';
-                  //echo "<script>console.log('" . json_encode($category) . "');</script>";
-                }                
-              }              
-            }
-          ?>
+                      $firstCat = '';
+                      //echo "<script>console.log('" . json_encode($category) . "');</script>";
+                    }
+                  }
+                }
+                ?>
           </ul>
         </div>
         <div class="col-md-4">
@@ -103,27 +104,28 @@ get_header();
     </div>
   </div>
 </section>
-<?php }else{ ?>
-<header class="page-header <?php echo $catClass;?> mb-5" data-aos="fade-down" data-aos-delay="100">
+<?php } else { ?>
+<header class="page-header <?php echo $catClass; ?> mb-5" data-aos="fade-down" data-aos-delay="100">
   <div class="container">
-    <?php $cat_name = single_cat_title('',false);?>
+    <?php $cat_name = single_cat_title('', false); ?>
     <h1>
-      <?php if(is_category()):
-            echo $cat_name; 
-          elseif(is_tag()):
-            esc_html_e( 'Tag', 'mozrest' );
-            echo " <i>".$cat_name."</i>"; 
-          elseif(is_author()):
-            esc_html_e( 'Author', 'mozrest' );
-            echo ": <i>".$cat_name."<i>"; 
-          elseif(is_archive()):
-            esc_html_e( 'In file', 'mozrest' );
-            echo " <i>".$cat_name."<i>";
+      <?php if (is_category()) :
+            echo $cat_name;
+          elseif (is_tag()) :
+            esc_html_e('Tag', 'mozrest');
+            echo " <i>" . $cat_name . "</i>";
+          elseif (is_author()) :
+            esc_html_e('Author', 'mozrest');
+            echo ": <i>" . $cat_name . "<i>";
+          elseif (is_archive()) :
+            esc_html_e('In file', 'mozrest');
+            echo " <i>" . $cat_name . "<i>";
           endif; ?>
     </h1>
   </div>
 </header>
-<?php } // End if blog ?>
+<?php } // End if blog 
+  ?>
 
 <section class="pt-0">
   <div class="container">
@@ -131,31 +133,31 @@ get_header();
 
 
       <?php
-	/* Start the Loop */
-  $firstPost = true;
-	$delay = 0;
-	while ( have_posts() ) :
-		the_post();
+        /* Start the Loop */
+        $firstPost = true;
+        $delay = 0;
+        while (have_posts()) :
+          the_post();
 
-    if($firstPost && $isCatBlog ){
-    ?>
+          if ($firstPost && $isCatBlog) {
+        ?>
 
       <div class="col-12 pb-5">
         <div class="row">
           <div class="col-md-8" data-aos="fade-up" data-aos-delay="100">
-            <?php	get_template_part( 'template-parts/content', get_post_type() );		?>
+            <?php get_template_part('parts/blog/content', get_post_type());    ?>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
 
             <div class="bg-blue text-white r-4 px-5 pt-4 pb-5">
               <h3 class="mb-1">
-                <?php esc_html_e( 'Check your online profile', 'mozrest' ); ?>
+                <?php esc_html_e('Check your online profile', 'mozrest'); ?>
               </h3>
               <p class="mb-4">
-                <?php esc_html_e( 'We\'ll find missing or inaccurate data', 'mozrest' ); ?>
+                <?php esc_html_e('We\'ll find missing or inaccurate data', 'mozrest'); ?>
               </p>
               <a href="/restaurant-online-presence-check" class="btn btn-primary uppercase d-block w-100">
-                <?php esc_html_e( 'Check my profile', 'mozrest' ); ?>
+                <?php esc_html_e('Check my profile', 'mozrest'); ?>
               </a>
             </div>
           </div>
@@ -164,43 +166,43 @@ get_header();
 
       </div>
 
-      <?php 
-      $firstPost = false;
-      }else{      
-    ?>
-      <div class="col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-up" data-aos-delay="<?php echo $delay;?>">
-        <?php	get_template_part( 'template-parts/content', get_post_type() );		?>
+      <?php
+            $firstPost = false;
+          } else {
+          ?>
+      <div class="col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-up" data-aos-delay="<?php echo $delay; ?>">
+        <?php get_template_part('parts/blog/content', get_post_type());    ?>
       </div>
-      <?php 
-        $delay += 150;
-        if($delay >= 450){
-          $delay = 0;
-        }
-      } // END $firstPost && $isCatBlog 
-      
-			
-	endwhile;
-	?>
+      <?php
+            $delay += 150;
+            if ($delay >= 450) {
+              $delay = 0;
+            }
+          } // END $firstPost && $isCatBlog 
+
+
+        endwhile;
+        ?>
       <div class="col-12">
         <div class="moz_pagination">
           <?php
-	$argsPag = array(
-		'prev_text'    => '<i class="icon mozresticons-chevron-left"></i> ' . __('Previous'),
-    'next_text'    => __('Next') . ' <i class="icon mozresticons-chevron-right"></i>',
-	);
-	echo paginate_links($argsPag);
-	?>
+            $argsPag = array(
+              'prev_text'    => '<i class="icon mozresticons-chevron-left"></i> ' . __('Previous'),
+              'next_text'    => __('Next') . ' <i class="icon mozresticons-chevron-right"></i>',
+            );
+            echo paginate_links($argsPag);
+            ?>
         </div>
       </div>
       <?php
-else :
-	?>
+    else :
+      ?>
       <div class="col-12">
-        <?php	get_template_part( 'template-parts/content', 'none' );?>
+        <?php get_template_part('parts/blog/content', 'none'); ?>
       </div>
       <?php
-endif;
-?>
+    endif;
+      ?>
     </div>
   </div>
 </section>
@@ -219,13 +221,13 @@ endif;
         </div>
         <div class="col-md-7 order-md-2 order-1">
           <div class="block-size-2 ms-0 pt-md-0 pt-5" data-aos="fade" data-aos-delay="300">
-            <h2 class="mb-3"><?php esc_html_e( 'Digital Marketing is complex', 'mozrest' ); ?></h2>
+            <h2 class="mb-3"><?php esc_html_e('Digital Marketing is complex', 'mozrest'); ?></h2>
             <p>
-              <?php esc_html_e( 'Get the latest tips on Digital Marketing for Restaurants sent to you!', 'mozrest' ); ?>
+              <?php esc_html_e('Get the latest tips on Digital Marketing for Restaurants sent to you!', 'mozrest'); ?>
             </p>
-            <?php 
-              include 'subscribe-form.php';
-            ?>
+            <?php
+              include 'parts/subscribe/subscribe-form.php';
+              ?>
           </div>
         </div>
       </div>
@@ -233,4 +235,4 @@ endif;
   </div>
 </section>
 <?php
-get_footer();
+  get_footer();

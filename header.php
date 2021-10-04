@@ -1,4 +1,5 @@
 <?php
+
 /**
  *
  * @package Mozrest
@@ -9,7 +10,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="https://gmpg.org/xfn/11">
 
@@ -40,7 +41,7 @@
 
   <!-- Google Tag Manager -->
   <?php
-    $GTM = 'GTM-T33BZF3';
+  $GTM = 'GTM-T33BZF3';
   ?>
 
   <script>
@@ -62,12 +63,45 @@
   <!-- End Google Tag Manager -->
 
   <!-- Start cookieyes banner -->
-  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/4d662d622bac22e1dfdd5a44.js">
-  </script>
+  <!-- <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/4d662d622bac22e1dfdd5a44.js">
+  </script> -->
   <!-- End cookieyes banner -->
 
-   <!-- Start zoho marketing hub -->
-  <script>var w=window;var p = w.location.protocol;if(p.indexOf("http") < 0){p = "http"+":";}var d = document;var f = d.getElementsByTagName('script')[0],s = d.createElement('script');s.type = 'text/javascript'; s.async = false; if (s.readyState){s.onreadystatechange = function(){if (s.readyState=="loaded"||s.readyState == "complete"){s.onreadystatechange = null;try{loadwaprops('3z403f7d55ff9c7e60971f2ca6bc94d4ed','3zb42549bdf1e018a5d207df703d42728e','3z46d6bf38e5e4be8033b83fd919e8499f98db014cf2b1cced545f58fe34c57e24','3zfd790c7b29b80a7cb831ecd55872cc53',0.0);}catch(e){}}};}else {s.onload = function(){try{loadwaprops('3z403f7d55ff9c7e60971f2ca6bc94d4ed','3zb42549bdf1e018a5d207df703d42728e','3z46d6bf38e5e4be8033b83fd919e8499f98db014cf2b1cced545f58fe34c57e24','3zfd790c7b29b80a7cb831ecd55872cc53',0.0);}catch(e){}};};s.src =p+'//mh.zoho.eu/hub/js/WebsiteAutomation.js'; f.parentNode.insertBefore(s, f);</script>
+  <!-- Start zoho marketing hub -->
+  <script>
+  var w = window;
+  var p = w.location.protocol;
+  if (p.indexOf("http") < 0) {
+    p = "http" + ":";
+  }
+  var d = document;
+  var f = d.getElementsByTagName('script')[0],
+    s = d.createElement('script');
+  s.type = 'text/javascript';
+  s.async = false;
+  if (s.readyState) {
+    s.onreadystatechange = function() {
+      if (s.readyState == "loaded" || s.readyState == "complete") {
+        s.onreadystatechange = null;
+        try {
+          loadwaprops('3z403f7d55ff9c7e60971f2ca6bc94d4ed', '3zb42549bdf1e018a5d207df703d42728e',
+            '3z46d6bf38e5e4be8033b83fd919e8499f98db014cf2b1cced545f58fe34c57e24',
+            '3zfd790c7b29b80a7cb831ecd55872cc53', 0.0);
+        } catch (e) {}
+      }
+    };
+  } else {
+    s.onload = function() {
+      try {
+        loadwaprops('3z403f7d55ff9c7e60971f2ca6bc94d4ed', '3zb42549bdf1e018a5d207df703d42728e',
+          '3z46d6bf38e5e4be8033b83fd919e8499f98db014cf2b1cced545f58fe34c57e24',
+          '3zfd790c7b29b80a7cb831ecd55872cc53', 0.0);
+      } catch (e) {}
+    };
+  };
+  s.src = p + '//mh.zoho.eu/hub/js/WebsiteAutomation.js';
+  f.parentNode.insertBefore(s, f);
+  </script>
   <!-- End zoho marketing hub -->
 
   <?php wp_head(); ?>
@@ -83,11 +117,11 @@
       <div class="container">
         <div class="row no-gutters align-items-md-center align-items-start">
           <div class="col-6">
-            <a href="<?php bloginfo( 'url' ); ?>" class="main-brand">
+            <a href="<?php bloginfo('url'); ?>" class="main-brand">
               <img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="MOZREST">
             </a>
           </div>
-          <div class="col-6 d-lg-none d-block">
+          <div class="col-6 d-xl-none d-block">
             <button class="main-menu_mobile-trigger" id="main-menu_mobile-trigger">
               <span class="line-1"></span><span class="line-2"></span><span class="line-3"></span>
             </button>
@@ -95,13 +129,13 @@
           <div class="col-lg-6 col-md-12">
             <menu class="main-menu" id="main-menu">
               <?php
-                wp_nav_menu(
-                  array(
-                    'theme_location' => 'primary',
-                    'menu_id'        => 'primary-menu',
-                    'container' => '',
-                  )
-                );
+              wp_nav_menu(
+                array(
+                  'theme_location' => 'primary',
+                  'menu_id'        => 'primary-menu',
+                  'container' => '',
+                )
+              );
               ?>
             </menu>
           </div>
