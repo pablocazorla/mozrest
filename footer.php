@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -14,49 +15,63 @@
   <div class="container text-md-start text-center">
     <div class="row">
       <div class="col-md-3">
-        <a href="<?php bloginfo( 'url' ); ?>" class="footer-top_brand">
+        <a href="<?php bloginfo('url'); ?>" class="footer-top_brand">
           <img class="img-100" src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="MOZREST" class="img-100">
         </a>
       </div>
       <div class="col-md-3">
         <nav class="fotter-top_nav">
-          <h4><?php esc_html_e( 'Company', 'mozrest' ); ?></h4>
+          <h4><?php _e('FOOTER_MENU_1_TITLE', 'mozrest'); ?></h4>
           <?php
-            wp_nav_menu(
-              array(
-                'theme_location' => 'footer1',
-                'menu_id'        => 'footer1-menu',
-                'container' => '',
-              )
-            );
+          wp_nav_menu(
+            array(
+              'theme_location' => 'footer1',
+              'menu_id'        => 'footer1-menu',
+              'container' => '',
+            )
+          );
           ?>
         </nav>
       </div>
       <div class="col-md-3">
         <nav class="fotter-top_nav">
-          <h4><?php esc_html_e( 'Resources', 'mozrest' ); ?></h4>
+          <h4><?php _e('FOOTER_MENU_2_TITLE', 'mozrest'); ?></h4>
           <?php
-            wp_nav_menu(
-              array(
-                'theme_location' => 'footer2',
-                'menu_id'        => 'footer2-menu',
-                'container' => '',
-              )
-            );
+          wp_nav_menu(
+            array(
+              'theme_location' => 'footer2',
+              'menu_id'        => 'footer2-menu',
+              'container' => '',
+            )
+          );
           ?>
         </nav>
       </div>
       <div class="col-md-3">
         <nav class="fotter-top_nav">
-          <h4><?php esc_html_e( 'Legal', 'mozrest' ); ?></h4>
+          <h4><?php _e('FOOTER_MENU_3_TITLE', 'mozrest'); ?></h4>
           <?php
-            wp_nav_menu(
-              array(
-                'theme_location' => 'footer3',
-                'menu_id'        => 'footer3-menu',
-                'container' => '',
-              )
-            );
+          wp_nav_menu(
+            array(
+              'theme_location' => 'footer3',
+              'menu_id'        => 'footer3-menu',
+              'container' => '',
+            )
+          );
+          ?>
+        </nav>
+      </div>
+      <div class="col-md-3">
+        <nav class="fotter-top_nav">
+          <h4><?php _e('FOOTER_MENU_4_TITLE', 'mozrest'); ?></h4>
+          <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'footer3',
+              'menu_id'        => 'footer3-menu',
+              'container' => '',
+            )
+          );
           ?>
         </nav>
       </div>
@@ -69,9 +84,9 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 offset-lg-3 col-md-8 order-md-1 order-2">
-        <?php				
-        esc_html_e( 'Copyright © 2021 Mozrest.com. All Right Reserved.', 'mozrest' );
-		?>
+        <?php
+        _e('FOOTER_COPYRIGHT', 'mozrest');
+        ?>
       </div>
       <div class="col-lg-3 col-md-4 order-md-2 order-1">
         <nav class="footer-social">

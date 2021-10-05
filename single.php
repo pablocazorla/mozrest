@@ -84,9 +84,9 @@ get_header();
             <div class="col-lg-12 col-md-6">
               <div class="bg-green r-3 text-white px-4 py-3 mb-4">
                 <div class="py-4">
-                  <h3 class="mb-2"><?php esc_html_e('Digital Marketing is complex', 'mozrest'); ?></h3>
+                  Digital Marketing is complex
                   <p>
-                    <?php esc_html_e('Get the latest tips on Digital Marketing for Restaurants sent to you!', 'mozrest'); ?>
+                    Get the latest tips on Digital Marketing for Restaurants sent to you!
                   </p>
                   <?php
                   include 'parts/subscribe/subscribe-form.php';
@@ -97,12 +97,12 @@ get_header();
             <div class="col-lg-12 col-md-6">
               <div class="bg-yellow r-3 text-white px-4 py-3 mb-4">
                 <div class="py-4">
-                  <h3 class="mb-4"><?php esc_html_e('Lets talk!', 'mozrest'); ?></h3>
+                  <h3 class="mb-4">Lets talk!</h3>
                   <p class="m-3">
-                    <?php esc_html_e('Do you have a question? Chat  with a member of our team.', 'mozrest'); ?>
+                    Do you have a question? Chat with a member of our team.
                   </p>
                   <a href="#" class="btn btn-blue uppercase d-block w-100 chat-bot">
-                    <?php esc_html_e('Talk to us', 'mozrest'); ?>
+                    Talk to us
                   </a>
                 </div>
               </div>
@@ -117,7 +117,7 @@ get_header();
 </section>
 <section class="pt-0 pb-4">
   <div class="container">
-    <h3 class="text-center mb-5 pb-3" data-aos="fade-up"><?php esc_html_e('Other articles', 'mozrest'); ?></h3>
+    <h3 class="text-center mb-5 pb-3" data-aos="fade-up">Other articles</h3>
     <div class="row justify-content-center">
       <?php
       $delay = 0;

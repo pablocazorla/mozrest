@@ -1,7 +1,6 @@
-<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+<form role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
   <div class="search-form-col wide">
-    <input type="search" class="search-field" placeholder="<?php esc_html_e( 'Search', 'mozrest' ); ?>..." value=""
-      name="s" title="Enter a keyword" size="1" />
+    <input type="search" class="search-field" placeholder="<?php _e('SEARCH_PLACEHOLDER', 'mozrest'); ?>..." value="" name="s" title="Enter a keyword" size="1" />
   </div>
   <div class="search-form-col">
     <button type="submit">

@@ -1,8 +1,8 @@
 <div class="splide__track">
   <ul class="splide__list">
-    <?php 
-        $count = 3;
-        while ( $count > 0 ) :?>
+    <?php
+    $count = 3;
+    while ($count > 0) : ?>
     <li class="splide__slide">
       <div class="testimonial-container">
         <div class="testimonial">
@@ -14,7 +14,7 @@
             <i class="icon mozresticons-star"></i>
           </div>
           <p>
-            <?php esc_html_e( 'Mozrest’s Ads solution drives 16% lower cost on our digital advertising.', 'mozrest' ); ?>
+            Mozrest’s Ads solution drives 16% lower cost on our digital advertising.
           </p>
           <div class="user-data">
             <div class="user-data_photo">
@@ -33,6 +33,7 @@
         </div>
       </div>
     </li>
-    <?php $count = $count - 1; endwhile;?>
+    <?php $count = $count - 1;
+    endwhile; ?>
   </ul>
 </div>

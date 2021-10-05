@@ -96,6 +96,36 @@
       }
     });
 
+    // Integration *************************************************************
+    $("#integracion-a").each(function () {
+      var $intlabrms = $("#int-lab-rms"),
+        $intlistrms = $("#int-list-rms"),
+        $intlabrp = $("#int-lab-rp"),
+        $intlistrp = $("#int-list-rp");
+
+      var valRMS = "";
+      var valRP = "";
+
+      var onSelect = function () {
+        console.log("Integration -----------------");
+        console.log("RMS", valRMS);
+        console.log("RP", valRP);
+      };
+
+      $intlistrms.find(".integracion-dropdown-list_item").click(function () {
+        var $int = $(this);
+        valRMS = $int.data("value");
+        $intlabrms.html($int.html());
+        onSelect();
+      });
+      $intlistrp.find(".integracion-dropdown-list_item").click(function () {
+        var $int = $(this);
+        valRP = $int.data("value");
+        $intlabrp.html($int.html());
+        onSelect();
+      });
+    });
+
     // Chat Bot ************************************************************************
 
     $(".chat-bot").each(function () {

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying 404 pages (not found)
  *
@@ -12,13 +13,13 @@ get_header();
 
 <header class="page-header">
   <div class="container">
-    <h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'mozrest' ); ?></h1>
+    <h1><?php _e('ERROR_404_TITLE', 'mozrest'); ?></h1>
   </div>
 </header><!-- .page-header -->
 <section>
   <div class="container">
     <p class="text-center">
-      <?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'mozrest' ); ?>
+      <?php _e('ERROR_404_P', 'mozrest'); ?>
     </p>
   </div>
   <div class="box-search">

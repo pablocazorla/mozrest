@@ -48,16 +48,17 @@ if (!function_exists('mozrest_setup')) :
 		/***********************************************
 		 * CUSTOM LENGTH EXCERPT
 		 ***********************************************/
-		function custom_excerpt_length($length)
-		{
-			global $post;
-			if ($post->post_type == 'post') {
-				return 14;
-			} else if ($post->post_type == 'illustration') {
-				return 9;
-			}
-		}
-		add_filter('excerpt_length', 'custom_excerpt_length', 999);
+		// function custom_excerpt_length($length)
+		// {
+		// 	global $post;
+		// 	if ($post->post_type == 'post') {
+		// 		return 14;
+		// 	}
+		// 	 else if ($post->post_type == 'illustration') {
+		// 		return 9;
+		// 	}
+		// }
+		//add_filter('excerpt_length', 'custom_excerpt_length', 999);
 		// remove_filter( 'the_excerpt', 'wpautop' );
 		function new_excerpt_more($more)
 		{
@@ -118,6 +119,55 @@ if (!function_exists('mozrest_setup')) :
 				'script',
 			)
 		);
+
+		/***********************************************
+		 * CUSTOM TYPE: CUSTOMER
+		 ***********************************************/
+		function create_customer_type()
+		{
+			$args = array(
+				'labels' => array(
+					'name' => 'Customers',
+					'singular_name' => 'Customer'
+				),
+				'public' => true,
+				'publicly_queryable' => true,
+				'show_ui' => true,
+				'show_in_menu' => true,
+				'query_var' => true,
+				'rewrite' => true,
+				'capability_type' => 'post',
+				'has_archive' => true,
+				'hierarchical' => false,
+				'show_tagcloud' => false,
+				'show_in_nav_menus' => true,
+				'menu_position' => 5,
+				'menu_icon' => 'dashicons-admin-users',
+				'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields')
+			);
+			register_post_type('customer', $args);
+		}
+		add_action('init', 'create_customer_type');
+
+		// Customer Types
+		function create_customer_taxonomies()
+		{
+			register_taxonomy(
+				'Customer',
+				'Customer',
+				array(
+					'labels' => array(
+						'name' => 'Customer Types',
+						'singular_name' => 'Customer Type'
+					),
+					'show_ui' => true,
+					'show_tagcloud' => false,
+					'hierarchical' => true,
+					'show_in_nav_menus' => true
+				)
+			);
+		}
+		add_action('init', 'create_customer_taxonomies', 0);
 	}
 endif;
 add_action('after_setup_theme', 'mozrest_setup');
