@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row justify-content-between align-items-center pb-5">
-      <div class="col-md-5">
+      <div class="col-lg-5 order-1 mb-lg-0 mb-3">
         <div class="integracion-dropdown-container dropdown">
           <div class="row justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="col">
@@ -58,14 +58,14 @@
           </div>
         </div>
       </div>
-      <div class="col-auto">
+      <div class="col-lg-2 order-lg-2 order-3">
         <div class="integracion-btn-central">
           <div class="integracion-btn-central_icon">
             <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/mozrest-icon.svg" alt="" />
           </div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-lg-5 order-lg-3 order-2 mb-lg-0 mb-3">
         <div class="integracion-dropdown-container dropdown">
           <div class="row justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="col">
