@@ -48,18 +48,17 @@ if (!function_exists('mozrest_setup')) :
 		/***********************************************
 		 * CUSTOM LENGTH EXCERPT
 		 ***********************************************/
-		// function custom_excerpt_length($length)
-		// {
-		// 	global $post;
-		// 	if ($post->post_type == 'post') {
-		// 		return 14;
-		// 	}
-		// 	 else if ($post->post_type == 'illustration') {
-		// 		return 9;
-		// 	}
-		// }
-		//add_filter('excerpt_length', 'custom_excerpt_length', 999);
-		// remove_filter( 'the_excerpt', 'wpautop' );
+		function custom_excerpt_length($length)
+		{
+			global $post;
+			if ($post->post_type == 'post') {
+				return 14;
+			} else { // if ($post->post_type == 'illustration') {
+				return 999999999;
+			}
+		}
+		add_filter('excerpt_length', 'custom_excerpt_length', 999);
+		remove_filter('the_excerpt', 'wpautop');
 		function new_excerpt_more($more)
 		{
 			return '';
@@ -90,6 +89,8 @@ if (!function_exists('mozrest_setup')) :
 				'footer2' => esc_html__('Footer2', 'mozrest'),
 				'footer3' => esc_html__('Footer3', 'mozrest'),
 				'footer4' => esc_html__('Footer4', 'mozrest'),
+				'footer5' => esc_html__('Footer5', 'mozrest'),
+				'footerBottom' => esc_html__('FooterBottom', 'mozrest'),
 			)
 		);
 		/**
@@ -213,6 +214,7 @@ function mozrest_scripts()
 {
 	wp_enqueue_style('style', get_stylesheet_uri(), array(), _MOZREST_VERSION);
 	wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), _MOZREST_VERSION);
+	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), _MOZREST_VERSION);
 	wp_enqueue_style('mozresticons', get_template_directory_uri() . '/css/mozresticons.css', array(), _MOZREST_VERSION);
 	wp_enqueue_style('splide_css', get_template_directory_uri() . '/css/splide.min.css', array(), _MOZREST_VERSION);
 	wp_enqueue_style('splide_theme_css', get_template_directory_uri() . '/css/splide-default.min.css', array(), _MOZREST_VERSION);

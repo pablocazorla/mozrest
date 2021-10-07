@@ -16,14 +16,15 @@
     <?php if (has_post_thumbnail()) {
       the_post_thumbnail('medium');
     } else { ?>
-      <img src="<?php bloginfo('template_url'); ?>/img/default-thumbnail.jpg" />
+    <img src="<?php bloginfo('template_url'); ?>/img/default-thumbnail.jpg" />
     <?php } ?>
   </a>
   <div class="blog-card_text">
     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-    <?php the_excerpt(); ?>
+    <p><?php the_excerpt(); ?></p>
     <div class="row align-items-center g-0">
-      <div class="col-6"><a href="<?php the_permalink(); ?>" class="read-more"><?php _e('READ_MORE', 'mozrest'); ?> <i class="icon mozresticons-chevron-right"></i></a>
+      <div class="col-6"><a href="<?php the_permalink(); ?>" class="read-more"><?php _e('READ_MORE', 'mozrest'); ?> <i
+            class="icon mozresticons-chevron-right"></i></a>
       </div>
       <div class="col-6 text-right">
         <span class="time-read"><?php the_reading_time(); ?> <?php _e('MIN_READ', 'mozrest'); ?></span>

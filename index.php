@@ -244,7 +244,66 @@ get_header();
   </div>
 
 </section>
+<section class="pb-0">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h4 class="text-yellow mb-4 text-uppercase" data-aos="fade-up">Blog</h4>
+      <h2 class="mb-4" data-aos="fade-up"><?php _e('Business management tips and news', 'mozrest'); ?></h2>
+      <div data-aos="fade-up">
+        <a href="#" class="btn btn-primary px-5 py-3">
+          All blog posts
+        </a>
+      </div>
+    </div>
 
+
+    <div class="row justify-content-center">
+      <?php
+      $delay = 0;
+      // the query
+      $args = array(
+        'posts_per_page'   => 3,
+        'post_type'        => 'post',
+      );
+      $the_query = new WP_Query($args);
+      ?>
+      <?php
+      if ($the_query->have_posts()) :
+        while ($the_query->have_posts()) : $the_query->the_post();
+      ?>
+      <div class="col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-up" data-aos-delay="<?php echo $delay; ?>">
+        <?php get_template_part('parts/blog/content', get_post_type());    ?>
+      </div>
+      <?php
+          $delay += 150;
+          if ($delay >= 450) {
+            $delay = 0;
+          }
+        endwhile;
+        wp_reset_postdata();
+      endif;
+      ?>
+    </div>
+  </div>
+</section>
+<section class="bg-blue text-white">
+  <div class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="text-white mb-4">Ready to get started?</h2>
+        <p class="text-bold">Get in touch with our friendly team to discuss the particular details of your business and
+          set
+          up a free guided demo to see Mozrest in action. We’ll be more than happy to guide you through.</p>
+        <div>
+          <a href="#" class="btn btn-primary px-5 py-3">
+            Request a demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 <?php
