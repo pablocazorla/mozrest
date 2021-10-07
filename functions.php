@@ -53,8 +53,10 @@ if (!function_exists('mozrest_setup')) :
 			global $post;
 			if ($post->post_type == 'post') {
 				return 14;
+			} else if ($post->post_type == 'testimonial') {
+				return 26;
 			} else { // if ($post->post_type == 'illustration') {
-				return 999999999;
+				return 300;
 			}
 		}
 		add_filter('excerpt_length', 'custom_excerpt_length', 999);
@@ -154,8 +156,8 @@ if (!function_exists('mozrest_setup')) :
 		function create_customer_taxonomies()
 		{
 			register_taxonomy(
-				'Customer',
-				'Customer',
+				'customer_category',
+				'customer',
 				array(
 					'labels' => array(
 						'name' => 'Customer Types',
@@ -169,6 +171,56 @@ if (!function_exists('mozrest_setup')) :
 			);
 		}
 		add_action('init', 'create_customer_taxonomies', 0);
+
+		/***********************************************
+		 * CUSTOM TYPE: TESTIMONIAL
+		 ***********************************************/
+		function create_testimonial_type()
+		{
+			$args = array(
+				'labels' => array(
+					'name' => 'Testimonials',
+					'singular_name' => 'Testimonial'
+				),
+				'public' => true,
+				'publicly_queryable' => true,
+				'show_ui' => true,
+				'show_in_menu' => true,
+				'query_var' => true,
+				'rewrite' => true,
+				'capability_type' => 'post',
+				'has_archive' => true,
+				'hierarchical' => false,
+				'show_tagcloud' => false,
+				'show_in_nav_menus' => true,
+				'menu_position' => 5,
+
+				'menu_icon' => 'dashicons-admin-comments',
+				'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields')
+			);
+			register_post_type('testimonial', $args);
+		}
+		add_action('init', 'create_testimonial_type');
+
+		// Testimonial Types
+		function create_testimonial_taxonomies()
+		{
+			register_taxonomy(
+				'testimonial_category',
+				'testimonial',
+				array(
+					'labels' => array(
+						'name' => 'Testimonial Types',
+						'singular_name' => 'Testimonial Type'
+					),
+					'show_ui' => true,
+					'show_tagcloud' => false,
+					'hierarchical' => true,
+					'show_in_nav_menus' => true
+				)
+			);
+		}
+		add_action('init', 'create_testimonial_taxonomies', 0);
 	}
 endif;
 add_action('after_setup_theme', 'mozrest_setup');

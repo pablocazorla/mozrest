@@ -65,7 +65,7 @@ get_header();
     </div>
   </div>
 </section>
-<section class="pb-0">
+<section class="pb-0" id="company">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8 text-center">
@@ -83,7 +83,7 @@ get_header();
     </div>
   </div>
 </section>
-<section class="pb-0">
+<section class="pb-0" id="products">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6 text-center">
@@ -195,13 +195,13 @@ get_header();
     </div>
   </div>
 </section>
-<section class="pb-0">
+<section class="pb-0" id="integrations">
   <div class="container">
     <h4 class="text-yellow text-center mb-4" data-aos="fade-up">MATCHING</h4>
   </div>
   <?php get_template_part('parts/integration/home-integration'); ?>
 </section>
-<section class="pb-0">
+<section class="pb-0" id="customers">
   <div class="container">
     <h4 class="text-yellow text-center mb-4" data-aos="fade-up">OUR CUSTOMERS</h4>
     <div class="row justify-content-center mb-5">
@@ -242,7 +242,47 @@ get_header();
       ?>
     </div>
   </div>
-
+</section>
+<section class="pb-0">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h4 class="text-yellow mb-4 text-uppercase" data-aos="fade-up">Testimonials</h4>
+      <h2 class="mb-4" data-aos="fade-up">
+        <?php _e('These restaurants and local businesses trust Mozrest', 'mozrest'); ?></h2>
+      <div data-aos="fade-up">
+        <a href="#" class="btn btn-primary px-5 py-3">
+          All customer stories
+        </a>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <?php
+      $delay = 0;
+      // the query
+      $args = array(
+        'posts_per_page'   => 8,
+        'post_type'        => 'testimonial',
+      );
+      $the_query = new WP_Query($args);
+      ?>
+      <?php
+      if ($the_query->have_posts()) :
+        while ($the_query->have_posts()) : $the_query->the_post();
+      ?>
+      <div class="col-lg-4 col-md-6 col-12 pb-5" data-aos="fade-up" data-aos-delay="<?php echo $delay; ?>">
+        <?php get_template_part('parts/testimonial/content', get_post_type());    ?>
+      </div>
+      <?php
+          $delay += 150;
+          if ($delay >= 450) {
+            $delay = 0;
+          }
+        endwhile;
+        wp_reset_postdata();
+      endif;
+      ?>
+    </div>
+  </div>
 </section>
 <section class="pb-0">
   <div class="container">
