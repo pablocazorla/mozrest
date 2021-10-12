@@ -57,3 +57,18 @@
   border: 5px solid #000;
   border-radius: 50px;
 }
+
+.ratio-img {
+  overflow: hidden;
+  position: relative;
+  background-color: #bbb;
+  display: block;
+  img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    .transform(translateY(-50%));
+  }
+}

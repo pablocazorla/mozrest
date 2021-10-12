@@ -84,7 +84,8 @@ get_header();
             <div class="col-lg-12 col-md-6">
               <div class="bg-green r-3 text-white px-4 py-3 mb-4">
                 <div class="py-4">
-                  Digital Marketing is complex
+                  <h3 class="text-white">Digital Marketing is complex</h3>
+
                   <p>
                     Get the latest tips on Digital Marketing for Restaurants sent to you!
                   </p>

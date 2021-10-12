@@ -14,7 +14,7 @@
 <div class="customer-card" id="customer-<?php the_ID(); ?>">
   <div class="row g-3">
     <div class="col-6">
-      <a href="<?php the_permalink(); ?>" class="customer-card_img">
+      <a href="<?php the_permalink(); ?>" class="ratio ratio-16x9 ratio-img">
         <?php if (has_post_thumbnail()) {
           the_post_thumbnail('large');
         } else { ?>

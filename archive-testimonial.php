@@ -1,56 +1,32 @@
 <?php get_header(); ?>
-	<article id="main-article" class="wrap archive archive-custom">		
-		<section class="post-list">
-			<?php $cat_name = single_cat_title('',false);?>
-			<header class="post-list-header">
-				<h1>
-					<?php if(is_category()):
-						echo $cat_name; 
-					elseif(is_tag()):
-						echo "Tag <i>".$cat_name."</i>"; 
-					elseif(is_author()):
-						echo "Author: <i>".$cat_name."<i>"; 
-					elseif(is_archive()):
-						echo "On archive <i>".$cat_name."<i>";
-					endif; ?>
-				</h1>
-				<p><?php echo category_description(); ?></p>
-			</header>
-			<?php if (have_posts()) :?>
-			<?php while (have_posts()) : the_post();?>
-			<div class="content" id="post-<?php the_ID();?>">
-				<a href="<?php the_permalink(); ?>">				
-					<?php if(has_post_thumbnail()){
-					the_post_thumbnail('thumbnail');
-					}else{ ?>
-					<img src="<?php bloginfo('template_url'); ?>/img/default-thumbnail.jpg" />
-					<?php } ?>
-				</a>
-				<div class="post-caption">											
-					<h2>
-						<a href="<?php the_permalink(); ?>">					
-							<?php the_title(); ?>
-						</a>
-					</h2>
-					<div class="category">
-						<?php the_category(', '); ?>					
-					</div>
-					<?php the_excerpt(); ?>
-				</div>
-			</div>
-			<?php endwhile; ?>
-			<?php else :?>
-			<h2>Sorry, posts not found</h2>
-			<?php endif; ?>
-			<nav class="pagination">
-				<?php		
-					next_posts_link('<span class="link-title">Next Posts</span>');
-					previous_posts_link('<span class="link-title">Previous Posts</span>');
-				?>
-			</nav>
-		</section>
-		<aside class="aside-sidebar">
-			<?php get_sidebar(); ?>
-		</aside>	
-	</article>
+
+<section class="pt-0">
+  <div class="container">
+    <div class="text-center py-5 mb-4">
+      <h2 class="mb-4" data-aos="fade-up">
+        <?php _e('All customers stories', 'mozrest'); ?></h2>
+      <div data-aos="fade-up">
+        <a href="<?php echo get_post_type_archive_link('testimonial') ?>" class="btn btn-primary px-5 py-3">
+          <?php _e("All stories", 'mozrest'); ?>
+        </a>
+
+        <?php
+
+
+        $terms = get_terms('testimonial_category');
+        if (!empty($terms) && !is_wp_error($terms)) {
+          foreach ($terms as $term) {
+            $currentSlug = $term->slug;
+            if ($currentSlug !== 'testimonials') {
+              echo '<a class="btn btn-outline-primary px-5 py-3" href="' . get_bloginfo('url') . '/testimonial_category/' . $currentSlug . '">' . $term->name . "</a> ";
+            }
+          }
+        }
+        ?>
+      </div>
+    </div>
+    <?php get_template_part('parts/testimonial/loop');    ?>
+  </div>
+</section>
+
 <?php get_footer(); ?>

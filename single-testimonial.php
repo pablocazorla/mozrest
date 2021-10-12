@@ -1,27 +1,39 @@
 <?php get_header(); ?>
-	<article id="main-article" class="wrap single single-custom">
-		<section class="post">
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<header class="post-header">
-				<h1><?php the_title(); ?></h1>
-				<div class="category">
-					<?php the_category(', '); ?> <span class="category-separator">|</span> <a href="#comments-panel">Comments</a>	
-				</div>
-				<?php the_excerpt();?>
-			</header>
-			<div class="content">
-				<?php the_content(); ?>
-			</div>
-			<div class="comments-panel">
-				<?php comments_template(); ?>
-			</div>		
-			<?php endwhile; ?>
-			<?php else :?>
-			<h2>Sorry, post not found</h2>
-			<?php endif; ?>
-		</section>
-		<aside class="aside-sidebar">
-			<?php get_sidebar(); ?>
-		</aside>	
-	</article>
+
+<section class="pt-0  ps-3 pe-lg-0  px-3">
+  <div class="py-5 text-center">
+    <h4 class="text-yellow text-uppercase m-0" data-aos="fade"><?php _e("Testimonials", 'mozrest'); ?></h4>
+  </div>
+  <div class="row g-0">
+    <div class="col-lg-6 py-3">
+      <div class="container semi-container me-lg-0 text-lg-start text-center" data-aos="fade-right">
+        <div class="pe-lg-5">
+          <h1>
+            <?php the_title(); ?></h1>
+          <p class="mb-2">
+            <b>
+              <?php
+							$terms = get_the_terms($post->ID, 'testimonial_category');
+							if (!empty($terms) && !is_wp_error($terms)) {
+								foreach ($terms as $term) {
+									echo $term->name;
+								}
+							}
+							?>
+            </b>
+          </p>
+          <?php the_content(); ?>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="ratio ratio-16x9 ratio-img">
+        <?php if (has_post_thumbnail()) {
+					the_post_thumbnail('large');
+				} ?>
+      </div>
+    </div>
+  </div>
+</section>
 <?php get_footer(); ?>
