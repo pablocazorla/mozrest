@@ -3,9 +3,31 @@
   border-radius: 50%;
   max-width: 140px;
   margin: 0 auto;
+  position: relative;
 
   .integracion-btn-central_icon {
     padding: 20px;
+  }
+  .integracion-btn-central_a {
+    position: absolute;
+    display: none;
+    padding: 25px 5px;
+    line-height: 1;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    .transform(translateY(-50%));
+  }
+
+  &.show-link {
+    .integracion-btn-central_icon {
+      opacity: 0;
+    }
+    .integracion-btn-central_a {
+      display: block;
+    }
   }
 }
 
@@ -44,8 +66,19 @@
 }
 .integracion-dropdown-list_icon {
   width: 40px;
+  height: 40px;
+  overflow: hidden;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 .integracion-dropdown-list {
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
   .integracion-dropdown-list_item {
     padding: 10px;
   }

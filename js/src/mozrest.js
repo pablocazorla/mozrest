@@ -101,7 +101,11 @@
       var $intlabrms = $("#int-lab-rms"),
         $intlistrms = $("#int-list-rms"),
         $intlabrp = $("#int-lab-rp"),
-        $intlistrp = $("#int-list-rp");
+        $intBtn = $("#integracion-btn-central"),
+        $a = $intBtn.find("a"),
+        $intlistrp = $("#int-list-rp"),
+        showLink = false,
+        hrefBase = $a.attr("href");
 
       var valRMS = "";
       var valRP = "";
@@ -110,6 +114,11 @@
         console.log("Integration -----------------");
         console.log("RMS", valRMS);
         console.log("RP", valRP);
+        if (valRMS !== "" && valRP !== "" && !showLink) {
+          showLink = true;
+          $intBtn.addClass("show-link");
+        }
+        $a.attr("href", hrefBase + "?matching=" + valRMS + "--" + valRP);
       };
 
       $intlistrms.find(".integracion-dropdown-list_item").click(function () {
