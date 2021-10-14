@@ -125,7 +125,8 @@ get_header();
               <?php _e("Mozrest <b>aggregates all your online reservations</b> and synchronises them with your existing Reservation Management System, improving your business’ operational flow in the process. <b>Less effort for more value!</b>", 'mozrest'); ?>
             </p>
             <p class="m-0">
-              <a href="#" class="btn btn-primary"><?php _e("Manage your booking channels", 'mozrest'); ?>
+              <a href="<?php get_url_by_slug('booking-channels-integration'); ?>"
+                class="btn btn-primary"><?php _e("Manage your booking channels", 'mozrest'); ?>
               </a>
             </p>
           </div>
@@ -158,7 +159,8 @@ get_header();
               <?php _e("We give you the tools to <b>improve your visibility and update your online profiles</b> with just one click! Mozrest integrates all the platforms where your customers can see you or speak about you and sends you an alert, so you <b>never miss a review again!</b>", 'mozrest'); ?>
             </p>
             <p class="m-0">
-              <a href="#" class="btn btn-primary"><?php _e("Manage your profiles & reviews", 'mozrest'); ?></a>
+              <a href="<?php get_url_by_slug('profile-and-reviews-management'); ?>"
+                class="btn btn-primary"><?php _e("Manage your profiles & reviews", 'mozrest'); ?></a>
             </p>
           </div>
           <div class="col-md-4 col-sm-6">
@@ -190,7 +192,8 @@ get_header();
               <?php _e("Mozrest helps you know your business better than before, thanks to our <b>insightful analytics and reporting functions</b> accessible from one screen, that you can easily export.", 'mozrest'); ?>
             </p>
             <p class="m-0">
-              <a href="#" class="btn btn-primary"><?php _e("Manage your business", 'mozrest'); ?></a>
+              <a href="<?php get_url_by_slug('reporting-dashboard'); ?>"
+                class="btn btn-primary"><?php _e("Manage your business", 'mozrest'); ?></a>
             </p>
           </div>
           <div class="col-md-4 col-sm-6">

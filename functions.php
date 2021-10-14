@@ -110,6 +110,12 @@ if (!function_exists('mozrest_setup')) :
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
+		function get_url_by_slug($slug)
+		{
+			$page_url_id = get_page_by_path($slug);
+			$page_url_link = get_permalink($page_url_id);
+			echo $page_url_link;
+		}
 		add_theme_support(
 			'html5',
 			array(
