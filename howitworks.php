@@ -63,7 +63,8 @@ Template Name: How it Works
       </div>
     </div>
     <div class="text-center" data-aos="fade-up">
-      <a href="#" class="btn btn-primary"><?php _e("Request a demo", 'mozrest'); ?></a>
+      <a href="<?php get_url_by_slug('request-a-demo'); ?>"
+        class="btn btn-primary"><?php _e("Request a demo", 'mozrest'); ?></a>
     </div>
 
 </section>

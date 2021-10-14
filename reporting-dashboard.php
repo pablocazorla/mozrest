@@ -15,7 +15,7 @@ Template Name: reporting-dashboard
         <div class="ps-3 pe-lg-5 px-3 pb-4">
           <?php _e("<p><b>Mozrest Reporting Dashboards</b> help you know your business better than before, thanks to user-friendly insightful analytics and reporting functions accessible from one screen, that you can easily export.</p><p>· Bookings performance<br/>· Online communications performance<br/>· Customers engagement activities</p><p>These online centralised marketing dashboards will allow you to keep track of your performance and better understand how to improve them.</p>", 'mozrest'); ?>
           <p class="m-0">
-            <a href="#" class="btn btn-yellow chat-bot">
+            <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-yellow chat-bot">
               <?php _e('Request a demo', 'mozrest'); ?>
             </a>
           </p>
@@ -84,7 +84,7 @@ Template Name: reporting-dashboard
       <a href="<?php get_url_by_slug('booking-channels-integration'); ?>" class="btn btn-outline-pink me-2 mb-3">
         <?php _e('Discover how it works', 'mozrest'); ?>
       </a>
-      <a href="#" class="btn btn-pink">
+      <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-pink">
         <?php _e('Request a demo to discover more features', 'mozrest'); ?>
       </a>
     </div>
@@ -146,15 +146,13 @@ Template Name: reporting-dashboard
       <a href="<?php get_url_by_slug('profile-and-reviews-management'); ?>" class="btn btn-outline-pink me-2 mb-3">
         <?php _e('Discover how it works', 'mozrest'); ?>
       </a>
-      <a href="#" class="btn btn-pink">
+      <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-pink">
         <?php _e('Request a demo to discover more features', 'mozrest'); ?>
       </a>
     </div>
   </div>
 </section>
 
-<?php
-include 'parts/subscribe/subscribe-long-box.php';
-?>
+<?php get_template_part('parts/subscribe/subscribe-long-box'); ?>
 
 <?php get_footer(); ?>

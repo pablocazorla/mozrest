@@ -130,16 +130,15 @@ Template Name: booking-channels-integration
       </div>
     </div>
     <div class="text-center pt-2">
-      <a href="#" class="btn btn-primary">
+      <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-primary">
         <?php _e('Request a demo', 'mozrest'); ?>
       </a>
     </div>
   </div>
 </section>
 
-<?php
-include 'parts/features/features-box.php';
-?>
+
+<?php get_template_part('parts/features/features-box'); ?>
 
 
 <section class="pt-4">
@@ -194,15 +193,14 @@ include 'parts/features/features-box.php';
       </div>
     </div>
     <div class="text-center pt-2">
-      <a href="#" class="btn btn-pink">
+      <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-pink">
         <?php _e('Request a demo to discover more features', 'mozrest'); ?>
       </a>
     </div>
   </div>
 </section>
 
-<?php
-include 'parts/subscribe/subscribe-long-box.php';
-?>
+
+<?php get_template_part('parts/subscribe/subscribe-long-box'); ?>
 
 <?php get_footer(); ?>

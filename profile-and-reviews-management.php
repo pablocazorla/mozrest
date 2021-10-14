@@ -15,7 +15,7 @@ Template Name: profile-and-reviews-management
         <div class="ps-3 pe-lg-5 px-3 pb-4">
           <?php _e("<p><b>Mozrest Profiles & Reviews Management</b> integrates all the platforms where your customers can see or speak about you.</p><p>· Post engaging content and respond to reviews to develop customer loyalty increase your profitability<br />· Provide a positive brand image of your business to attract new customers and increase your sales revenue.</p><p><b>Need to change your pictures and opening hours quickly?</b><br />We integrate many social platforms and online guides in one place to make sure all your profiles are coherent and up-to-date with just one click!</p><p><b>Not sure how to respond to reviews?</b><br />We send you an alert each time a customer posts feedback about its great experience on a social platform or online guide, so you can post a thank you message in return and never miss a review again!</p>", 'mozrest'); ?>
           <p class="m-0">
-            <a href="#" class="btn btn-yellow chat-bot">
+            <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-yellow chat-bot">
               <?php _e('Request a demo', 'mozrest'); ?>
             </a>
           </p>
@@ -131,16 +131,15 @@ Template Name: profile-and-reviews-management
       </div>
     </div>
     <div class="text-center pt-2">
-      <a href="#" class="btn btn-primary">
+      <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-primary">
         <?php _e('Request a demo', 'mozrest'); ?>
       </a>
     </div>
   </div>
 </section>
 
-<?php
-include 'parts/features/features-box.php';
-?>
+
+<?php get_template_part('parts/features/features-box'); ?>
 
 
 <section class="pt-4">
@@ -195,15 +194,15 @@ include 'parts/features/features-box.php';
       </div>
     </div>
     <div class="text-center pt-2">
-      <a href="#" class="btn btn-pink">
+      <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-pink">
         <?php _e('Request a demo to discover more features', 'mozrest'); ?>
       </a>
     </div>
   </div>
 </section>
 
-<?php
-include 'parts/subscribe/subscribe-long-box.php';
-?>
+
+
+<?php get_template_part('parts/subscribe/subscribe-long-box'); ?>
 
 <?php get_footer(); ?>
