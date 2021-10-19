@@ -262,7 +262,10 @@ function create_rms_type()
 		'show_in_nav_menus' => true,
 		'menu_position' => 5,
 		'menu_icon' => 'dashicons-admin-multisite',
-		'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields')
+		'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields'),
+		'rewrite' => array(
+			'slug' => 'reservation-management-system'
+		),
 	);
 	register_post_type('rms', $args);
 }
@@ -311,7 +314,10 @@ function create_rp_type()
 		'show_in_nav_menus' => true,
 		'menu_position' => 5,
 		'menu_icon' => 'dashicons-admin-site-alt3',
-		'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields')
+		'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields'),
+		'rewrite' => array(
+			'slug' => 'reservation-portal'
+		),
 	);
 	register_post_type('rp', $args);
 }

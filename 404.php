@@ -9,22 +9,5 @@
  */
 
 get_header();
-?>
-
-<header class="page-header">
-  <div class="container">
-    <h1><?php _e('ERROR_404_TITLE', 'mozrest'); ?></h1>
-  </div>
-</header><!-- .page-header -->
-<section>
-  <div class="container">
-    <p class="text-center">
-      <?php _e('ERROR_404_P', 'mozrest'); ?>
-    </p>
-  </div>
-  <div class="box-search">
-    <?php get_search_form(); ?>
-  </div>
-</section>
-<?php
+get_template_part('parts/error404/error404');
 get_footer();
