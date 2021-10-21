@@ -82,3 +82,36 @@
   margin: 0 auto;
   padding-bottom: 20px;
 }
+
+.datalist-reservation {
+  max-width: 540px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.datalist-reservation-link {
+  @w: 50px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  display: block;
+  width: @w;
+  height: @w;
+  line-height: @w;
+  background-color: @yellow;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  .transform(translateY(-50%));
+  font-size: 20px;
+  i {
+    position: relative;
+    left: 2px;
+    top: -1px;
+  }
+  &:hover {
+    background-color: darken(@yellow, 8);
+    color: #fff;
+  }
+}

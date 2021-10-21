@@ -1,14 +1,8 @@
 <?php get_header(); ?>
-
-
-
-
-
-
 <section>
   <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-6">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-6 text-md-start text-center">
         <h1>
           <?php echo __("Get your", 'mozrest') . ' ' . get_the_title() . ' ' . __("account integrated 
 to your Reservation Management System", 'mozrest'); ?>
@@ -16,11 +10,11 @@ to your Reservation Management System", 'mozrest'); ?>
         <p>
           <?php echo __("Mozrest has partnered with", 'mozrest') . ' ' . get_the_title() . ' ' . __("to build a reliable two-way integration so you can easily manage your availability from one single place.", 'mozrest'); ?>
         </p>
-        <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-primary">
+        <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-primary mb-4">
           <?php _e('Request a demo', 'mozrest'); ?>
         </a>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 col-8">
         <div class="connect-img">
           <img class="img-auto" src="<?php bloginfo('template_url'); ?>/img/integration.svg" alt="Integration" />
           <div class="connect-img_item rms">

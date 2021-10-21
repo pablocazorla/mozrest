@@ -118,3 +118,31 @@
     }
   }
 }
+
+.reservation-item {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  border: 2px solid @blue;
+  margin-bottom: 20px;
+
+  .reservation-item_row {
+    display: flex;
+    align-items: center;
+
+    .reservation-item_img {
+      flex: 0 0 50px;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .reservation-item_text {
+      padding-left: 12px;
+      flex: 1 0 auto;
+    }
+  }
+}

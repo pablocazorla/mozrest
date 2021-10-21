@@ -135,6 +135,38 @@
       });
     });
 
+    // DATALIST *************************************************************
+    $(".datalist-reservation").each(function () {
+      var $this = $(this),
+        $input = $this.find("input"),
+        $list = $this.find("option"),
+        $a = $this.find("a"),
+        options = [];
+
+      $list.each(function () {
+        var value = $(this).val(),
+          url = $(this).data("slug");
+        options.push({
+          value: value,
+          url: url,
+        });
+      });
+
+      $input.on("change", function () {
+        var href = "#";
+        var value = $input.val();
+        var arr = options.filter(function (o) {
+          return o.value === value;
+        });
+
+        if (arr[0]) {
+          href = arr[0].url;
+        }
+
+        $a.attr("href", href);
+      });
+    });
+
     // Chat Bot ************************************************************************
 
     $(".chat-bot").each(function () {

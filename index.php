@@ -29,7 +29,7 @@ get_header();
             <?php _e("<b>Mozrest integrates multiple booking channels into your Reservation Management System,</b> so you get a complete overview of your real-time availability in one place. Restaurants and local businesses (garages, hairdressers, beauty salons, health centres, etc.) rely on Mozrest to easily manage their reservation platforms, gain time, and optimise their customer acquisition. Less effort for more value!", 'mozrest'); ?>
           </p>
           <p class="m-0">
-            <a href="#integrations" class="btn btn-primary chat-bot" style="max-width:290px">
+            <a href="#integrations" class="btn btn-primary" style="max-width:290px">
               <?php _e("Discover if your systems connect with Mozrest", 'mozrest'); ?>
             </a>
           </p>
@@ -81,7 +81,7 @@ get_header();
           <?php _e("Easily manage multiple booking channels in your Reservation Management System", 'mozrest'); ?>
         </h2>
         <p>
-          <a href="#" class="btn btn-outline-pink" data-aos="fade-up">
+          <a href="<?php get_url_by_slug('how-it-works'); ?>" class="btn btn-outline-pink" data-aos="fade-up">
             <?php _e("Discover how it works", 'mozrest'); ?>
           </a>
         </p>
