@@ -115,3 +115,32 @@
     color: #fff;
   }
 }
+
+.br-blue {
+  border-right: 1px solid @blue;
+}
+
+.about-img {
+  width: 130px;
+  margin: 0 auto 25px;
+
+  .about-img_content {
+    width: 100%;
+    height: 0;
+    padding: 0 0 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    background-color: #ccc;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100% !important;
+      height: auto !important;
+      display: block;
+      .transform(translateY(-50%));
+    }
+  }
+}

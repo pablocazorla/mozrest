@@ -235,113 +235,168 @@ if (!function_exists('mozrest_setup')) :
 			);
 		}
 		add_action('init', 'create_testimonial_taxonomies', 0);
+
+		/***********************************************
+		 * CUSTOM TYPE: Reservation Management System
+		 ***********************************************/
+		function create_rms_type()
+		{
+			$args = array(
+				'labels' => array(
+					'name' => 'Reservation Management Systems',
+					'singular_name' => 'Reservation Management System'
+				),
+				'public' => true,
+				'publicly_queryable' => true,
+				'show_ui' => true,
+				'show_in_menu' => true,
+				'query_var' => true,
+				'rewrite' => true,
+				'capability_type' => 'post',
+				'has_archive' => true,
+				'hierarchical' => false,
+				'show_tagcloud' => false,
+				'show_in_nav_menus' => true,
+				'menu_position' => 5,
+				'menu_icon' => 'dashicons-admin-multisite',
+				'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields'),
+				'rewrite' => array(
+					'slug' => 'reservation-management-system'
+				),
+			);
+			register_post_type('rms', $args);
+		}
+		add_action('init', 'create_rms_type');
+
+		// Reservation Management System Types
+		function create_rms_taxonomies()
+		{
+			register_taxonomy(
+				'rms_category',
+				'rms',
+				array(
+					'labels' => array(
+						'name' => 'Reservation Management System Types',
+						'singular_name' => 'Reservation Management System Type'
+					),
+					'show_ui' => true,
+					'show_tagcloud' => false,
+					'hierarchical' => true,
+					'show_in_nav_menus' => true
+				)
+			);
+		}
+		add_action('init', 'create_rms_taxonomies', 0);
+
+		/***********************************************
+		 * CUSTOM TYPE: Reservation Portal
+		 ***********************************************/
+		function create_rp_type()
+		{
+			$args = array(
+				'labels' => array(
+					'name' => 'Reservation Portals',
+					'singular_name' => 'Reservation Portal'
+				),
+				'public' => true,
+				'publicly_queryable' => true,
+				'show_ui' => true,
+				'show_in_menu' => true,
+				'query_var' => true,
+				'rewrite' => true,
+				'capability_type' => 'post',
+				'has_archive' => true,
+				'hierarchical' => false,
+				'show_tagcloud' => false,
+				'show_in_nav_menus' => true,
+				'menu_position' => 5,
+				'menu_icon' => 'dashicons-admin-site-alt3',
+				'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields'),
+				'rewrite' => array(
+					'slug' => 'reservation-portal'
+				),
+			);
+			register_post_type('rp', $args);
+		}
+		add_action('init', 'create_rp_type');
+
+		// Reservation Portal Types
+		function create_rp_taxonomies()
+		{
+			register_taxonomy(
+				'rp_category',
+				'rp',
+				array(
+					'labels' => array(
+						'name' => 'Reservation Portal Types',
+						'singular_name' => 'Reservation Portal Type'
+					),
+					'show_ui' => true,
+					'show_tagcloud' => false,
+					'hierarchical' => true,
+					'show_in_nav_menus' => true
+				)
+			);
+		}
+		add_action('init', 'create_rp_taxonomies', 0);
+
+
+
+		/***********************************************
+		 * CUSTOM TYPE: TEAM
+		 ***********************************************/
+		function create_team_type()
+		{
+			$args = array(
+				'labels' => array(
+					'name' => 'Team Members',
+					'singular_name' => 'Team Member'
+				),
+				'public' => true,
+				'publicly_queryable' => true,
+				'show_ui' => true,
+				'show_in_menu' => true,
+				'query_var' => true,
+				'rewrite' => true,
+				'capability_type' => 'post',
+				'has_archive' => true,
+				'hierarchical' => false,
+				'show_tagcloud' => false,
+				'show_in_nav_menus' => true,
+				'menu_position' => 6,
+				'menu_icon' => 'dashicons-universal-access',
+				'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields')
+			);
+			register_post_type('team', $args);
+		}
+		add_action('init', 'create_team_type');
+
+		// Team Types
+		function create_team_taxonomies()
+		{
+			register_taxonomy(
+				'team_category',
+				'team',
+				array(
+					'labels' => array(
+						'name' => 'Team Member Types',
+						'singular_name' => 'Team Member Type'
+					),
+					'show_ui' => true,
+					'show_tagcloud' => false,
+					'hierarchical' => true,
+					'show_in_nav_menus' => true
+				)
+			);
+		}
+		add_action('init', 'create_team_taxonomies', 0);
 	}
 endif;
 add_action('after_setup_theme', 'mozrest_setup');
 
-/***********************************************
- * CUSTOM TYPE: Reservation Management System
- ***********************************************/
-function create_rms_type()
-{
-	$args = array(
-		'labels' => array(
-			'name' => 'Reservation Management Systems',
-			'singular_name' => 'Reservation Management System'
-		),
-		'public' => true,
-		'publicly_queryable' => true,
-		'show_ui' => true,
-		'show_in_menu' => true,
-		'query_var' => true,
-		'rewrite' => true,
-		'capability_type' => 'post',
-		'has_archive' => true,
-		'hierarchical' => false,
-		'show_tagcloud' => false,
-		'show_in_nav_menus' => true,
-		'menu_position' => 5,
-		'menu_icon' => 'dashicons-admin-multisite',
-		'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields'),
-		'rewrite' => array(
-			'slug' => 'reservation-management-system'
-		),
-	);
-	register_post_type('rms', $args);
-}
-add_action('init', 'create_rms_type');
 
-// Reservation Management System Types
-function create_rms_taxonomies()
-{
-	register_taxonomy(
-		'rms_category',
-		'rms',
-		array(
-			'labels' => array(
-				'name' => 'Reservation Management System Types',
-				'singular_name' => 'Reservation Management System Type'
-			),
-			'show_ui' => true,
-			'show_tagcloud' => false,
-			'hierarchical' => true,
-			'show_in_nav_menus' => true
-		)
-	);
-}
-add_action('init', 'create_rms_taxonomies', 0);
 
-/***********************************************
- * CUSTOM TYPE: Reservation Portal
- ***********************************************/
-function create_rp_type()
-{
-	$args = array(
-		'labels' => array(
-			'name' => 'Reservation Portals',
-			'singular_name' => 'Reservation Portal'
-		),
-		'public' => true,
-		'publicly_queryable' => true,
-		'show_ui' => true,
-		'show_in_menu' => true,
-		'query_var' => true,
-		'rewrite' => true,
-		'capability_type' => 'post',
-		'has_archive' => true,
-		'hierarchical' => false,
-		'show_tagcloud' => false,
-		'show_in_nav_menus' => true,
-		'menu_position' => 5,
-		'menu_icon' => 'dashicons-admin-site-alt3',
-		'supports' => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments', 'custom-fields'),
-		'rewrite' => array(
-			'slug' => 'reservation-portal'
-		),
-	);
-	register_post_type('rp', $args);
-}
-add_action('init', 'create_rp_type');
 
-// Reservation Portal Types
-function create_rp_taxonomies()
-{
-	register_taxonomy(
-		'rp_category',
-		'rp',
-		array(
-			'labels' => array(
-				'name' => 'Reservation Portal Types',
-				'singular_name' => 'Reservation Portal Type'
-			),
-			'show_ui' => true,
-			'show_tagcloud' => false,
-			'hierarchical' => true,
-			'show_in_nav_menus' => true
-		)
-	);
-}
-add_action('init', 'create_rp_taxonomies', 0);
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.

@@ -6,7 +6,6 @@ Template Name: request-an-integration
 <?php get_header(); ?>
 
 <section class="pt-0  ps-3 pe-lg-0  px-3">
-
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8">
