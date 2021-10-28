@@ -167,6 +167,30 @@
       });
     });
 
+    // Menu Lang ************************************************************************
+
+    $(".drop-lang-selector").each(function () {
+      var $this = $(this),
+        $selectedLang = $this.find(".selected-lang"),
+        $a = $this.find("li");
+
+      var setText = function (text) {
+        $selectedLang.text(text);
+      };
+
+      var initialText = $this.find("li.current-language-menu-item a").text();
+
+      console.log(initialText);
+
+      setText(initialText);
+
+      $a.click(function (e) {
+        //  e.preventDefault();
+        var newText = $(this).text();
+        setText(newText);
+      });
+    });
+
     // Chat Bot ************************************************************************
 
     $(".chat-bot").each(function () {

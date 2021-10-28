@@ -1,13 +1,14 @@
 .btn {
   .font-alt;
   padding: 0.8rem 2rem;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 0.8em;
   .transition(all 0.2s);
 
   .generate_btn_color(@col) {
     &.btn-@{col} {
       background-color: @@col;
+      border-color: @@col;
       color: #fff !important;
 
       &:hover {

@@ -92,6 +92,7 @@ if (!function_exists('mozrest_setup')) :
 				'footer3' => esc_html__('Footer3', 'mozrest'),
 				'footer4' => esc_html__('Footer4', 'mozrest'),
 				'footer5' => esc_html__('Footer5', 'mozrest'),
+				'MenuLanguage' => esc_html__('MenuLanguage', 'mozrest'),
 				'footerBottom' => esc_html__('FooterBottom', 'mozrest'),
 			)
 		);

@@ -85,26 +85,32 @@
         </nav>
       </div>
       <div class="col-xl-2 col-lg-4 col-sm-6" data-aos="fade-up">
-        <h4><?php _e('Language & Country', 'mozrest'); ?></h4>
+        <h4><?php _e('Language', 'mozrest'); ?></h4>
         <div class="dropdown drop-lang-selector mb-2 mx-md-0 mx-auto">
           <div class="drop-lang-selector_btn" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="row align-items-center">
               <div class="col-auto pe-0">
                 <div class="drop-lang-selector_icon"><i class="fa fa-comment-o"></i></div>
               </div>
-              <div class="col">English</div>
+              <div class="col"><span class="selected-lang">English (UK)</span>
+              </div>
               <div class="col-auto ps-0">
                 <i class="mozresticons-chevron-down icon-caret"></i>
               </div>
             </div>
           </div>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">Spanish</a></li>
-            <li><a class="dropdown-item" href="#">French</a></li>
-          </ul>
+          <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'MenuLanguage',
+              'menu_id'        => 'MenuLanguage-menu',
+              'menu_class' => 'dropdown-menu',
+              'container' => '',
+            )
+          );
+          ?>
         </div>
-        <div class="dropdown drop-lang-selector mb-5 mx-md-0 mx-auto">
+        <!-- <div class="dropdown drop-lang-selector mb-5 mx-md-0 mx-auto">
           <div class="drop-lang-selector_btn" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="row align-items-center">
               <div class="col-auto pe-0">
@@ -122,7 +128,7 @@
             <li><a class="dropdown-item" href="#">Spain</a></li>
             <li><a class="dropdown-item" href="#">France</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
       <div class="col-xl-2 col-lg-4 col-sm-6" data-aos="fade-up">
         <h4><?php _e('Call Us', 'mozrest'); ?></h4>
@@ -159,7 +165,7 @@
         <div class="footer-brand mb-3 mx-md-0 mx-auto">
           <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="MOZREST" />
         </div>
-        <p class="text-md-start text-center">Copyright © 2021 Mozrest. All rights reserved.<br />
+        <p class="text-md-start text-center">&copy; <?php echo date("Y"); ?> Mozrest Ltd. All Rights Reserved.<br />
           29 Corringham Road, HA9 9PX Wembley, UK</p>
       </div>
       <div class="col-md-6 order-md-2 order-1">

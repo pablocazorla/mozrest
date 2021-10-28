@@ -81,7 +81,7 @@ Template Name: reporting-dashboard
       </div>
     </div>
     <div class="text-center pt-2">
-      <a href="<?php get_url_by_slug('booking-channels-integration'); ?>" class="btn btn-outline-pink me-2 mb-3">
+      <a href="<?php get_url_by_slug('booking-channels-integration'); ?>" class="btn btn-outline-pink me-2">
         <?php _e('Discover how it works', 'mozrest'); ?>
       </a>
       <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-pink">
@@ -143,7 +143,7 @@ Template Name: reporting-dashboard
       </div>
     </div>
     <div class="text-center pt-2">
-      <a href="<?php get_url_by_slug('profile-and-reviews-management'); ?>" class="btn btn-outline-pink me-2 mb-3">
+      <a href="<?php get_url_by_slug('profile-and-reviews-management'); ?>" class="btn btn-outline-pink me-2">
         <?php _e('Discover how it works', 'mozrest'); ?>
       </a>
       <a href="<?php get_url_by_slug('request-a-demo'); ?>" class="btn btn-pink">
