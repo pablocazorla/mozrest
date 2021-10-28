@@ -23,7 +23,7 @@ Template Name: How it Works
         <div class="row g-5">
           <div class="col-md-6" data-aos="fade">
             <div class="ratio ratio-16x9 ratio-img">
-              <img src="<?php bloginfo('template_url'); ?>/img/howitworks/hw1.jpg" alt="" />
+              <img src="<?php bloginfo('template_url'); ?>/img/booking-1.jpg" alt="" />
             </div>
           </div>
           <div class="col-md-6" data-aos="fade">
@@ -36,7 +36,7 @@ Template Name: How it Works
           </div>
           <div class="col-md-6" data-aos="fade">
             <div class="ratio ratio-16x9 ratio-img">
-              <img src="<?php bloginfo('template_url'); ?>/img/howitworks/hw2.jpg" alt="" />
+              <img src="<?php bloginfo('template_url'); ?>/img/booking-2.jpg" alt="" />
             </div>
           </div>
           <div class="col-md-6" data-aos="fade">
@@ -49,7 +49,7 @@ Template Name: How it Works
           </div>
           <div class="col-md-6" data-aos="fade">
             <div class="ratio ratio-16x9 ratio-img">
-              <img src="<?php bloginfo('template_url'); ?>/img/howitworks/hw3.jpg" alt="" />
+              <img src="<?php bloginfo('template_url'); ?>/img/booking-3.jpg" alt="" />
             </div>
           </div>
           <div class="col-md-6" data-aos="fade">
