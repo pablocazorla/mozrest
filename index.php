@@ -12,14 +12,14 @@ get_header();
 ?>
 <section class="py-0  ps-3 pe-lg-0  px-3">
   <div class="row g-0 align-items-center relative">
-    <a class="cta-presentation" href="#">
+    <!-- <a class="cta-presentation" href="#">
       <div class="cta-presentation_icon">
         <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/mozrest-icon.svg" alt="" />
       </div>
       <div class="cta-presentation_text">
         <?php _e("Hey there! We're here to help. Do you have a question for us?", 'mozrest'); ?>
       </div>
-    </a>
+    </a> -->
     <div class="col-lg-6 py-5">
       <div class="container semi-container me-lg-0 text-lg-start text-center" data-aos="fade-right">
         <div class="pe-lg-5">

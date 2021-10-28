@@ -5,7 +5,7 @@ Template Name: support
 ?>
 <?php get_header(); ?>
 
-<section class="pt-0 pb-1  ps-3 pe-lg-0  px-3">
+<section class="pt-0 pb-5  ps-3 pe-lg-0  px-3">
   <div class="container">
     <div class="py-5 text-center">
       <h1 class="m-0" data-aos="fade"><?php _e("Support", 'mozrest'); ?></h1>
@@ -34,6 +34,7 @@ Template Name: support
 </section>
 <section class="pt-0" data-aos="fade-up">
   <div class="container">
+    <p class="text-center m-0"><?php _e('Alternatively, you can fill in the form below:', 'mozrest'); ?></p>
     <script type="text/javascript" src="https://form.jotform.com/jsform/212902569097362"></script>
   </div>
 </section>
