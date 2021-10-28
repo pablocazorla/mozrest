@@ -38,9 +38,8 @@ get_header();
     </div>
     <div class="col-lg-6">
       <div class="ratio ratio-16x9">
-        <video role="video"
-          src="https://media.istockphoto.com/videos/couple-being-greeted-by-maitre-d-using-digital-tablet-as-they-arrive-video-id1213592063"
-          alt="" autoplay loop muted></video>
+        <video role="video" src="<?php bloginfo('template_url'); ?>/video/mozrest-booking-management.mp4" alt=""
+          autoplay loop muted></video>
       </div>
     </div>
   </div>

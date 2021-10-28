@@ -24,9 +24,8 @@ Template Name: profile-and-reviews-management
     </div>
     <div class="col-lg-6">
       <div class="ratio ratio-16x9">
-        <video role="video"
-          src="https://ak.picdn.net/shutterstock/videos/24177157/preview/stock-footage-smiling-afro-american-woman-with-curly-hair-overlook-social-network-account-and-photos-chat-with.webm"
-          alt="" autoplay loop muted></video>
+        <video role="video" src="<?php bloginfo('template_url'); ?>/video/mozrest-social-media-management.mp4" alt=""
+          autoplay loop muted></video>
       </div>
     </div>
   </div>
